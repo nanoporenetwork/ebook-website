@@ -1,0 +1,26 @@
+site_name: Nanopore Network eBook - An Educator's Guide
+docs_dir: '../../docs/en'
+site_dir: '../../generated/en'
+
+theme:
+  name: material
+  language: en
+  palette:
+    # Palette toggle for light mode
+    - scheme: default
+      toggle:
+        icon: material/brightness-7
+        name: Switch to dark mode
+    # Palette toggle for dark mode
+    - scheme: slate
+      toggle:
+        icon: material/brightness-4
+        name: Switch to light mode
+extra:
+  alternate:
+    - name: English
+      link: /en
+      lang: en
+    - name: Spanish
+      link: /es
+      lang: es
