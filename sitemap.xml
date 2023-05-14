@@ -1,19 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
     <url>
-         <loc>Noneen/</loc>
+         <loc>https://nanoporenetwork.github.io/ebook-website/en/</loc>
          <lastmod>2023-05-14</lastmod>
          <changefreq>daily</changefreq>
-         <xhtml:link rel="alternate" hreflang="es" href="Nonees/en/"/>
-         <xhtml:link rel="alternate" hreflang="en" href="Noneen/en/"/>
+         <xhtml:link rel="alternate" hreflang="es" href="https://nanoporenetwork.github.io/ebook-website/es/en/"/>
+         <xhtml:link rel="alternate" hreflang="en" href="https://nanoporenetwork.github.io/ebook-website/en/en/"/>
          
     </url>
     <url>
-         <loc>Nonees/</loc>
+         <loc>https://nanoporenetwork.github.io/ebook-website/es/</loc>
          <lastmod>2023-05-14</lastmod>
          <changefreq>daily</changefreq>
-         <xhtml:link rel="alternate" hreflang="es" href="Nonees/es/"/>
-         <xhtml:link rel="alternate" hreflang="en" href="Noneen/es/"/>
+         <xhtml:link rel="alternate" hreflang="es" href="https://nanoporenetwork.github.io/ebook-website/es/es/"/>
+         <xhtml:link rel="alternate" hreflang="en" href="https://nanoporenetwork.github.io/ebook-website/en/es/"/>
          
     </url>
 </urlset>
