@@ -1,11 +1,43 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
     <url>
-         <loc>https://nanoporenetwork.github.io/ebook-website/es/</loc>
-         <lastmod>2023-05-14</lastmod>
+         <loc>None.</loc>
+         <lastmod>2023-05-15</lastmod>
          <changefreq>daily</changefreq>
-         <xhtml:link rel="alternate" hreflang="es" href="https://nanoporenetwork.github.io/ebook-website/es/es/"/>
-         <xhtml:link rel="alternate" hreflang="en" href="https://nanoporenetwork.github.io/ebook-website/en/es/"/>
+         <xhtml:link rel="alternate" hreflang="en" href="Noneen/"/>
+         <xhtml:link rel="alternate" hreflang="es" href="Nonees/"/>
+         
+    </url>
+    <url>
+         <loc>NoneBioinformatics_protocols/JetStream2/</loc>
+         <lastmod>2023-05-15</lastmod>
+         <changefreq>daily</changefreq>
+         <xhtml:link rel="alternate" hreflang="en" href="Noneen/Bioinformatics_protocols/JetStream2/"/>
+         <xhtml:link rel="alternate" hreflang="es" href="Nonees/Bioinformatics_protocols/JetStream2/"/>
+         
+    </url>
+    <url>
+         <loc>NoneBioinformatics_protocols/bioinformatics_protocols/</loc>
+         <lastmod>2023-05-15</lastmod>
+         <changefreq>daily</changefreq>
+         <xhtml:link rel="alternate" hreflang="en" href="Noneen/Bioinformatics_protocols/bioinformatics_protocols/"/>
+         <xhtml:link rel="alternate" hreflang="es" href="Nonees/Bioinformatics_protocols/bioinformatics_protocols/"/>
+         
+    </url>
+    <url>
+         <loc>NoneFAQ/FAQ/</loc>
+         <lastmod>2023-05-15</lastmod>
+         <changefreq>daily</changefreq>
+         <xhtml:link rel="alternate" hreflang="en" href="Noneen/FAQ/FAQ/"/>
+         <xhtml:link rel="alternate" hreflang="es" href="Nonees/FAQ/FAQ/"/>
+         
+    </url>
+    <url>
+         <loc>NoneOxford_Nanopore_equipment/equipment/</loc>
+         <lastmod>2023-05-15</lastmod>
+         <changefreq>daily</changefreq>
+         <xhtml:link rel="alternate" hreflang="en" href="Noneen/Oxford_Nanopore_equipment/equipment/"/>
+         <xhtml:link rel="alternate" hreflang="es" href="Nonees/Oxford_Nanopore_equipment/equipment/"/>
          
     </url>
 </urlset>
