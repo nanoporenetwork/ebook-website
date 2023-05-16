@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
+    <url>
+         <loc>None./</loc>
+         <lastmod>2023-05-16</lastmod>
+         <changefreq>daily</changefreq>
+         <xhtml:link rel="alternate" hreflang="en" href="Noneen/"/>
+         <xhtml:link rel="alternate" hreflang="es" href="Nonees/"/>
+         
+    </url>
+    <url>
+         <loc>NoneFAQ/faq/</loc>
+         <lastmod>2023-05-16</lastmod>
+         <changefreq>daily</changefreq>
+         <xhtml:link rel="alternate" hreflang="en" href="Noneen/FAQ/faq/"/>
+         <xhtml:link rel="alternate" hreflang="es" href="Nonees/FAQ/faq/"/>
+         
+    </url>
+    <url>
+         <loc>Nonebioinformatics/JetStream2/</loc>
+         <lastmod>2023-05-16</lastmod>
+         <changefreq>daily</changefreq>
+         <xhtml:link rel="alternate" hreflang="en" href="Noneen/bioinformatics/JetStream2/"/>
+         <xhtml:link rel="alternate" hreflang="es" href="Nonees/bioinformatics/JetStream2/"/>
+         
+    </url>
+    <url>
+         <loc>Nonejavascripts/extras/accessibility/</loc>
+         <lastmod>2023-05-16</lastmod>
+         <changefreq>daily</changefreq>
+         <xhtml:link rel="alternate" hreflang="en" href="Noneen/javascripts/extras/accessibility/"/>
+         <xhtml:link rel="alternate" hreflang="es" href="Nonees/javascripts/extras/accessibility/"/>
+         
+    </url>
+</urlset>
