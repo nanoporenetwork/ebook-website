@@ -25,6 +25,14 @@
          
     </url>
     <url>
+         <loc>Nonejavascripts/extras/accessibility/</loc>
+         <lastmod>2023-05-17</lastmod>
+         <changefreq>daily</changefreq>
+         <xhtml:link rel="alternate" hreflang="en" href="Noneen/javascripts/extras/accessibility/"/>
+         <xhtml:link rel="alternate" hreflang="es" href="Nonees/javascripts/extras/accessibility/"/>
+         
+    </url>
+    <url>
          <loc>Nonelaboratory_protocols/dna_extraction/</loc>
          <lastmod>2023-05-17</lastmod>
          <changefreq>daily</changefreq>
