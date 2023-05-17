@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
+    <url>
+         <loc>None./</loc>
+         <lastmod>2023-05-17</lastmod>
+         <changefreq>daily</changefreq>
+         <xhtml:link rel="alternate" hreflang="en" href="Noneen/"/>
+         <xhtml:link rel="alternate" hreflang="es" href="Nonees/"/>
+         
+    </url>
+    <url>
+         <loc>Nonebioinformatics/JetStream2/</loc>
+         <lastmod>2023-05-17</lastmod>
+         <changefreq>daily</changefreq>
+         <xhtml:link rel="alternate" hreflang="en" href="Noneen/bioinformatics/JetStream2/"/>
+         <xhtml:link rel="alternate" hreflang="es" href="Nonees/bioinformatics/JetStream2/"/>
+         
+    </url>
+    <url>
+         <loc>Nonecontribute/contribution-guidelines/</loc>
+         <lastmod>2023-05-17</lastmod>
+         <changefreq>daily</changefreq>
+         <xhtml:link rel="alternate" hreflang="en" href="Noneen/contribute/contribution-guidelines/"/>
+         <xhtml:link rel="alternate" hreflang="es" href="Nonees/contribute/contribution-guidelines/"/>
+         
+    </url>
+    <url>
+         <loc>Nonelaboratory_protocols/dna_extraction/</loc>
+         <lastmod>2023-05-17</lastmod>
+         <changefreq>daily</changefreq>
+         <xhtml:link rel="alternate" hreflang="en" href="Noneen/laboratory_protocols/dna_extraction/"/>
+         <xhtml:link rel="alternate" hreflang="es" href="Nonees/laboratory_protocols/dna_extraction/"/>
+         
+    </url>
+    <url>
+         <loc>Noneother_resources/faq/</loc>
+         <lastmod>2023-05-17</lastmod>
+         <changefreq>daily</changefreq>
+         <xhtml:link rel="alternate" hreflang="en" href="Noneen/other_resources/faq/"/>
+         <xhtml:link rel="alternate" hreflang="es" href="Nonees/other_resources/faq/"/>
+         
+    </url>
+</urlset>
