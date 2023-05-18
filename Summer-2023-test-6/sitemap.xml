@@ -1,0 +1,251 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
+    <url>
+         <loc>None./</loc>
+         <lastmod>2023-05-18</lastmod>
+         <changefreq>daily</changefreq>
+         <xhtml:link rel="alternate" hreflang="en" href="Noneen/"/>
+         <xhtml:link rel="alternate" hreflang="es" href="Nonees/"/>
+         
+    </url>
+    <url>
+         <loc>Nonebioinformatics/JetStream2/</loc>
+         <lastmod>2023-05-18</lastmod>
+         <changefreq>daily</changefreq>
+         <xhtml:link rel="alternate" hreflang="en" href="Noneen/bioinformatics/JetStream2/"/>
+         <xhtml:link rel="alternate" hreflang="es" href="Nonees/bioinformatics/JetStream2/"/>
+         
+    </url>
+    <url>
+         <loc>Nonebioinformatics/data_management/</loc>
+         <lastmod>2023-05-18</lastmod>
+         <changefreq>daily</changefreq>
+         <xhtml:link rel="alternate" hreflang="en" href="Noneen/bioinformatics/data_management/"/>
+         <xhtml:link rel="alternate" hreflang="es" href="Nonees/bioinformatics/data_management/"/>
+         
+    </url>
+    <url>
+         <loc>Nonebioinformatics/epi2me/</loc>
+         <lastmod>2023-05-18</lastmod>
+         <changefreq>daily</changefreq>
+         <xhtml:link rel="alternate" hreflang="en" href="Noneen/bioinformatics/epi2me/"/>
+         <xhtml:link rel="alternate" hreflang="es" href="Nonees/bioinformatics/epi2me/"/>
+         
+    </url>
+    <url>
+         <loc>Nonebioinformatics/software/</loc>
+         <lastmod>2023-05-18</lastmod>
+         <changefreq>daily</changefreq>
+         <xhtml:link rel="alternate" hreflang="en" href="Noneen/bioinformatics/software/"/>
+         <xhtml:link rel="alternate" hreflang="es" href="Nonees/bioinformatics/software/"/>
+         
+    </url>
+    <url>
+         <loc>Nonecontribute/contribution-guidelines/</loc>
+         <lastmod>2023-05-18</lastmod>
+         <changefreq>daily</changefreq>
+         <xhtml:link rel="alternate" hreflang="en" href="Noneen/contribute/contribution-guidelines/"/>
+         <xhtml:link rel="alternate" hreflang="es" href="Nonees/contribute/contribution-guidelines/"/>
+         
+    </url>
+    <url>
+         <loc>Nonecurated_experiments/16s_sequencing/</loc>
+         <lastmod>2023-05-18</lastmod>
+         <changefreq>daily</changefreq>
+         <xhtml:link rel="alternate" hreflang="en" href="Noneen/curated_experiments/16s_sequencing/"/>
+         <xhtml:link rel="alternate" hreflang="es" href="Nonees/curated_experiments/16s_sequencing/"/>
+         
+    </url>
+    <url>
+         <loc>Nonecurated_experiments/dna_barcoding/</loc>
+         <lastmod>2023-05-18</lastmod>
+         <changefreq>daily</changefreq>
+         <xhtml:link rel="alternate" hreflang="en" href="Noneen/curated_experiments/dna_barcoding/"/>
+         <xhtml:link rel="alternate" hreflang="es" href="Nonees/curated_experiments/dna_barcoding/"/>
+         
+    </url>
+    <url>
+         <loc>Nonecurated_experiments/edna/</loc>
+         <lastmod>2023-05-18</lastmod>
+         <changefreq>daily</changefreq>
+         <xhtml:link rel="alternate" hreflang="en" href="Noneen/curated_experiments/edna/"/>
+         <xhtml:link rel="alternate" hreflang="es" href="Nonees/curated_experiments/edna/"/>
+         
+    </url>
+    <url>
+         <loc>Nonecurated_experiments/microbial_genomes/</loc>
+         <lastmod>2023-05-18</lastmod>
+         <changefreq>daily</changefreq>
+         <xhtml:link rel="alternate" hreflang="en" href="Noneen/curated_experiments/microbial_genomes/"/>
+         <xhtml:link rel="alternate" hreflang="es" href="Nonees/curated_experiments/microbial_genomes/"/>
+         
+    </url>
+    <url>
+         <loc>Nonecurated_experiments/plant_genomes/</loc>
+         <lastmod>2023-05-18</lastmod>
+         <changefreq>daily</changefreq>
+         <xhtml:link rel="alternate" hreflang="en" href="Noneen/curated_experiments/plant_genomes/"/>
+         <xhtml:link rel="alternate" hreflang="es" href="Nonees/curated_experiments/plant_genomes/"/>
+         
+    </url>
+    <url>
+         <loc>Noneequipment_and_lab/computers/</loc>
+         <lastmod>2023-05-18</lastmod>
+         <changefreq>daily</changefreq>
+         <xhtml:link rel="alternate" hreflang="en" href="Noneen/equipment_and_lab/computers/"/>
+         <xhtml:link rel="alternate" hreflang="es" href="Nonees/equipment_and_lab/computers/"/>
+         
+    </url>
+    <url>
+         <loc>Noneequipment_and_lab/other_lab_equipment/</loc>
+         <lastmod>2023-05-18</lastmod>
+         <changefreq>daily</changefreq>
+         <xhtml:link rel="alternate" hreflang="en" href="Noneen/equipment_and_lab/other_lab_equipment/"/>
+         <xhtml:link rel="alternate" hreflang="es" href="Nonees/equipment_and_lab/other_lab_equipment/"/>
+         
+    </url>
+    <url>
+         <loc>Noneequipment_and_lab/reagents_and_kits/</loc>
+         <lastmod>2023-05-18</lastmod>
+         <changefreq>daily</changefreq>
+         <xhtml:link rel="alternate" hreflang="en" href="Noneen/equipment_and_lab/reagents_and_kits/"/>
+         <xhtml:link rel="alternate" hreflang="es" href="Nonees/equipment_and_lab/reagents_and_kits/"/>
+         
+    </url>
+    <url>
+         <loc>Noneequipment_and_lab/sequencing_hardware/</loc>
+         <lastmod>2023-05-18</lastmod>
+         <changefreq>daily</changefreq>
+         <xhtml:link rel="alternate" hreflang="en" href="Noneen/equipment_and_lab/sequencing_hardware/"/>
+         <xhtml:link rel="alternate" hreflang="es" href="Nonees/equipment_and_lab/sequencing_hardware/"/>
+         
+    </url>
+    <url>
+         <loc>Noneexample_data/example_data/</loc>
+         <lastmod>2023-05-18</lastmod>
+         <changefreq>daily</changefreq>
+         <xhtml:link rel="alternate" hreflang="en" href="Noneen/example_data/example_data/"/>
+         <xhtml:link rel="alternate" hreflang="es" href="Nonees/example_data/example_data/"/>
+         
+    </url>
+    <url>
+         <loc>Noneget_started/get_started/</loc>
+         <lastmod>2023-05-18</lastmod>
+         <changefreq>daily</changefreq>
+         <xhtml:link rel="alternate" hreflang="en" href="Noneen/get_started/get_started/"/>
+         <xhtml:link rel="alternate" hreflang="es" href="Nonees/get_started/get_started/"/>
+         
+    </url>
+    <url>
+         <loc>Noneget_started/time_and_cost_planning/</loc>
+         <lastmod>2023-05-18</lastmod>
+         <changefreq>daily</changefreq>
+         <xhtml:link rel="alternate" hreflang="en" href="Noneen/get_started/time_and_cost_planning/"/>
+         <xhtml:link rel="alternate" hreflang="es" href="Nonees/get_started/time_and_cost_planning/"/>
+         
+    </url>
+    <url>
+         <loc>Noneget_started.en.md/get_started/</loc>
+         <lastmod>2023-05-18</lastmod>
+         <changefreq>daily</changefreq>
+         <xhtml:link rel="alternate" hreflang="en" href="Noneen/get_started.en.md/get_started/"/>
+         <xhtml:link rel="alternate" hreflang="es" href="Nonees/get_started.en.md/get_started/"/>
+         
+    </url>
+    <url>
+         <loc>Nonejavascripts/extras/accessibility/</loc>
+         <lastmod>2023-05-18</lastmod>
+         <changefreq>daily</changefreq>
+         <xhtml:link rel="alternate" hreflang="en" href="Noneen/javascripts/extras/accessibility/"/>
+         <xhtml:link rel="alternate" hreflang="es" href="Nonees/javascripts/extras/accessibility/"/>
+         
+    </url>
+    <url>
+         <loc>Nonelaboratory_protocols/dna_extraction/</loc>
+         <lastmod>2023-05-18</lastmod>
+         <changefreq>daily</changefreq>
+         <xhtml:link rel="alternate" hreflang="en" href="Noneen/laboratory_protocols/dna_extraction/"/>
+         <xhtml:link rel="alternate" hreflang="es" href="Nonees/laboratory_protocols/dna_extraction/"/>
+         
+    </url>
+    <url>
+         <loc>Nonelaboratory_protocols/pcr_and_cleanup/</loc>
+         <lastmod>2023-05-18</lastmod>
+         <changefreq>daily</changefreq>
+         <xhtml:link rel="alternate" hreflang="en" href="Noneen/laboratory_protocols/pcr_and_cleanup/"/>
+         <xhtml:link rel="alternate" hreflang="es" href="Nonees/laboratory_protocols/pcr_and_cleanup/"/>
+         
+    </url>
+    <url>
+         <loc>Nonelaboratory_protocols/rna_extraction/</loc>
+         <lastmod>2023-05-18</lastmod>
+         <changefreq>daily</changefreq>
+         <xhtml:link rel="alternate" hreflang="en" href="Noneen/laboratory_protocols/rna_extraction/"/>
+         <xhtml:link rel="alternate" hreflang="es" href="Nonees/laboratory_protocols/rna_extraction/"/>
+         
+    </url>
+    <url>
+         <loc>Nonelaboratory_protocols/sample_prep_en/</loc>
+         <lastmod>2023-05-18</lastmod>
+         <changefreq>daily</changefreq>
+         <xhtml:link rel="alternate" hreflang="en" href="Noneen/laboratory_protocols/sample_prep_en/"/>
+         <xhtml:link rel="alternate" hreflang="es" href="Nonees/laboratory_protocols/sample_prep_en/"/>
+         
+    </url>
+    <url>
+         <loc>Nonelaboratory_protocols/sample_prep_es/</loc>
+         <lastmod>2023-05-18</lastmod>
+         <changefreq>daily</changefreq>
+         <xhtml:link rel="alternate" hreflang="en" href="Noneen/laboratory_protocols/sample_prep_es/"/>
+         <xhtml:link rel="alternate" hreflang="es" href="Nonees/laboratory_protocols/sample_prep_es/"/>
+         
+    </url>
+    <url>
+         <loc>Noneother_resources/faq/</loc>
+         <lastmod>2023-05-18</lastmod>
+         <changefreq>daily</changefreq>
+         <xhtml:link rel="alternate" hreflang="en" href="Noneen/other_resources/faq/"/>
+         <xhtml:link rel="alternate" hreflang="es" href="Nonees/other_resources/faq/"/>
+         
+    </url>
+    <url>
+         <loc>Noneother_resources/glossary/</loc>
+         <lastmod>2023-05-18</lastmod>
+         <changefreq>daily</changefreq>
+         <xhtml:link rel="alternate" hreflang="en" href="Noneen/other_resources/glossary/"/>
+         <xhtml:link rel="alternate" hreflang="es" href="Nonees/other_resources/glossary/"/>
+         
+    </url>
+    <url>
+         <loc>Noneteaching_resources/cultural_relevance/</loc>
+         <lastmod>2023-05-18</lastmod>
+         <changefreq>daily</changefreq>
+         <xhtml:link rel="alternate" hreflang="en" href="Noneen/teaching_resources/cultural_relevance/"/>
+         <xhtml:link rel="alternate" hreflang="es" href="Nonees/teaching_resources/cultural_relevance/"/>
+         
+    </url>
+    <url>
+         <loc>Noneteaching_resources/cures/</loc>
+         <lastmod>2023-05-18</lastmod>
+         <changefreq>daily</changefreq>
+         <xhtml:link rel="alternate" hreflang="en" href="Noneen/teaching_resources/cures/"/>
+         <xhtml:link rel="alternate" hreflang="es" href="Nonees/teaching_resources/cures/"/>
+         
+    </url>
+    <url>
+         <loc>Noneteaching_resources/fmn/</loc>
+         <lastmod>2023-05-18</lastmod>
+         <changefreq>daily</changefreq>
+         <xhtml:link rel="alternate" hreflang="en" href="Noneen/teaching_resources/fmn/"/>
+         <xhtml:link rel="alternate" hreflang="es" href="Nonees/teaching_resources/fmn/"/>
+         
+    </url>
+    <url>
+         <loc>Noneteaching_resources/presentations/</loc>
+         <lastmod>2023-05-18</lastmod>
+         <changefreq>daily</changefreq>
+         <xhtml:link rel="alternate" hreflang="en" href="Noneen/teaching_resources/presentations/"/>
+         <xhtml:link rel="alternate" hreflang="es" href="Nonees/teaching_resources/presentations/"/>
+         
+    </url>
+</urlset>
