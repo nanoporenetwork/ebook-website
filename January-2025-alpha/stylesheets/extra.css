@@ -29,15 +29,15 @@
 }
 .md-typeset .admonition.equipment,
 .md-typeset details.equipment {
-  border-color: rgb(43, 155, 70);
+  border-color: rgb(220, 96, 46);
 }
 .md-typeset .equipment > .admonition-title,
 .md-typeset .equipment > summary {
-  background-color: rgba(43, 155, 70, 0.1);
+  background-color: rgba(220, 96, 46, 0.1);
 }
 .md-typeset .equipment > .admonition-title::before,
 .md-typeset .equipment > summary::before {
-  background-color: rgb(43, 155, 70);
+  background-color: rgb(220, 96, 46);
   -webkit-mask-image: var(--md-admonition-icon--equipment);
           mask-image: var(--md-admonition-icon--equipment);
 }
