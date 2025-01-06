@@ -10,15 +10,15 @@
 }
 .md-typeset .admonition.reagents,
 .md-typeset details.reagents {
-  border-color: rgb(43, 155, 70);
+  border-color: rgb(21, 113, 69);
 }
 .md-typeset .reagents > .admonition-title,
 .md-typeset .reagents > summary {
-  background-color: rgba(43, 155, 70, 0.1);
+  background-color: rgba(21, 113, 69, 0.1);
 }
 .md-typeset .reagents > .admonition-title::before,
 .md-typeset .reagents > summary::before {
-  background-color: rgb(43, 155, 70);
+  background-color: rgb(21, 113, 69);
   -webkit-mask-image: var(--md-admonition-icon--reagents);
           mask-image: var(--md-admonition-icon--reagents);
 }
