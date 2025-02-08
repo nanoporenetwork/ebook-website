@@ -2,13 +2,13 @@
   {
     "version": "January-2025-alpha",
     "title": "January-2025-alpha",
-    "aliases": [
-      "latest"
-    ]
+    "aliases": []
   },
   {
     "version": "February-2025-alpha",
     "title": "February-2025-alpha",
-    "aliases": []
+    "aliases": [
+      "latest"
+    ]
   }
 ]
