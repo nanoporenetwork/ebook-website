@@ -8,6 +8,8 @@
       
       
       
+        <link rel="canonical" href="https://github.com/nanoporenetwork/ebook-website/bioinformatics/data_management/">
+      
       
         <link rel="prev" href="../../curated_experiments/phage/">
       
@@ -1652,8 +1654,19 @@
 <div class="admonition classroom">
 <p class="admonition-title">Instruction tip</p>
 <p><strong>Managing Student-Generated Data</strong></p>
-<p>Managing student-generated data in a Nanopore sequencing course requires careful planning to ensure smooth data sharing, organization, and long-term usability. Educators should establish a clear data-sharing strategy that facilitates seamless file exchange between instructors and students, particularly given the large file sizes associated with sequencing data. Cloud storage solutions like <a href="https://cyverse.org/">CyVerse</a>, <a href="https://www.google.com/drive/">Google Drive</a>, or institutional servers may be useful for storing and distributing datasets, but file size limitations and access controls should be considered. Additionally, educators should anticipate the scientific value of student-generated data—good data practices from the beginning can ensure that sequencing results are valid, reproducible, and valuable in aggregate.</p>
+<p>Managing student-generated data in a Nanopore sequencing course requires careful planning to ensure smooth data sharing, organization, and long-term usability. Educators should establish a clear data-sharing strategy that facilitates seamless file exchange between instructors and students, particularly given the large file sizes and/or large number of files associated with sequencing data. Cloud storage solutions like <a href="https://cyverse.org/">CyVerse</a>, <a href="https://www.google.com/drive/">Google Drive</a>, or institutional servers may be useful for storing and distributing datasets, but file size limitations and access controls should be considered. Additionally, educators should anticipate the scientific value of student-generated data—insisting on good data practices from the beginning can ensure that sequencing results are valid, reproducible, and valuable in aggregate.</p>
 <p>Developing a <strong>classroom data management plan</strong> can help structure how data are named, stored, and tracked across multiple course sections, lab groups, or project days. Establishing standardized file-naming conventions that incorporate identifiers such as course section, date, group number, and experiment type will allow educators to efficiently organize and retrieve data. Collecting consistent metadata across student projects is also essential if data are to be meaningfully analyzed or aggregated for further research or public sharing. Resources such as the <a href="https://www.go-fair.org/fair-principles/">FAIR Principles</a> provide guidance on making data findable, accessible, interoperable, and reusable.</p>
+<p><strong>File and object names and metadata to keep track of from the start</strong></p>
+<ul>
+<li><strong>Project name</strong>: At the most encompassing level of organization, have a simple project name</li>
+<li><strong>Students involved</strong>: Have a way of tracking students by more than give names and initials. Perhaps all students can be assigned a short unique identifier. You could consider having students create and use <a href="https://orcid.org/">ORCIDs</a>.</li>
+<li><strong>Sample names</strong>: Have a way to name specific samples. The sample name might also include or be linked to acquisition information such as the date collected, or the location of sampling. If a single sampled is sampled multiple times, have a way to track and indicate this.</li>
+<li><strong>Replicates</strong>: Have a way to indicate replication.</li>
+<li><strong>Data directory structures</strong>: Consider how directories on storage platforms will be organized. Have rules for how folders should be named, when folders should be created, and what should be in them.</li>
+<li><strong>Collision avoidance</strong>: Some files and folders will not have unique names. For example, every time you run a 16S workflow on <abbr title="Oxford Nanopore software required for operating the sequencing devices.">MinKNOW</abbr>, you will get folders named <code>barcode01</code>, <code>barcode02</code>,<code>barcode03</code>... Know when you will encounter these and have a way to manage their organization, or if needed, renaming, to avoid confusion.</li>
+<li><strong>Software management</strong>: Have a way to keep track of the software versions of any software you will use.</li>
+</ul>
+<p>While this list is not exhaustive, considering these possibilities ahead of time will make for smooth organization later.</p>
 <p>By integrating good data hygiene and documentation practices, educators can help students engage with sequencing workflows in a way that mirrors professional research environments.</p>
 </div>
 <h3 id="data-management-plans">Data management plans</h3>
@@ -1693,15 +1706,15 @@
 <p>Nanopore sequencing generates multiple types of data files at different stages of the workflow. Below is an overview of the key file formats:</p>
 <h3 id="raw-data">Raw data</h3>
 <ul>
-<li><strong>POD5 (.pod5)</strong>
+<li><strong><abbr title="The current file format used by ONT to store raw sequencing signal data.">POD5</abbr> (.pod5)</strong>
   [<a href="https://github.com/nanoporetech/pod5-file-format">Documentation</a>]<br />
-  Current standard format for storing raw signal data from Nanopore sequencing. Replaces the older FAST5 format for improved performance and scalability.</li>
-<li><strong>FAST5 (.fast5) [Legacy]</strong><br />
-  Used in older Nanopore sequencing workflows to store raw signal data. This format is no longer in use, having been replaced by POD5.</li>
+  Current standard format for storing raw signal data from Nanopore sequencing. Replaces the older <abbr title="A file format previously used by ONT to store raw signal data from nanopore sequencing. It has been replaced by *POD5*.">FAST5</abbr> format for improved performance and scalability.</li>
+<li><strong><abbr title="A file format previously used by ONT to store raw signal data from nanopore sequencing. It has been replaced by *POD5*.">FAST5</abbr> (.fast5) [Legacy]</strong><br />
+  Used in older Nanopore sequencing workflows to store raw signal data. This format is no longer in use, having been replaced by <abbr title="The current file format used by ONT to store raw sequencing signal data.">POD5</abbr>.</li>
 </ul>
 <h3 id="processed-data">Processed data</h3>
 <ul>
-<li><strong>FASTQ (.fastq)</strong>
+<li><strong><abbr title="A common file format for storing nucleotide sequences and associated quality scores.">FASTQ</abbr> (.fastq)</strong>
   [<a href="https://en.wikipedia.org/wiki/FASTQ_format">Documentation</a>]<br />
   Primary file format for storing basecalled sequence reads, including nucleotide sequences and associated quality scores.</li>
 <li><strong>BAM (.bam) / CRAM (.cram)</strong>
@@ -1734,32 +1747,32 @@
 <hr />
 <h2 id="managing-genomics-data-for-long-term-use">Managing genomics data for long-term use</h2>
 <h3 id="metadata-collection">Metadata collection</h3>
-<p>Metadata provides essential <strong>context</strong> for sequencing datasets and is often required for submitting data to public repositories like the <strong><a href="https://www.ncbi.nlm.nih.gov/sra">NCBI Sequence Read Archive (SRA)</a></strong>. Key metadata elements may include:</p>
+<p>Metadata provides essential <strong>context</strong> for sequencing datasets and is often required for submitting data to public repositories like the <strong><a href="https://www.ncbi.nlm.nih.gov/sra">NCBI Sequence <abbr title="A sequence of nucleotides generated by a sequencing machine from a single DNA or RNA fragment.">Read</abbr> Archive (SRA)</a></strong>. Key metadata elements may include:</p>
 <ul>
 <li><strong>Sample ID</strong> (Unique identifier for the sample)</li>
 <li><strong>Collection date</strong> (When the sample was obtained)</li>
 <li><strong>Location</strong> (Geographic origin of the sample)</li>
-<li><strong>Extraction and library prep methods</strong> (Protocols used)</li>
-<li><strong>Sequencing platform and flow cell type</strong></li>
+<li><strong>Extraction and <abbr title="A collection of DNA fragments prepared for sequencing.">library</abbr> prep methods</strong> (Protocols used)</li>
+<li><strong>Sequencing platform and <abbr title="A consumable device containing nanopores through which nucleic acids pass during sequencing.">flow cell</abbr> type</strong></li>
 <li><strong>Bioinformatics processing steps</strong> (Pipeline details, tools used)</li>
 </ul>
 <h3 id="storage-and-backup-strategies">Storage and backup strategies</h3>
 <ul>
-<li><strong>Primary Storage</strong>: A local high-capacity SSD (recommended <strong>1TB or more</strong>) for sequencing and short-term analysis.</li>
-<li><strong>Backup Storage</strong>: Redundant copies using <strong>external SSDs or network drives</strong>.</li>
-<li><strong>Cloud Solutions</strong>: Platforms like <strong>Google Drive, CyVerse, or JetStream2</strong> for scalable storage.</li>
-<li><strong>Public Repositories</strong>: Depositing finalized datasets in <strong>SRA, EMBL-EBI ENA, or MG-RAST</strong> for community access.</li>
+<li><strong>Primary Storage</strong>: A local high-capacity SSD (recommended 1TB or more) for sequencing and short-term analysis.</li>
+<li><strong>Backup Storage</strong>: Redundant copies using external SSDs or network drives.</li>
+<li><strong>Cloud Solutions</strong>: Platforms like Google Drive, CyVerse, or JetStream2 for scalable storage.</li>
+<li><strong>Public Repositories</strong>: Depositing finalized datasets in SRA, EMBL-EBI ENA, or MG-RAST for community access.</li>
 </ul>
 <h3 id="preparing-data-for-public-submission">Preparing data for public submission</h3>
 <ul>
-<li>Ensure <strong>FASTQ files</strong> are properly formatted.</li>
-<li>Validate metadata <strong>against repository requirements</strong>.</li>
-<li>Use <strong>consistent file naming conventions</strong> (e.g., <code>sampleID_experimentType_date.fastq</code>).</li>
-<li>Include a <strong>README file</strong> describing dataset contents and processing steps.</li>
+<li>Ensure <abbr title="A common file format for storing nucleotide sequences and associated quality scores.">FASTQ</abbr> files are properly formatted.</li>
+<li>Validate metadata against repository requirements.</li>
+<li>Use consistent file naming conventions (e.g., <code>sampleID_experimentType_date.fastq</code>).</li>
+<li>Include a README file describing dataset contents and processing steps.</li>
 </ul>
 <hr />
-<h2 id="quickstart-how-to-find-and-download-nanopore-reads-from-the-sequence-read-archive-sra">Quickstart: How to find and download Nanopore reads from the Sequence Read Archive (SRA)</h2>
-<p>The <strong>NCBI Sequence Read Archive (SRA)</strong> is a public repository that stores sequencing data, including Oxford Nanopore sequencing reads. This tutorial provides a step-by-step guide to searching for <strong>Actinomyces</strong> sequences generated using <strong>Oxford Nanopore</strong> technology and downloading a FASTQ file for further analysis.</p>
+<h2 id="quickstart-how-to-find-and-download-nanopore-reads-from-the-sequence-read-archive-sra">Quickstart: How to find and download Nanopore reads from the Sequence <abbr title="A sequence of nucleotides generated by a sequencing machine from a single DNA or RNA fragment.">Read</abbr> Archive (SRA)</h2>
+<p>The <strong>NCBI Sequence <abbr title="A sequence of nucleotides generated by a sequencing machine from a single DNA or RNA fragment.">Read</abbr> Archive (SRA)</strong> is a public repository that stores sequencing data, including Oxford Nanopore sequencing reads. This tutorial provides a step-by-step guide to searching for data, in this case, <strong>Actinomyces</strong> sequences generated using <strong>Oxford Nanopore</strong> technology and downloading a <abbr title="A common file format for storing nucleotide sequences and associated quality scores.">FASTQ</abbr> file for further analysis. You can adapt the tutorial to search for data from your organism of interest and use those data for reanalysis and to practice your bioinformatics skills. </p>
 <ol>
 <li>
 <p>Open your web browser and visit the <strong><a href="https://www.ncbi.nlm.nih.gov/sra/">NCBI SRA website</a></strong>.</p>
@@ -1808,13 +1821,13 @@
     </figure></p>
 </li>
 <li>
-<p>On the run browser page, click the <strong>FASTA/FASTQ download</strong> link.
+<p>On the run browser page, click the <strong>FASTA/<abbr title="A common file format for storing nucleotide sequences and associated quality scores.">FASTQ</abbr> download</strong> link.
     <figure markdown="span">
     <a class="glightbox" href="/img/sra_tutorial_screenshots/06_sra-advanced_run_detail_browser.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="Download link" src="/img/sra_tutorial_screenshots/06_sra-advanced_run_detail_browser.png" width="400" /></a>
     </figure></p>
 </li>
 <li>
-<p>Under <strong>Download</strong> click on <strong>FASTQ</strong> to start a download for your file. The file will be in a compressed <strong>.fastq.gz</strong> format. This is a typical input for many downstream analyses.
+<p>Under <strong>Download</strong> click on <strong><abbr title="A common file format for storing nucleotide sequences and associated quality scores.">FASTQ</abbr></strong> to start a download for your file. The file will be in a compressed <strong>.fastq.gz</strong> format. This is a typical <abbr title="When referring to DNA; amount/concentration of DNA needed execute a protocol.">input</abbr> for many downstream analyses.
     <figure markdown="span">
     <a class="glightbox" href="/img/sra_tutorial_screenshots/07_sra-advanced_run_download.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="Fastq link" src="/img/sra_tutorial_screenshots/07_sra-advanced_run_download.png" width="400" /></a>
     </figure></p>
@@ -1822,7 +1835,7 @@
 </ol>
 <h3 id="additional-notes">Additional Notes</h3>
 <ul>
-<li>The downloaded FASTQ file contains raw sequence reads and quality scores that can be used for taxonomic classification, assembly, or other bioinformatics workflows.</li>
+<li>The downloaded <abbr title="A common file format for storing nucleotide sequences and associated quality scores.">FASTQ</abbr> file contains raw sequence reads and quality scores that can be used for taxonomic classification, assembly, or other bioinformatics workflows.</li>
 <li>Advanced users may explore <strong>SRA Toolkit</strong>, a command-line software package that enables more efficient searching, downloading, and processing of SRA data. The toolkit provides options such as <code>prefetch</code> for downloading and <code>fastq-dump</code> for extracting sequence reads. More details can be found in the <strong><a href="https://github.com/ncbi/sra-tools/wiki/">SRA Toolkit documentation</a></strong>.</li>
 </ul>
 
@@ -1847,7 +1860,7 @@
     <span class="md-icon" title="Last update">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1zM12.5 7v5.2l4 2.4-1 1L11 13V7zM11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2z"/></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">February 5, 2025</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">February 10, 2025</span>
   </span>
 
     

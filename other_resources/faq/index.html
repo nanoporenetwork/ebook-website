@@ -8,6 +8,8 @@
       
       
       
+        <link rel="canonical" href="https://github.com/nanoporenetwork/ebook-website/other_resources/faq/">
+      
       
         <link rel="prev" href="../../teaching_resources/resources/">
       
@@ -1539,13 +1541,13 @@
 <p><strong>Q: What is Nanopore sequencing?</strong><br />
 A: Nanopore sequencing is a method of DNA (RNA and perhaps one day protein) sequencing that detects changes in electrical current as nucleic acids pass through a biological nanopore. This allows for real-time sequencing of long DNA fragments.</p>
 <p><strong>Q: What equipment do I need to get started with Nanopore sequencing?</strong><br />
-A: The <strong>MinION</strong> device is the most accessible option, along with a computer that meets system requirements, a flow cell, sequencing kits, and basic molecular biology equipment.</p>
+A: The <strong><abbr title="A portable nanopore sequencing device developed by Oxford Nanopore Technologies.">MinION</abbr></strong> device is the most accessible option, along with a computer that meets system requirements, a <abbr title="A consumable device containing nanopores through which nucleic acids pass during sequencing.">flow cell</abbr>, sequencing kits, and basic molecular biology equipment.</p>
 <p><strong>Q: How much does it cost to start sequencing?</strong><br />
-A: Costs vary depending on the setup. A MinION starter pack (device + flow cells + sequencing kit) is around $2,000, but ongoing costs include consumables like flow cells and reagents. See our <a href="../../get_started/time-and-cost">time and costs guide</a>.</p>
+A: Costs vary depending on the setup. A <abbr title="A portable nanopore sequencing device developed by Oxford Nanopore Technologies.">MinION</abbr> starter pack (device + <abbr title="A consumable device containing nanopores through which nucleic acids pass during sequencing.">flow cells</abbr> + sequencing kit) is around $2,000, but ongoing costs include consumables like <abbr title="A consumable device containing nanopores through which nucleic acids pass during sequencing.">flow cells</abbr> and reagents. See our <a href="../../get_started/time-and-cost">time and costs guide</a>.</p>
 <p><strong>Q: Do I need prior experience in sequencing or bioinformatics to use Nanopore sequencing?</strong><br />
-A: No, but familiarity with basic molecular biology techniques and an understanding of sequencing principles will help. The platform provides user-friendly software such as MinKNOW and EPI2ME. See also <a href="../../bioinformatics/software">software guide</a>.</p>
+A: No, but familiarity with basic molecular biology techniques and an understanding of sequencing principles will help. The platform provides user-friendly software such as <abbr title="Oxford Nanopore software required for operating the sequencing devices.">MinKNOW</abbr> and <abbr title="Oxford Nanopore's software suite for sequence data analysis.">EPI2ME</abbr>. See also <a href="../../bioinformatics/software">software guide</a>.</p>
 <p><strong>Q: How does Nanopore sequencing compare to other sequencing methods?</strong><br />
-A: Unlike Illumina sequencing, which provides short, highly accurate reads, Nanopore sequencing produces long reads that can span structural variants and repetitive regions, with real-time data generation.</p>
+A: Unlike Illumina sequencing, which provides short, highly accurate reads, Nanopore sequencing produces <abbr title="Sequences that are typically longer than 10,000 base pairs, advantageous for resolving repetitive regions and structural variants.">long reads</abbr> that can span structural variants and repetitive regions, with real-time data generation.</p>
 <hr />
 <h2 id="using-nanopore-in-the-classroom">Using Nanopore in the Classroom</h2>
 <p><strong>Q: How can I integrate Nanopore sequencing into my curriculum?</strong><br />
@@ -1560,12 +1562,12 @@ A: Common classroom experiments include:
 <p><strong>Q: How long does a typical sequencing experiment take?</strong><br />
 A: From sample preparation to sequencing:
 - <strong>DNA extraction:</strong> 1-2 hours
-- <strong>Library preparation:</strong> 1-2 hours
+- <strong><abbr title="A collection of DNA fragments prepared for sequencing.">Library</abbr> preparation:</strong> 1-2 hours
 - <strong>Sequencing:</strong> 1-24 hours (depending on read depth)
 - <strong>Data analysis:</strong> 1-3 hours
 These are general answers, check your specific protocol for more details.</p>
 <p><strong>Q: Do students need their own sequencing devices?</strong><br />
-A: No, a single MinION device can be shared, with students processing different samples in barcoded multiplexed runs.</p>
+A: No, a single <abbr title="A portable nanopore sequencing device developed by Oxford Nanopore Technologies.">MinION</abbr> device can be shared, with students processing different samples in barcoded multiplexed runs.</p>
 <hr />
 <h2 id="sequencing-and-data-handling">Sequencing and Data Handling</h2>
 <p><strong>Q: What kind of samples can be sequenced?</strong><br />
@@ -1578,11 +1580,11 @@ A: Almost any biological sample containing DNA, including:
 A: This depends on the kit:</p>
 <ul>
 <li><strong>Rapid barcoding kit:</strong> ~10 ng per sample</li>
-<li><strong>Ligation sequencing kit:</strong> ~100 ng per sample</li>
+<li><strong><abbr title="The enzymatic process of joining two DNA fragments together.">Ligation</abbr> sequencing kit:</strong> ~100 ng per sample</li>
 <li><strong>16S sequencing kit:</strong> ~10 ng per sample</li>
 </ul>
 <p><strong>Q: How is sequencing data stored and analyzed?</strong><br />
-A: Sequencing generates POD5 files (raw signal data) and FASTQ files (nucleotide sequences). Data can be analyzed using EPI2ME, Galaxy. See also <a href="../../bioinformatics/data_management/">data guide</a>.</p>
+A: Sequencing generates <abbr title="The current file format used by ONT to store raw sequencing signal data.">POD5</abbr> files (raw signal data) and <abbr title="A common file format for storing nucleotide sequences and associated quality scores.">FASTQ</abbr> files (nucleotide sequences). Data can be analyzed using <abbr title="Oxford Nanopore's software suite for sequence data analysis.">EPI2ME</abbr>, Galaxy. See also <a href="../../bioinformatics/data_management/">data guide</a>.</p>
 <p><strong>Q: What storage is needed for sequencing data?</strong><br />
 A: A minimum of 500GB storage is recommended, with 1TB preferred. Cloud-based solutions like CyVerse, JetStream2, or AWS S3 are also options. See also <a href="../../bioinformatics/data_management/">data guide</a>.</p>
 <p><strong>Q: Can Nanopore sequencing be used for metagenomics?</strong><br />
@@ -1592,24 +1594,24 @@ A: Yes, Nanopore sequencing can be used for metagenomic studies, enabling long-r
 <p><strong>Q: What if my sequencing run fails?</strong><br />
 A: Common issues include:</p>
 <ul>
-<li><strong>Low DNA input</strong> → Ensure enough high-quality DNA is used.</li>
-<li><strong>Flow cell clogging</strong> → Use a <strong>flush kit</strong> to unclog pores.</li>
+<li><strong>Low DNA <abbr title="When referring to DNA; amount/concentration of DNA needed execute a protocol.">input</abbr></strong> → Ensure enough high-quality DNA is used.</li>
+<li><strong><abbr title="A consumable device containing nanopores through which nucleic acids pass during sequencing.">Flow cell</abbr> clogging</strong> → Use a <strong>flush kit</strong> to unclog pores.</li>
 <li><strong>Low sequencing yield</strong> → Check sample preparation and quality.</li>
 </ul>
-<p><strong>Q: How should flow cells be stored?</strong><br />
-A: Flow cells should be <strong>kept at 2-8°C</strong> and used before the <strong>expiration date</strong>. If not used immediately, they should not be frozen.</p>
-<p><strong>Q: How do I clean and reuse a flow cell?</strong><br />
-A: MinION Flow cells can be washed and reused 1-2 times. For another sequencing run you must use a Flow Cell Wash Kit. Flongle flow cells are one-time use.</p>
-<p><strong>Q: How long does a flow cell last?</strong><br />
-A: A MinION flow cell typically lasts for 1-2 sequencing runs with an 11-week shelf life. Flongles typically last 4-6 weeks in our experience.</p>
+<p><strong>Q: How should <abbr title="A consumable device containing nanopores through which nucleic acids pass during sequencing.">flow cells</abbr> be stored?</strong><br />
+A: <abbr title="A consumable device containing nanopores through which nucleic acids pass during sequencing.">Flow cells</abbr> should be <strong>kept at 2-8°C</strong> and used before the <strong>expiration date</strong>. If not used immediately, they should not be frozen.</p>
+<p><strong>Q: How do I clean and reuse a <abbr title="A consumable device containing nanopores through which nucleic acids pass during sequencing.">flow cell</abbr>?</strong><br />
+A: <abbr title="A portable nanopore sequencing device developed by Oxford Nanopore Technologies.">MinION</abbr> <abbr title="A consumable device containing nanopores through which nucleic acids pass during sequencing.">Flow cells</abbr> can be washed and reused 1-2 times. For another sequencing run you must use a Flow Cell Wash Kit. <abbr title="A smaller, lower-cost flow cell.">Flongle</abbr> <abbr title="A consumable device containing nanopores through which nucleic acids pass during sequencing.">flow cells</abbr> are one-time use.</p>
+<p><strong>Q: How long does a <abbr title="A consumable device containing nanopores through which nucleic acids pass during sequencing.">flow cell</abbr> last?</strong><br />
+A: A <abbr title="A portable nanopore sequencing device developed by Oxford Nanopore Technologies.">MinION</abbr> <abbr title="A consumable device containing nanopores through which nucleic acids pass during sequencing.">flow cell</abbr> typically lasts for 1-2 sequencing runs with an 11-week shelf life. Flongles typically last 4-6 weeks in our experience.</p>
 <hr />
 <h2 id="advanced-topics">Advanced Topics</h2>
 <p><strong>Q: Can I run multiple samples at once?</strong><br />
-A: Yes, multiplexing allows you to sequence multiple barcoded samples in the same run, reducing costs.</p>
+A: Yes, <abbr title="Sequencing multiple samples simultaneously by using unique barcodes for each sample.">multiplexing</abbr> allows you to sequence multiple barcoded samples in the same run, reducing costs.</p>
 <p><strong>Q: Can I sequence RNA instead of DNA?</strong><br />
 A: Yes, <strong>direct RNA sequencing</strong> is possible with Nanopore, allowing you to study full-length transcripts and modifications. As of yet, we don't cover this topic as the specialized requirements for working with RNA is likely less common in general classroom settings.</p>
 <p><strong>Q: Can I use cloud computing for sequencing analysis?</strong>  </p>
-<p>A: Yes, <strong>JetStream2</strong>, <strong>AWS</strong>, and <strong>EPI2ME</strong> offer cloud-based solutions for basecalling and data analysis.</p>
+<p>A: Yes, <strong>JetStream2</strong>, <strong>AWS</strong>, and <strong><abbr title="Oxford Nanopore's software suite for sequence data analysis.">EPI2ME</abbr></strong> offer cloud-based solutions for <abbr title="The process of determining the sequence of nucleotides (bases) from raw signal data generated by the sequencing platform.">basecalling</abbr> and data analysis.</p>
 
 
 
