@@ -844,6 +844,27 @@
   
   
     <li class="md-nav__item">
+      <a href="../curated_experiments/phage/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Phage Genomes
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
       <a href="../curated_experiments/microbial_genomes/" class="md-nav__link">
         
   
@@ -891,27 +912,6 @@
   
   <span class="md-ellipsis">
     Environmental DNA
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../curated_experiments/phage/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    Phage Genomes
   </span>
   
 
@@ -4473,7 +4473,7 @@ Cloud storage provides scalable and convenient options for managing sequencing d
     (d.head || d.body).appendChild(s);
     })();
 </script>
-<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript></section><section class="print-page" id="curated_experiments-microbial_genomes"><h1 id="curated_experiments-microbial_genomes-curated-experiment-microbial-whole-genome-sequencing">Curated Experiment: Microbial Whole Genome Sequencing</h1></section><section class="print-page" id="curated_experiments-plant_genomes"><h1 id="curated_experiments-plant_genomes-curated-experiment-small-plant-genome-sequencing">Curated Experiment: Small Plant Genome Sequencing</h1></section><section class="print-page" id="curated_experiments-edna"><h1 id="curated_experiments-edna-environmental-dna">Environmental DNA</h1></section><section class="print-page" id="curated_experiments-phage"><h1 id="curated_experiments-phage-curated-experiment-phage-sequencing">Curated Experiment: Phage Sequencing</h1>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript></section><section class="print-page" id="curated_experiments-phage"><h1 id="curated_experiments-phage-curated-experiment-phage-sequencing">Curated Experiment: Phage Sequencing</h1>
 <h2 id="curated_experiments-phage-sequencing-phage-genomes-with-oxford-nanopore-technologies-ont">Sequencing Phage Genomes with Oxford Nanopore Technologies (ONT)</h2>
 <p><strong>Summary</strong>: Students can isolate and sequence high-qualty bacteriophage genomes.</p>
 <div class="admonition downloads">
@@ -4496,8 +4496,11 @@ Cloud storage provides scalable and convenient options for managing sequencing d
 <li><strong>Maintainer/contact</strong>: James T. Melton, Spelman College: <a href="mailto:jmelton@spelman.edu">email</a></li>
 <li><strong>Last updated</strong>: February, 2025</li>
 <li><strong>Source protocols and references</strong><ul>
-<li><a href="#curated_experiments-phage">Source 1</a></li>
-<li><a href="#curated_experiments-phage">Source 1</a></li>
+<li><a href="https://www.promega.com/products/nucleic-acid-extraction/clean-up-and-concentration/wizard-dna-clean-up-system/?catNum=A7280#protocols">Promega Wizard® DNA Clean-Up System -  A7280</a></li>
+<li><a href="https://seaphagesphagediscoveryguide.helpdocsonline.com/9-1-protocol">SeaPHAGES 9.1 DNA extraction</a></li>
+<li>(alternative) <a href="https://norgenbiotek.com/product/phage-dna-isolation-kit">Norgen Phage DNA isolation Kit - 46800</a></li>
+<li>(alternative) <a href="https://www.cytivalifesciences.com/en/us/shop/molecular-and-immunodiagnostics/magnetic-beads-and-kits/sera-xtracta-virus-pathogen-kit-p-24116">Sera-Xtracta Virus/Pathogen Kit</a></li>
+<li>(alternative) <a href="https://norgenbiotek.com/product/pathogenviral-nucleic-acid-isolation-kit-magnetic-bead-system?v=1480">Pathogen/Viral Nucleic Acid Isolation Kit (Magnetic Bead System)</a></li>
 </ul>
 </li>
 </ul>
@@ -4511,15 +4514,20 @@ Cloud storage provides scalable and convenient options for managing sequencing d
 <li><strong>Sequencing format</strong>: <abbr title="A portable nanopore sequencing device developed by Oxford Nanopore Technologies.">MinION</abbr></li>
 <li><strong>Sequencing kit</strong>:
     One of the following kits (See protocol for recommendations based on your endpoints)<ul>
-<li><a href="#curated_experiments-phage-url">Squencing kit name (product number)</a></li>
-<li><a href="#curated_experiments-phage-url">Squencing kit name (product number)</a></li>
-<li><a href="#curated_experiments-phage-url">Squencing kit name (product number)</a></li>
-<li><a href="#curated_experiments-phage-url">Squencing kit name (product number)</a></li>
+<li><a href="https://store.nanoporetech.com/us/rapid-barcoding-sequencing-kit-24-v14.html">Rapid Barcoding Sequencing Kit 24 V14 (SQK-RBK114.24)</a></li>
+<li><a href="https://store.nanoporetech.com/us/rapid-barcoding-sequencing-kit-96-v14.html">Rapid Barcoding Sequencing Kit 96 V14 (SQK-RBK114.96)</a></li>
+<li><a href="https://store.nanoporetech.com/us/native-barcoding-kit-24-v14.html">Native Barcoding Kit 24 V14 (SQK-NBD114.24)</a></li>
+<li><a href="https://store.nanoporetech.com/us/native-barcoding-kit-96-v14.html">Native Barcoding Kit 96 V14 (SQK-NBD114.96)</a></li>
 </ul>
 </li>
-<li><strong>Oxford Nanopore Sequencing protocol</strong>: <a href="#curated_experiments-phage-url">Official ONT protocol</a></li>
-<li><strong>Indexed/Barcoded</strong>: [Yes, # indicies] OR [No]</li>
-<li><strong>Samples per run</strong>: [# of samples]</li>
+<li><strong>Oxford Nanopore Sequencing protocol</strong>:<ul>
+<li><a href="https://nanoporetech.com/document/rapid-sequencing-gdna-barcoding-sqk-rbk114">Rapid barcoding (24 or 96)</a></li>
+<li><a href="https://nanoporetech.com/document/ligation-sequencing-gdna-native-barcoding-v14-sqk-nbd114-24">Native barcoding (24)</a></li>
+<li><a href="https://nanoporetech.com/document/ligation-sequencing-gdna-native-barcoding-v14-sqk-nbd114-96">Native barcoding (96)</a></li>
+</ul>
+</li>
+<li><strong>Indexed/Barcoded</strong>: Yes, 24-96 depending on kit</li>
+<li><strong>Samples per run</strong>: 24-96 of samples</li>
 </ul>
 <p><strong>Computer and Bioinformatics</strong></p>
 <ul>
@@ -4696,7 +4704,7 @@ Cloud storage provides scalable and convenient options for managing sequencing d
 <div class="admonition bioinformatics">
 <p class="admonition-title">Bioinformatics</p>
 <p>Add bioinformatics explantory details if relevant</p>
-</div></section><h1 class='nav-section-title-end'>Ended: Curated Experiments</h1>
+</div></section><section class="print-page" id="curated_experiments-microbial_genomes"><h1 id="curated_experiments-microbial_genomes-curated-experiment-microbial-whole-genome-sequencing">Curated Experiment: Microbial Whole Genome Sequencing</h1></section><section class="print-page" id="curated_experiments-plant_genomes"><h1 id="curated_experiments-plant_genomes-curated-experiment-small-plant-genome-sequencing">Curated Experiment: Small Plant Genome Sequencing</h1></section><section class="print-page" id="curated_experiments-edna"><h1 id="curated_experiments-edna-environmental-dna">Environmental DNA</h1></section><h1 class='nav-section-title-end'>Ended: Curated Experiments</h1>
                         <h1 class='nav-section-title' id='section-bioinformatics'>
                             Bioinformatics <a class='headerlink' href='#section-bioinformatics' title='Permanent link'>↵</a>
                         </h1>
