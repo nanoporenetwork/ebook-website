@@ -4506,7 +4506,7 @@ Cloud storage provides scalable and convenient options for managing sequencing d
 </ul>
 <p><strong>DNA source material</strong></p>
 <ul>
-<li><strong>Type</strong>: Microbial</li>
+<li><strong>Type</strong>: Viral</li>
 <li><strong>Collection source</strong>: Phage isolates</li>
 </ul>
 <p><strong>Nanopore Sequencing</strong></p>
@@ -4550,7 +4550,7 @@ Cloud storage provides scalable and convenient options for managing sequencing d
 </ul>
 <details class="optional" open="open">
 <summary>Choosing kits and formats</summary>
-<p>Depending on how many samples and students you want to process, you can either choose <strong><abbr title="A library preparation kit that uses a transposase complex to attach sequencing adapters; is quicker and uses fewer 3rd party reagents than the native barcoding kit but also sheers the DNA resulting in smaller fragment lengths.">rapid barcoding</abbr></strong> or <strong><abbr title="A library preparation kit that uses ligation to attach sequencing adapters; is longer and uses additional 3rd party reagents compared to the rapid barcoding kit but also results in longer fragment lengths.">native barcoding</abbr></strong> with either 24 or 96 indicies. Here is our explantion of the options.</p>
+<p>Depending on how many samples and students you want to process, you can either choose <strong><abbr title="A library preparation kit that uses a transposase complex to attach sequencing adapters; is quicker and uses fewer 3rd party reagents than the native barcoding kit but also sheers the DNA resulting in smaller fragment lengths.">rapid barcoding</abbr></strong> or <strong><abbr title="A library preparation kit that uses ligation to attach sequencing adapters; is longer and uses additional 3rd party reagents compared to the rapid barcoding kit but also results in longer fragment lengths.">native barcoding</abbr></strong> with either 24 or 96 indicies. An explantion of the options are below.</p>
 <table>
 <thead>
 <tr>
@@ -4596,6 +4596,94 @@ Cloud storage provides scalable and convenient options for managing sequencing d
 </details>
 <details class="reagents">
 <summary>Reagents</summary>
+<div class="admonition info">
+<p class="admonition-title">Info</p>
+<p>In this protocol, we will detail a phage DNA extraction, sequencing, and genome assembly, using the recommended by the <a href="https://seaphages.org/">SEA-PHAGES</a> (Science Education Alliance- Phage Hunters Advancing Genomics and Evolutionary Sciences) program.</p>
+</div>
+<div class="admonition info">
+<p class="admonition-title">Info</p>
+<p>We organized the options in the following protocol into <strong>Easiest option (EO)</strong> or <strong>Lower cost (LC)</strong>. For example, most labs are more familiar with spin column-based DNA extraction kits, but magnetic bead kits allow for smaller aliquoting volumes and lower costs. Similarly, purchasing magnetic racks from scientific vendors such as New England Biolabs (NEB) or ThermoFisher is generally more accessible for universities with strict purchasing policies than purchasing 3rd party supplies or 3D printing your own racks, although it can offer substantial cost savings.</p>
+</div>
+<div class="tabbed-set tabbed-alternate" data-tabs="1:2"><input checked="checked" id="curated_experiments-phage-__tabbed_1_1" name="curated_experiments-phage-__tabbed_1" type="radio" /><input id="curated_experiments-phage-__tabbed_1_2" name="curated_experiments-phage-__tabbed_1" type="radio" /><div class="tabbed-labels"><label for="curated_experiments-phage-__tabbed_1_1">Easiest Option (EO)</label><label for="curated_experiments-phage-__tabbed_1_2">Lowest Cost (LC)</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
+<p><strong>Personal protective equipment</strong></p>
+<ul>
+<li>As recommended by original protocols (e.g., gloves, lab coat)</li>
+</ul>
+<p><strong>Sample collection and prep</strong></p>
+<ul>
+<li>Reagent or material 1</li>
+<li>Reagent or material 2</li>
+<li>Kit <!-- If you call for a commercial kit separate included and provided reagents and materials --><ul>
+<li><em>Included</em><ul>
+<li>Reagent or material 1</li>
+<li>Reagent or material 2</li>
+</ul>
+</li>
+<li><em>User provided</em><ul>
+<li>Nuclease mix: DNase 1, RNase A, NaCl, Glycerol, ddH2O</li>
+<li>80% isopropanol</li>
+<li>3 mL syringes</li>
+<li>Proteinase K (20 mg/mL) (optional)</li>
+<li>0.5 M EDTA (optional)</li>
+<li>SDS 10% (optional)</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<p><strong>DNA extraction</strong></p>
+<ul>
+<li>
+<p>High titer phage lysates (≥ 9 x 105 PFU/mL)</p>
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<p>Medium titer phage lysates (107 - 109 PFU/mL) may provide enough DNA for sequencing.</p>
+</div>
+</li>
+<li>
+<p>Reagent or material 2</p>
+</li>
+<li><a href="https://www.promega.com/products/nucleic-acid-extraction/clean-up-and-concentration/wizard-dna-clean-up-system/?catNum=A7280#protocols">Promega Wizard® DNA Clean-Up System -  A7280</a> <!-- If you call for a commercial kit separate included and provided reagents and materials --><ul>
+<li><em>Included</em><ul>
+<li>2 ml DNA clean-up resin (Promega Wizard DNA Clean-Up Kit)</li>
+<li>2 DNA clean-up columns (Promega Wizard DNA Clean-Up Kit)</li>
+</ul>
+</li>
+<li><em>User provided</em><ul>
+<li><a href="https://seaphagesphagediscoveryguide.helpdocsonline.com/nuclease-mix">Nuclease mix - preperation instructions</a>:</li>
+<li>DNase 1</li>
+<li>RNase A</li>
+<li>NaCl</li>
+<li>Glycerol</li>
+<li>ddH2O</li>
+<li>6 ml 80 % isopropanol, freshly prepared</li>
+<li>3 mL syringes</li>
+<li>Proteinase K (20 mg/ml) and SDS (10 %) (optional)</li>
+<li>0.5 M EDTA (optional)</li>
+<li>SDS 10% (optional)</li>
+<li>ddH2O pre-warmed (95 °C)</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<p><strong>DNA prep, <abbr title="A collection of DNA fragments prepared for sequencing.">library</abbr> creation, and sequencing</strong></p>
+<ul>
+<li><em>Nanopore kit</em><ul>
+<li>Included kit reagent 1</li>
+<li>Included kit reagent 2</li>
+</ul>
+</li>
+<li><em>User-provided reagents</em><ul>
+<li>Reagent or material 1</li>
+<li>Reagent or material 2</li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="tabbed-block">
 <p><strong>Personal protective equipment</strong></p>
 <ul>
 <li>As recommended by original protocols (e.g., gloves, lab coat)</li>
@@ -4620,8 +4708,16 @@ Cloud storage provides scalable and convenient options for managing sequencing d
 </ul>
 <p><strong>DNA extraction</strong></p>
 <ul>
-<li>Reagent or material 1</li>
-<li>Reagent or material 2</li>
+<li>
+<p>High titer phage lysates (≥ 9 x 105 PFU/mL)</p>
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<p>Medium titer phage lysates (107 - 109 PFU/mL) may provide enough DNA for sequencing.</p>
+</div>
+</li>
+<li>
+<p>Reagent or material 2</p>
+</li>
 <li><a href="#curated_experiments-phage-url to kit product page">Kit</a> <!-- If you call for a commercial kit separate included and provided reagents and materials --><ul>
 <li><em>Included</em><ul>
 <li>Reagent or material 1</li>
@@ -4649,6 +4745,9 @@ Cloud storage provides scalable and convenient options for managing sequencing d
 </ul>
 </li>
 </ul>
+</div>
+</div>
+</div>
 </details>
 <details class="equipment">
 <summary>Equipment and consumables</summary>
@@ -4675,11 +4774,10 @@ Cloud storage provides scalable and convenient options for managing sequencing d
 </details>
 <details class="time">
 <summary>Estimated timings</summary>
-<p><strong>Section I</strong></p>
-<p><strong>Section II</strong></p>
-<p><strong>Section III</strong></p>
-<p><strong>Section IV</strong></p>
-<p><strong>Section V</strong></p>
+<p><strong>Extraction and quantification of phage genomic DNA</strong>:</p>
+<p><strong><abbr title="A collection of DNA fragments prepared for sequencing.">Library</abbr> preparation for sequencing</strong></p>
+<p><strong>Sequencing</strong></p>
+<p><strong>Base calling and reads analysis</strong></p>
 </details>
 <hr />
 <h3 id="curated_experiments-phage-background">Background</h3>
@@ -4722,7 +4820,7 @@ Cloud storage provides scalable and convenient options for managing sequencing d
 <p>An optional warning</p>
 </div>
 <h3 id="curated_experiments-phage-section-ii">Section II <!-- i.e. DNA Extraction --></h3>
-<div class="tabbed-set tabbed-alternate" data-tabs="1:2"><input checked="checked" id="curated_experiments-phage-__tabbed_1_1" name="curated_experiments-phage-__tabbed_1" type="radio" /><input id="curated_experiments-phage-__tabbed_1_2" name="curated_experiments-phage-__tabbed_1" type="radio" /><div class="tabbed-labels"><label for="curated_experiments-phage-__tabbed_1_1">Protocol alternative 1</label><label for="curated_experiments-phage-__tabbed_1_2">Protocol alternative 2</label></div>
+<div class="tabbed-set tabbed-alternate" data-tabs="2:2"><input checked="checked" id="curated_experiments-phage-__tabbed_2_1" name="curated_experiments-phage-__tabbed_2" type="radio" /><input id="curated_experiments-phage-__tabbed_2_2" name="curated_experiments-phage-__tabbed_2" type="radio" /><div class="tabbed-labels"><label for="curated_experiments-phage-__tabbed_2_1">Protocol alternative 1</label><label for="curated_experiments-phage-__tabbed_2_2">Protocol alternative 2</label></div>
 <div class="tabbed-content">
 <div class="tabbed-block">
 <p class="annotate">One way to do this step (1). Try it!</p>
