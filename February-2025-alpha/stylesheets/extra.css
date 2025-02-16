@@ -9,21 +9,21 @@
 }
 
 :root {
-  --md-admonition-icon--down1oads:  url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--!Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.--><path d="M256 464a208 208 0 1 1 0-416 208 208 0 1 1 0 416zM256 0a256 256 0 1 0 0 512A256 256 0 1 0 256 0zM376.9 294.6c4.5-4.2 7.1-10.1 7.1-16.3c0-12.3-10-22.3-22.3-22.3L304 256l0-96c0-17.7-14.3-32-32-32l-32 0c-17.7 0-32 14.3-32 32l0 96-57.7 0C138 256 128 266 128 278.3c0 6.2 2.6 12.1 7.1 16.3l107.1 99.9c3.8 3.5 8.7 5.5 13.8 5.5s10.1-2 13.8-5.5l107.1-99.9z"/></svg>')
+  --md-admonition-icon--downloads: url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--!Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.--><path d="M256 0a256 256 0 1 0 0 512A256 256 0 1 0 256 0zM244.7 395.3l-112-112c-4.6-4.6-5.9-11.5-3.5-17.4s8.3-9.9 14.8-9.9l64 0 0-96c0-17.7 14.3-32 32-32l32 0c17.7 0 32 14.3 32 32l0 96 64 0c6.5 0 12.3 3.9 14.8 9.9s1.1 12.9-3.5 17.4l-112 112c-6.2 6.2-16.4 6.2-22.6 0z"/></svg>')
 }
-.md-typeset .admonition.down1oads,
-.md-typeset details.down1oads {
-  border-color: rgb(100, 0, 0);
+.md-typeset .admonition.downloads,
+.md-typeset details.downloads {
+  border-color: rgb(43, 155, 70);
 }
-.md-typeset .down1oads > .admonition-title,
-.md-typeset .down1oads > summary {
-  background-color: rgba(0, 0, 0, 0.1);
+.md-typeset .downloads > .admonition-title,
+.md-typeset .downloads > summary {
+  background-color: rgba(43, 155, 70, 0.1);
 }
-.md-typeset .down1oads > .admonition-title::before,
-.md-typeset .down1oads > summary::before {
-  background-color: rgb(0, 0, 0);
-  -webkit-mask-image: var(--md-admonition-icon--down1oads);
-          mask-image: var(--md-admonition-icon--down1oads);
+.md-typeset .downloads > .admonition-title::before,
+.md-typeset .downloads > summary::before {
+  background-color: rgb(43, 155, 70);
+  -webkit-mask-image: var(--md-admonition-icon--downloads);
+          mask-image: var(--md-admonition-icon--downloads);
 }
 
 
