@@ -1634,16 +1634,16 @@
 <li><strong>Sequencing format</strong>: <abbr title="A portable nanopore sequencing device developed by Oxford Nanopore Technologies.">MinION</abbr></li>
 <li><strong>Sequencing kit</strong>:
     One of the following kits (See protocol for recommendations based on your endpoints)<ul>
-<li><a href="https://store.nanoporetech.com/us/rapid-barcoding-sequencing-kit-24-v14.html">Rapid Barcoding Sequencing Kit 24 V14 (SQK-RBK114.24)</a></li>
-<li><a href="https://store.nanoporetech.com/us/rapid-barcoding-sequencing-kit-96-v14.html">Rapid Barcoding Sequencing Kit 96 V14 (SQK-RBK114.96)</a></li>
-<li><a href="https://store.nanoporetech.com/us/native-barcoding-kit-24-v14.html">Native Barcoding Kit 24 V14 (SQK-NBD114.24)</a></li>
-<li><a href="https://store.nanoporetech.com/us/native-barcoding-kit-96-v14.html">Native Barcoding Kit 96 V14 (SQK-NBD114.96)</a></li>
+<li><a href="https://store.nanoporetech.com/us/rapid-barcoding-sequencing-kit-24-v14.html"><abbr title="A library preparation kit that uses a transposase complex to attach sequencing adapters; is quicker and uses fewer 3rd party reagents than the native barcoding kit but also sheers the DNA resulting in smaller fragment lengths.">Rapid Barcoding</abbr> Sequencing Kit 24 V14 (SQK-RBK114.24)</a></li>
+<li><a href="https://store.nanoporetech.com/us/rapid-barcoding-sequencing-kit-96-v14.html"><abbr title="A library preparation kit that uses a transposase complex to attach sequencing adapters; is quicker and uses fewer 3rd party reagents than the native barcoding kit but also sheers the DNA resulting in smaller fragment lengths.">Rapid Barcoding</abbr> Sequencing Kit 96 V14 (SQK-RBK114.96)</a></li>
+<li><a href="https://store.nanoporetech.com/us/native-barcoding-kit-24-v14.html"><abbr title="A library preparation kit that uses ligation to attach sequencing adapters; is longer and uses additional 3rd party reagents compared to the rapid barcoding kit but also results in longer fragment lengths.">Native Barcoding</abbr> Kit 24 V14 (SQK-NBD114.24)</a></li>
+<li><a href="https://store.nanoporetech.com/us/native-barcoding-kit-96-v14.html"><abbr title="A library preparation kit that uses ligation to attach sequencing adapters; is longer and uses additional 3rd party reagents compared to the rapid barcoding kit but also results in longer fragment lengths.">Native Barcoding</abbr> Kit 96 V14 (SQK-NBD114.96)</a></li>
 </ul>
 </li>
 <li><strong>Oxford Nanopore Sequencing protocol</strong>:<ul>
-<li><a href="https://nanoporetech.com/document/rapid-sequencing-gdna-barcoding-sqk-rbk114">Rapid barcoding (24 or 96)</a></li>
-<li><a href="https://nanoporetech.com/document/ligation-sequencing-gdna-native-barcoding-v14-sqk-nbd114-24">Native barcoding (24)</a></li>
-<li><a href="https://nanoporetech.com/document/ligation-sequencing-gdna-native-barcoding-v14-sqk-nbd114-96">Native barcoding (96)</a></li>
+<li><a href="https://nanoporetech.com/document/rapid-sequencing-gdna-barcoding-sqk-rbk114"><abbr title="A library preparation kit that uses a transposase complex to attach sequencing adapters; is quicker and uses fewer 3rd party reagents than the native barcoding kit but also sheers the DNA resulting in smaller fragment lengths.">Rapid barcoding</abbr> (24 or 96)</a></li>
+<li><a href="https://nanoporetech.com/document/ligation-sequencing-gdna-native-barcoding-v14-sqk-nbd114-24"><abbr title="A library preparation kit that uses ligation to attach sequencing adapters; is longer and uses additional 3rd party reagents compared to the rapid barcoding kit but also results in longer fragment lengths.">Native barcoding</abbr> (24)</a></li>
+<li><a href="https://nanoporetech.com/document/ligation-sequencing-gdna-native-barcoding-v14-sqk-nbd114-96"><abbr title="A library preparation kit that uses ligation to attach sequencing adapters; is longer and uses additional 3rd party reagents compared to the rapid barcoding kit but also results in longer fragment lengths.">Native barcoding</abbr> (96)</a></li>
 </ul>
 </li>
 <li><strong>Indexed/Barcoded</strong>: Yes, 24-96 depending on kit</li>
@@ -1652,15 +1652,67 @@
 <p><strong>Computer and Bioinformatics</strong></p>
 <ul>
 <li><strong>Analysis tools</strong><ul>
-<li><a href="URL to tool documentation">Tool 1</a> <!-- If you name a platform like EPI2ME, you may optionally  indent the list further to specifically list tools used within this platform if you wish to call them out --></li>
-<li><a href="URL to tool documentation">Tool 2</a></li>
-<li><a href="URL to tool documentation">Tool 3</a></li>
+<li><a href="https://colab.google/">Google colab:</a><ul>
+<li><a href="https://github.com/nanoporetech/dorado"><abbr title="A basecalling software developed by Oxford Nanopore Technologies for translating raw nanopore signals into nucleotide sequences.">Dorado</abbr> basecaller</a></li>
+<li><a href="https://github.com/mikolmogorov/Flye">Flye assembler</a></li>
 </ul>
 </li>
-<li><strong>Analysis difficulty</strong>: [Easier] OR [Challenging]</li>
-<li><strong>Command line needed</strong>: [Yes] OR [No]</li>
-<li><strong><abbr title="Graphical Processing Unit; a specialized computer processing chip (analogous to CPU) that can be used to speed-up some types of calculations such as basecalling.">GPU</abbr>/Super-high accuracy <abbr title="The process of determining the sequence of nucleotides (bases) from raw signal data generated by the sequencing platform.">basecalling</abbr> required</strong>: [Yes] OR [No]</li>
+<li><a href="https://training.galaxyproject.org/">Galaxy:</a><ul>
+<li><a href="https://github.com/wdecoster/NanoPlot">Nanoplot</a></li>
+<li><a href="https://github.com/mikolmogorov/Flye">Flye assembler</a></li>
 </ul>
+</li>
+</ul>
+</li>
+<li><strong>Analysis difficulty</strong>: Challenging</li>
+<li><strong>Command line needed</strong>: Yes</li>
+<li><strong><abbr title="Graphical Processing Unit; a specialized computer processing chip (analogous to CPU) that can be used to speed-up some types of calculations such as basecalling.">GPU</abbr>/Super-high accuracy <abbr title="The process of determining the sequence of nucleotides (bases) from raw signal data generated by the sequencing platform.">basecalling</abbr> required</strong>: Yes (Provided by the online bioinformatics platforms)</li>
+</ul>
+<details class="optional" open="open">
+<summary>Choosing kits and formats</summary>
+<p>Depending on how many samples and students you want to process, you can either choose <strong><abbr title="A library preparation kit that uses a transposase complex to attach sequencing adapters; is quicker and uses fewer 3rd party reagents than the native barcoding kit but also sheers the DNA resulting in smaller fragment lengths.">rapid barcoding</abbr></strong> or <strong><abbr title="A library preparation kit that uses ligation to attach sequencing adapters; is longer and uses additional 3rd party reagents compared to the rapid barcoding kit but also results in longer fragment lengths.">native barcoding</abbr></strong> with either 24 or 96 indicies. Here is our explantion of the options.</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;"><strong>Kits</strong></th>
+<th style="text-align: left;"><a href="https://community.nanoporetech.com/docs/prepare/library_prep_protocols/rapid-sequencing-gdna-barcoding-sqk-rbk114/v/rbk_9176_v114_revl_27nov2022"><abbr title="A library preparation kit that uses a transposase complex to attach sequencing adapters; is quicker and uses fewer 3rd party reagents than the native barcoding kit but also sheers the DNA resulting in smaller fragment lengths.">Rapid Barcoding</abbr> Sequencing Kit 24 V14</a> (SQK-RBK114.24) or <a href="https://store.nanoporetech.com/us/rapid-barcoding-sequencing-kit-96-v14.html"><abbr title="A library preparation kit that uses a transposase complex to attach sequencing adapters; is quicker and uses fewer 3rd party reagents than the native barcoding kit but also sheers the DNA resulting in smaller fragment lengths.">Rapid Barcoding</abbr> Sequencing Kit 96 V14</a> (SQK-RBK114.96)</th>
+<th style="text-align: left;"><a href="https://community.nanoporetech.com/docs/prepare/library_prep_protocols/ligation-sequencing-gdna-native-barcoding-v14-sqk-nbd114-24/v/nbe_9169_v114_revp_15sep2022"><abbr title="A library preparation kit that uses ligation to attach sequencing adapters; is longer and uses additional 3rd party reagents compared to the rapid barcoding kit but also results in longer fragment lengths.">Native Barcoding</abbr> Kit 24 V14</a> (SQK-NBD114.24) or <a href="https://store.nanoporetech.com/us/native-barcoding-kit-96-v14.html"><abbr title="A library preparation kit that uses ligation to attach sequencing adapters; is longer and uses additional 3rd party reagents compared to the rapid barcoding kit but also results in longer fragment lengths.">Native Barcoding</abbr> Kit 96 V14</a> (SQK-NBD114.96)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><strong>Number of genomes</strong></td>
+<td style="text-align: left;">Up to 24 or 96 samples can be multiplexed, depending on the chosen kit</td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>3rd party reagents for reaction</strong></td>
+<td style="text-align: left;">None</td>
+<td style="text-align: left;">Yes (Enzymes from NEB or Roche)</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Required DNA</strong></td>
+<td style="text-align: left;">• 50 ng per sample for &gt; 4 samples (5 ng/µl) <br> • 200 ng per barcode if ≤ 4 samples (20 ng/µl)</td>
+<td style="text-align: left;">400 ng per sample for &gt; 4 samples (≥36.3 ng/µl) <br> 1000 ng per barcode if ≤ 4 samples (≥90.9 ng/µl) <br> <em>NOTE: 11-12 µl of a DNA sample are used during <abbr title="A collection of DNA fragments prepared for sequencing.">library</abbr> prep. The concentrations above are ideal for sequencing; however, samples as low as 5.8 ng/µl (63.8 ng) have been sequenced successfully, even when pooled with samples prepared with the recommended amounts of DNA.</em></td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Application</strong></td>
+<td style="text-align: left;">Entry-level CURE projects, such as identifying cluster type of isolated phages (similar but more advanced to the <a href="https://seaphages.org/media/docs/DOGEMSDescription.pdf">DOGEMS</a> strategy in SEA-PHAGES). Advanced level of CURE projects, such as phage genome annotation and genomic comparisons. Exploring phage diversity from environmental samples.</td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Pros</strong></td>
+<td style="text-align: left;">• Can be performed in class due to a shorter <abbr title="A collection of DNA fragments prepared for sequencing.">library</abbr> prep time (estimated: 50 minutes). <br> • No third-party reagents are required (less expensive).</td>
+<td style="text-align: left;">• Will allow for sequencing of the terminal ends of the phage genomes. <br> • Long fragment buffer (LFB) allows for size selection of DNA fragments &gt; 3000 bp. <br><br> <em>NOTE: While using the long fragment buffer might decrease the concentration of DNA, genome assembly works best with longer reads.</em></td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Cons</strong></td>
+<td style="text-align: left;">• Due to the transposase-based <abbr title="The process of preparing DNA or RNA samples for sequencing, including fragmentation, adapter ligation, and amplification.">library preparation</abbr>, the terminal ends of the phage genomes might not be sequenced. <br> • Genomic DNA is cut randomly, which can result in shorter read sizes if the genomic extraction wasn’t done carefully.</td>
+<td style="text-align: left;">• Due to the lengthy process (estimated: 10-12 hours, depending on the number of samples), it is recommended that the instructor perform the <abbr title="A collection of DNA fragments prepared for sequencing.">library</abbr> prep outside of class time; however, there are pausing points in the protocol. <br> • Third-party reagents are required (more expensive).</td>
+</tr>
+</tbody>
+</table>
+</details>
 </details>
 <details class="reagents">
 <summary>Reagents</summary>
