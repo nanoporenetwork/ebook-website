@@ -1541,6 +1541,63 @@
     </span>
   </a>
   
+    <nav class="md-nav" aria-label="Contribution templates">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#editing-the-website" class="md-nav__link">
+    <span class="md-ellipsis">
+      Editing the website
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Editing the website">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#overview" class="md-nav__link">
+    <span class="md-ellipsis">
+      Overview
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#authoring-steps" class="md-nav__link">
+    <span class="md-ellipsis">
+      Authoring steps
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#making-changes-to-the-live-site" class="md-nav__link">
+    <span class="md-ellipsis">
+      Making changes to the live site
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#creating-formal-releases-and-updating-website-citation" class="md-nav__link">
+    <span class="md-ellipsis">
+      Creating formal releases and updating website citation
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
 </li>
       
     </ul>
@@ -1612,7 +1669,7 @@ e=d.getElementsByTagName(s)[0];e.parentNode.insertBefore(i, e);
 <li>Participate in the discussion at <a href="https://qubeshub.org/community/groups/nanoporenetwork/overview">QUBES Nanopore Network</a> or <a href="https://join.slack.com/t/dnalcnanopore-rvs6354/shared_invite/zt-2j25rj9mr-MESJ8XmVsyk7qZ49qhMiNA">Nanopore Network Slack</a>.  </li>
 <li>Visit the website's <a href="https://github.com/nanoporenetwork/ebook-website">GitHub page</a> and submit an <a href="https://github.com/nanoporenetwork/ebook-website/issues">issue</a>.</li>
 </ol>
-<p>On pages that may be frequently updated, you will also see a feed from our Slack channel.</p>
+<p>On pages that may be frequently updated, you will also see a <strong>feed from our Slack channel</strong>.</p>
 <div id="curator-feed-default-feed-layout"><a href="https://curator.io" target="_blank" class="crt-logo crt-tag">Powered by Curator.io</a></div>
 
 <hr />
@@ -1636,6 +1693,135 @@ e=d.getElementsByTagName(s)[0];e.parentNode.insertBefore(i, e);
 <p>The <a href="../../other_resources/glossary/">glossary</a> and <a href="../../other_resources/faq/">FAQ</a> sections are designed to help newcomers quickly understand technical terms and common questions about Nanopore sequencing. If you notice missing terms or important questions that should be addressed, your contributions can enhance clarity for future educators and students.   </p>
 <h2 id="contribution-templates">Contribution templates</h2>
 <p>You can visit <a href="../../examples/protocol-template/">examples/protocol-template.md</a> to see and download a template for contributing protocols.</p>
+<h3 id="editing-the-website">Editing the website</h3>
+<p>The full authoring workflow—the process of building this entire site—relies on two GitHub repositories, an a variety of publishing tools, the most important of which are <a href="https://mkdocs.readthedocs.io/en/stable/">MkDocs</a> and <a href="https://squidfunk.github.io/mkdocs-material/">Material for MkDocs</a>. You will need a bit of <a href="https://swcarpentry.github.io/git-novice/">GitHub knowledge</a> and <a href="https://swcarpentry.github.io/shell-novice/">Command line knowledge</a> to fully manipulate these tools.</p>
+<h4 id="overview">Overview</h4>
+<p>In the <a href="https://mkdocs.readthedocs.io/en/stable/getting-started/">MkDocs system</a> your 'docs' are a collection of <a href="https://www.markdownguide.org/">markdown</a> files; every page in this site is built as a markdown file. There is also a <code>mkdocs.yml</code> file which contains important metadata about how the site is organize (e.g., the title of the site, the navigation bar, etc.).</p>
+<p>Once you have made a page(s) in markdown, there is some <strong>serve command</strong> you can use to serve the site (e.g. <code>mkdocs serve</code>) to build an html version of the site as a preview you can browse locally. When you are ready, there will also be some <strong>deploy command</strong> which pushes the html site to GitHub to be served as a website.  </p>
+<p>This site, is a bit more complicated.</p>
+<p>The problem, is that in the build process, the unrendered markdown docs remain on my (the author's) computer, and what is pushed to github are only the HTML files organized however MkDocs has decided. We <strong>don't want</strong> people editing the HTML files—it's difficult to do, and the point is that editing should take place in markdown only. If I want other people to be able to edit my original markdown files they can't. Therefore, this site is split into two repositories:</p>
+<ul>
+<li>
+<p><strong><a href="https://github.com/nanoporenetwork/nanopore_e-book-dev">nanopore_e-book-dev</a></strong>: Is a <strong>private</strong> repository (i.e., you must request access) where the unrendered docs live.</p>
+</li>
+<li>
+<p><strong><a href="https://github.com/nanoporenetwork/ebook-website">ebook-website</a></strong>: Is a public repository where the built site lives. If you check that site you will see that it basically containes HTML files.</p>
+<p>The authoring workflow is something like:</p>
+<p><a class="glightbox" href="../../img/contribute/authoring_flowchart/Slide1.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="" src="../../img/contribute/authoring_flowchart/Slide1.png" /></a></p>
+</li>
+</ul>
+<h4 id="authoring-steps">Authoring steps</h4>
+<p><strong>Fork and clone repository and install software dependencies</strong></p>
+<ol>
+<li>
+<p>If needed, contact <a href="mailto:williams@cshl.edu">williams@cshl.edu</a> or <a href="mailto:feitzin@cshl.edu">feitzin@cshl.edu</a> to be added to the repository as a collaborator; you will need to share your <a href="https://docs.github.com/en/get-started/start-your-journey/creating-an-account-on-github">GitHub ID</a>.</p>
+</li>
+<li>
+<p>On github, go to <a href="https://github.com/nanoporenetwork/nanopore_e-book-dev">nanopore_e-book-dev</a> and create a <a href="https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/working-with-forks/fork-a-repo">fork</a> to your own GitHub account.</p>
+</li>
+<li>
+<p>Clone the <code>nanopore_e-book-dev</code> repository.</p>
+<pre><code>git clone YOUR FORKED REPOSITORY
+</code></pre>
+</li>
+<li>
+<p>Use python <a href="https://packaging.python.org/en/latest/tutorials/installing-packages/"><code>pip</code></a> to install all of the software dependencies in the <code>requirements.txt</code>; verify that all packages have installed successfully.</p>
+<pre><code>pip install -r requirements.txt
+</code></pre>
+<p>or</p>
+<pre><code>pip3 install -r requirements.txt
+</code></pre>
+</li>
+</ol>
+<p><strong>Edit the website in markdown form and view a local preview</strong></p>
+<ol>
+<li>
+<p>Change into the <code>nanopore_e-book-dev</code> directory you cloned.</p>
+<pre><code>cd nanopore_e-book-dev
+</code></pre>
+<ol>
+<li>Optional, create a <a href="https://github.com/Kunena/Kunena-Forum/wiki/create-a-new-branch-with-git-and-manage-branches">branch</a> if desired.</li>
+</ol>
+</li>
+<li>
+<p>Use a text editor (e.g., <a href="https://atom-editor.cc/">atom</a>) to make changes to the documentation.</p>
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<p>We are using the <a href="https://squidfunk.github.io/mkdocs-material/">Material theme</a>. Explore the site's documentation for extensive examples on how to use:</p>
+<ul>
+<li><a href="https://squidfunk.github.io/mkdocs-material/reference/admonitions/">admonitions</a> (e.g., tip boxes)</li>
+<li><a href="https://squidfunk.github.io/mkdocs-material/reference/annotations/">annotations</a></li>
+<li><a href="https://squidfunk.github.io/mkdocs-material/setup/setting-up-navigation/">navigation</a></li>
+</ul>
+</div>
+</li>
+<li>
+<p>Use <code>mkdocs serve</code> to generate a local preview of your site. This will be a 'live' preview which will refresh in your browser everytime you save a change to your website.</p>
+<pre><code>mkdocs serve
+</code></pre>
+</li>
+<li>
+<p>Copy the URL (e.g. 'http://127.0.0.1:8000/nanoporenetwork/ebook-website/') to a web browser to preview. In the terminal use <kbd>CNTRL</kbd>+<kbd>C</kbd> to stop serving the preview site.</p>
+</li>
+</ol>
+<p><strong>Commit your changes, push, and create a pull request</strong></p>
+<ol>
+<li>
+<p>Add all changed files and commit your change</p>
+<p><div class="highlight"><pre><span></span><code>git add --all
+</code></pre></div>
+<div class="highlight"><pre><span></span><code>git commit -am &quot;commit message&quot;
+</code></pre></div></p>
+</li>
+<li>
+<p>Push your change to your fork on GitHub</p>
+<pre><code>git push
+</code></pre>
+</li>
+<li>
+<p>Create a <a href="https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/creating-a-pull-request">pull request</a> on Github. The website maintainers will review your changes, suggest edits, and/or incorporate your requested changes!</p>
+</li>
+</ol>
+<h4 id="making-changes-to-the-live-site">Making changes to the live site</h4>
+<p>Edits and changes are done as above. In principle, the live site will have versioned releases using <a href="https://github.com/jimporter/mike">mike</a>.</p>
+<ol>
+<li>
+<p>Create a version of the site using <code>mike</code>; the command string will contain a version and, optionally, and alias (e.g. <code>mike deploy [version] [alias]...</code>)</p>
+<pre><code>mike deploy February-2025-alpha latest
+</code></pre>
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<p><strong>Versioning</strong></p>
+<p>Versioning for this website shall be:</p>
+<ul>
+<li>
+<p><strong>Major Versions</strong>: Month-YYYY (e.g., March-2025); for major releases (e.g., May, August, December)</p>
+</li>
+<li>
+<p><strong>Minor Versions</strong>: Month-YYYY-a (e.g. March-2025-a, March-2025-b, ...); for critical updates between major releases.</p>
+</li>
+</ul>
+<p>Typos, broken links, etc. can be fixed any time without a new release. Correcting outdated information, adding new links to external documents, etc. should trigger a minor version. Substantially new content should be done at major version releases.</p>
+</div>
+</li>
+<li>
+<p>Set the version to default</p>
+<pre><code>mike set-default February-2025-alpha # or whatever version
+</code></pre>
+</li>
+<li>
+<p>Build the site and preview. Copy the URL (e.g. 'http://localhost:8000/') to a web browser to preview. In the terminal use <kbd>CNTRL</kbd>+<kbd>C</kbd> to stop serving the preview site. The version dropdown should appear in the site header.</p>
+<pre><code>mike serve
+</code></pre>
+</li>
+<li>
+<p>Deploy the site from the development repository to the ebook website depository. Note, you will only be able to do this if you also have write access as a collaborator to the main site.</p>
+<pre><code>mike set-default --push latest -r https://github.com/nanoporenetwork/ebook-website.git --allow-empty
+</code></pre>
+</li>
+</ol>
+<h4 id="creating-formal-releases-and-updating-website-citation">Creating formal releases and updating website citation</h4>
+<p>Following <a href="https://docs.github.com/en/repositories/archiving-a-github-repository/referencing-and-citing-content">these instructions</a> for logging into a <a href="https://zenodo.org/login/">Zenodo account</a> and adding the main repository. When you create a release you will get an update to the Zenodo record. </p>
 
 
 
@@ -1719,7 +1905,7 @@ e=d.getElementsByTagName(s)[0];e.parentNode.insertBefore(i, e);
     </div>
     
     
-    <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.tracking", "navigation.sections", "navigation.path", "navigation.indexes", "toc.integrate", "content.tooltips"], "search": "../../assets/javascripts/workers/search.6ce7567c.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": {"default": "latest", "provider": "mike"}}</script>
+    <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.tracking", "navigation.sections", "navigation.path", "navigation.indexes", "toc.integrate", "content.tooltips", "content.code.copy"], "search": "../../assets/javascripts/workers/search.6ce7567c.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": {"default": "latest", "provider": "mike"}}</script>
     
     
   <script defer src="https://cdn.customgpt.ai/js/chat.js"></script> <script defer> (function(){ function init(){ CustomGPT.init({ p_id:'55164', p_key:'eb9ff041998a713eb5cfacc3a49f7efb' }) } document.readyState === 'complete' ? init() : window.addEventListener('load', init); })(); </script>
