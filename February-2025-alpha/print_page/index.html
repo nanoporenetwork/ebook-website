@@ -4565,12 +4565,12 @@ Cloud storage provides scalable and convenient options for managing sequencing d
 <p><strong>Protocol Credits</strong></p>
 <ul>
 <li><strong>Author(s)</strong><ul>
-<li>Anna Feitzinger, CSHL</li>
-<li>Jeffry Petracca, CSHL</li>
+<li>Anna Feitzinger, Cold Spring Harbor Laboratory</li>
+<li>Jeffry Petracca, Cold Spring Harbor Laboratory</li>
 </ul>
 </li>
-<li><strong>Maintainer/contact</strong>: Anna Feitzinger, CSHL <a href="mailto:feitzin@cshl.edu">email</a></li>
-<li><strong>Last updated</strong>: January, 2025</li>
+<li><strong>Maintainer/contact</strong>: Anna Feitzinger, Cold Spring Harbor Laboratory: <a href="mailto:feitzin@cshl.edu">email</a></li>
+<li><strong>Last updated</strong>: March, 2025</li>
 <li><strong>Source materials and references</strong><ul>
 <li><a href="https://dnabarcoding101.org/lab/">Barcoding 101 Lab Resources</a></li>
 <li><a href="https://community.nanoporetech.com/protocols/rapid-sequencing-gdna-barcoding-sqk-rbk114"><abbr title="A library preparation kit that uses a transposase complex to attach sequencing adapters; is quicker and uses fewer 3rd party reagents than the native barcoding kit but also sheers the DNA resulting in smaller fragment lengths.">Rapid barcoding</abbr> protocol</a></li>
@@ -4579,11 +4579,11 @@ Cloud storage provides scalable and convenient options for managing sequencing d
 </ul>
 <p><strong>Nanopore Sequencing</strong></p>
 <ul>
-<li><strong>Sequencing format</strong>: [<abbr title="A smaller, lower-cost flow cell.">Flongle</abbr>]</li>
-<li><strong>Sequencing kit</strong>: <a href="#annotated_experiments-dna_barcoding-url"><abbr title="A library preparation kit that uses a transposase complex to attach sequencing adapters; is quicker and uses fewer 3rd party reagents than the native barcoding kit but also sheers the DNA resulting in smaller fragment lengths.">Rapid Barcoding</abbr> Kit (product number)</a></li>
+<li><strong>Sequencing format</strong>: <abbr title="A smaller, lower-cost flow cell.">Flongle</abbr></li>
+<li><strong>Sequencing kit</strong>: <a href="https://store.nanoporetech.com/us/rapid-barcoding-sequencing-kit-24-v14.html"><abbr title="A library preparation kit that uses a transposase complex to attach sequencing adapters; is quicker and uses fewer 3rd party reagents than the native barcoding kit but also sheers the DNA resulting in smaller fragment lengths.">Rapid Barcoding</abbr> Kit 24 v14 (SQK-RBK114.24)</a></li>
 <li><strong>Oxford Nanopore Sequencing protocol</strong>: <a href="https://community.nanoporetech.com/protocols/rapid-sequencing-gdna-barcoding-sqk-rbk114"><abbr title="A library preparation kit that uses a transposase complex to attach sequencing adapters; is quicker and uses fewer 3rd party reagents than the native barcoding kit but also sheers the DNA resulting in smaller fragment lengths.">Rapid Barcoding</abbr> Kit (SQK-RBK114.24)</a></li>
-<li><strong>Indexed/Barcoded</strong>: [Yes, 24 indicies]</li>
-<li><strong>Samples per run</strong>: [24 of samples]</li>
+<li><strong>Indexed/Barcoded</strong>: Yes, 24 indicies</li>
+<li><strong>Samples per run</strong>: 24  samples</li>
 </ul>
 <p><strong>Computer and Bioinformatics</strong></p>
 <ul>
@@ -4615,7 +4615,7 @@ Cloud storage provides scalable and convenient options for managing sequencing d
 <summary>Reagents</summary>
 <p><strong>Sample collection and prep</strong></p>
 <ul>
-<li>See resources at <a href="https://community.nanoporetech.com/protocols/rapid-sequencing-gdna-barcoding-sqk-rbk114">barcoding101 Sample Collections</a></li>
+<li>See resources and recipies at <a href="https://community.nanoporetech.com/protocols/rapid-sequencing-gdna-barcoding-sqk-rbk114">barcoding101 Sample Collections</a></li>
 </ul>
 <p><strong>DNA extraction</strong></p>
 <p>For rapid DNA extraction only:</p>
@@ -4637,9 +4637,11 @@ Cloud storage provides scalable and convenient options for managing sequencing d
 </ul>
 <p><strong>PCR</strong></p>
 <ul>
-<li>For Ready-To-Go PCR Bead Amplification:
-    o   2 Ready-To-Go PCR Beads in 0.2- or 0.5-mL PCR tubes
-    o   Appropriate primer/loading dye mix (50 µL; 23 µL per reaction)*</li>
+<li>For Ready-To-Go PCR Bead Amplification:<ul>
+<li>2 Ready-To-Go PCR Beads in 0.2- or 0.5-mL PCR tubes</li>
+<li>Appropriate primer/loading dye mix (50 µL; 23 µL per reaction)*</li>
+</ul>
+</li>
 </ul>
 <p><strong>Barcoding Primers</strong></p>
 <p>Plant Primers:</p>
@@ -4708,29 +4710,31 @@ Cloud storage provides scalable and convenient options for managing sequencing d
 </details>
 <hr />
 <h3 id="annotated_experiments-dna_barcoding-background">Background</h3>
-<p>Identifying organisms has grown in importance as we monitor the biological effects of global climate change and attempt to preserve species diversity in the face of accelerating habitat destruction. We know very little about the diversity of plants and animals – let alone microbes – living in many unique ecosystems on earth. Less than two million of the estimated 5-50 million plant and animal species have been identified. Scientists agree that the yearly rate of extinction has increased from about one species per million to 100-1,000 per million. This means that thousands of plants and animals are lost each year. Most of these have not yet been identified.</p>
+<p>Identifying organisms has grown in importance as we monitor the biological effects of global climate change and attempt to preserve species diversity in the face of accelerating habitat destruction. We know very little about the diversity of plants and animals—let alone microbes—living in many unique ecosystems on earth. Less than two million of the estimated 5-50 million plant and animal species have been identified. Scientists agree that the yearly rate of extinction has increased from about one species per million to 100-1,000 per million. This means that thousands of plants and animals are lost each year. Most of these have not yet been identified.</p>
 <p>Classical taxonomy falls short in this race to catalog biological diversity before it disappears. Specimens must be carefully collected and handled to preserve their distinguishing features. Differentiating subtle anatomical differences between closely related species requires the subjective judgment of a highly trained specialist – and few are being produced in colleges today.</p>
-<p>DNA barcodes allow non-experts to objectively identify species – even from small, damaged, or industrially processed material. Just as the unique pattern of bars in a universal product code (UPC) identifies each consumer product, a “DNA barcode” is a unique pattern of DNA sequence that can potentially identify each living thing. Short DNA barcodes, about 700 nucleotides in length, can be quickly processed from thousands of specimens and unambiguously analyzed by computer programs.
-DNA amplicons are the copied sections of DNA produced by an amplification process that replicates a particμLar target region of a DNA molecule. For example, DNA amplicons are commonly generated via the polymerase chain reaction (PCR).</p>
+<p>DNA barcodes allow non-experts to objectively identify species – even from small, damaged, or industrially processed material. Just as the unique pattern of bars in a universal product code (UPC) identifies each consumer product, a “DNA barcode” is a unique pattern of DNA sequence that can potentially identify each living thing. Short DNA barcodes, about 700 nucleotides in length, can be quickly processed from thousands of specimens and unambiguously analyzed by computer programs.</p>
+<p>DNA amplicons are the copied sections of DNA produced by an amplification process that replicates a particμLar target region of a DNA molecule. For example, DNA amplicons are commonly generated via the polymerase chain reaction (PCR).</p>
 <p>In DNA barcoding, a DNA amplicon might represent a region of DNA that can be used to determine the species of an organism. In medical research, amplicon DNA sequences might be used to detect pathogens, search for inherited diseases, or identify single nucleotide polymorphisms (SNPs) that are associated with a particular disease phenotype. More broadly, amplicon sequencing can be used to assess and analyze genetic variation at particular positions in a genome.</p>
 <div class="admonition nanopore">
 <p class="admonition-title">Explanation</p>
 <p>Because the regions of DNA used for identification are approximately ~70% conversved, differences can be used to distinguish between species but allows the same primer pair to be use across many species.</p>
 <ul>
-<li>RbCl or MatK located on the chloroplast are used to identify plants</li>
-<li>CO1 located on the mitochondria is used for animals, including invertebrates.</li>
-<li>ITS located in nuclear ribosomal DNA (rDNA) is used for fungi</li>
+<li><em>rbcL</em> or <em>matK</em> located on the chloroplast are used to identify plants</li>
+<li><em>CO1</em> located on the mitochondria is used for animals, including invertebrates.</li>
+<li><em>ITS</em> located in nuclear ribosomal DNA (rDNA) is used for fungi</li>
 </ul>
 </div>
 <p>DNA sequencing can be carried out in a number of different ways depending on the needs of an experiment. The ONT <abbr title="A portable nanopore sequencing device developed by Oxford Nanopore Technologies.">MinION</abbr> sequencing device offers a portable, versatile, efficient, and relatively inexpensive way to sequence DNA in a classroom setting. In order to sequence DNA amplicons on this platform, they must first be prepared using an ONT kit. One efficient option for amplicons is the <abbr title="A library preparation kit that uses a transposase complex to attach sequencing adapters; is quicker and uses fewer 3rd party reagents than the native barcoding kit but also sheers the DNA resulting in smaller fragment lengths.">Rapid Barcoding</abbr> Kit, which we used in this protocol.</p>
-<h3 id="annotated_experiments-dna_barcoding-dna-barcoding-student-project-examples">DNA Barcoding Student Project Examples</h3>
+<div class="admonition classroom">
+<p class="admonition-title">Example Projects</p>
+<p><strong>DNA Barcoding Student Project Examples</strong></p>
 <p>Example of DNA Barcoding student projects can be found for the DNALC's barcoding programs below:</p>
 <ul>
 <li><a href="https://dnabarcoding101.org/symposium/program/ubrp">Urban <abbr title="Short, unique sequences added to DNA fragments to identify and differentiate multiple samples sequenced together. See also—Indexing.">Barcode</abbr> Research Project</a></li>
 <li><a href="https://dnabarcoding101.org/symposium/program/ubrp"><abbr title="Short, unique sequences added to DNA fragments to identify and differentiate multiple samples sequenced together. See also—Indexing.">Barcode</abbr> Long Island</a></li>
 <li><a href="https://dnabarcoding101.org/symposium/program/ubrp">Urban <abbr title="Short, unique sequences added to DNA fragments to identify and differentiate multiple samples sequenced together. See also—Indexing.">Barcode</abbr> Research Project</a></li>
 </ul>
-<p>Information on the annual Symposium</p>
+</div>
 <details class="references">
 <summary>Additional Reading</summary>
 <ol>
@@ -4954,8 +4958,7 @@ Chelex inhibits DNA amplification by PCR.</p>
 <div class="tabbed-set tabbed-alternate" data-tabs="2:3"><input checked="checked" id="annotated_experiments-dna_barcoding-__tabbed_2_1" name="annotated_experiments-dna_barcoding-__tabbed_2" type="radio" /><input id="annotated_experiments-dna_barcoding-__tabbed_2_2" name="annotated_experiments-dna_barcoding-__tabbed_2" type="radio" /><input id="annotated_experiments-dna_barcoding-__tabbed_2_3" name="annotated_experiments-dna_barcoding-__tabbed_2" type="radio" /><div class="tabbed-labels"><label for="annotated_experiments-dna_barcoding-__tabbed_2_1">RbCl</label><label for="annotated_experiments-dna_barcoding-__tabbed_2_2">COI</label><label for="annotated_experiments-dna_barcoding-__tabbed_2_3">ITS</label></div>
 <div class="tabbed-content">
 <div class="tabbed-block">
-<p>Plant
-rbcL primers:
+<p>Primers:
 (rbcLaF / rbcLa rev)</p>
 <table>
 <thead>
@@ -4995,8 +4998,7 @@ rbcL primers:
 </table>
 </div>
 <div class="tabbed-block">
-<p>Plant
-rbcL primers:
+<p>Primers:
 (LCO1490 / HC02198)</p>
 <table>
 <thead>
@@ -5036,8 +5038,7 @@ rbcL primers:
 </table>
 </div>
 <div class="tabbed-block">
-<p>Plant
-rbcL primers:
+<p>Primers:
 (ITS1F / ITS4)</p>
 <table>
 <thead>
@@ -5372,7 +5373,7 @@ Keeping the tube on the magnetic rack, use an appropriate pipette to remove all 
 <p>The DNA sequence from the .fasta file can be copied and pasted into the blue line of <a href="https://dnasubway.cyverse.org/">DNA Subway</a> under "Enter sequences in FASTA format".</p>
 <div class="admonition classroom">
 <p class="admonition-title">Instruction tip</p>
-<p>DNA Subway2.0 is coming late Spring/Summer 2025 and is equiped with a new "Blue Line" for Nanopore sequencing data which contains tools for generating the consensus Nanopore sequence reads.</p>
+<p>DNA Subway 2.0 is coming late Spring/Summer 2025 and is equiped with a new "Blue Line" for Nanopore sequencing data which contains tools for generating the consensus Nanopore sequence reads.</p>
 </div>
 <hr />
 <p><strong>Comments and discussion</strong></p>
@@ -9246,6 +9247,13 @@ drive.mount('/content/drive')
 <hr />
 <h2 id="teaching_resources-resources-slide-presentations">Slide Presentations</h2>
 <p>This section includes downloadable slides that educators can use for lectures and classroom discussions.</p>
+<ul>
+<li><strong>Presentation</strong>: <a href="https://docs.google.com/presentation/d/1qy43LUHtk226-N2iTuK4zwv9JvY5ZUoq/edit?usp=sharing&amp;ouid=118291678313934666679&amp;rtpof=true&amp;sd=true">Long-<abbr title="A sequence of nucleotides generated by a sequencing machine from a single DNA or RNA fragment.">Read</abbr> Sequencing Technology</a><ul>
+<li>Author: Katie M. Sandlin</li>
+<li>Affiliation: <a href="https://thegep.org/">Genomics Education Partnership</a></li>
+</ul>
+</li>
+</ul>
 <hr />
 <h2 id="teaching_resources-resources-videos">Videos</h2>
 <p>Here, you will find educational videos that explain key concepts and demonstrate laboratory techniques.</p>
@@ -9301,28 +9309,6 @@ drive.mount('/content/drive')
 <div class="grid cards">
 <ul>
 <li>
-<p><span class="twemoji lg middle"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.7.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M219.3.5c3.1-.6 6.3-.6 9.4 0l200 40C439.9 42.7 448 52.6 448 64s-8.1 21.3-19.3 23.5L352 102.9V160c0 70.7-57.3 128-128 128S96 230.7 96 160v-57.1l-48-9.6v65.1l15.7 78.4c.9 4.7-.3 9.6-3.3 13.3S52.8 256 48 256H16c-4.8 0-9.3-2.1-12.4-5.9s-4.3-8.6-3.3-13.3L16 158.4V86.6C6.5 83.3 0 74.3 0 64c0-11.4 8.1-21.3 19.3-23.5zM111.9 327.7c10.5-3.4 21.8.4 29.4 8.5l71 75.5c6.3 6.7 17 6.7 23.3 0l71-75.5c7.6-8.1 18.9-11.9 29.4-8.5 65 20.9 112 81.7 112 153.6 0 17-13.8 30.7-30.7 30.7H30.7C13.8 512 0 498.2 0 481.3c0-71.9 47-132.7 111.9-153.6"/></svg></span> <strong>Bob Kuhn</strong></p>
-<hr />
-<p><figure markdown="span" align="left">
-  <img src="../img/profile_photos/bob_kuhn.png" width="300">
-  <figcaption></figcaption>
-</figure></p>
-<p><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512"><!--! Font Awesome Free 6.7.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M337.8 5.4c-10.8-7.2-24.8-7.2-35.6 0L166.3 96H48c-26.5 0-48 21.5-48 48v320c0 26.5 21.5 48 48 48h208v-96c0-35.3 28.7-64 64-64s64 28.7 64 64v96h208c26.5 0 48-21.5 48-48V144c0-26.5-21.5-48-48-48H473.7zM96 192h32c8.8 0 16 7.2 16 16v64c0 8.8-7.2 16-16 16H96c-8.8 0-16-7.2-16-16v-64c0-8.8 7.2-16 16-16m400 16c0-8.8 7.2-16 16-16h32c8.8 0 16 7.2 16 16v64c0 8.8-7.2 16-16 16h-32c-8.8 0-16-7.2-16-16zM96 320h32c8.8 0 16 7.2 16 16v64c0 8.8-7.2 16-16 16H96c-8.8 0-16-7.2-16-16v-64c0-8.8 7.2-16 16-16m400 16c0-8.8 7.2-16 16-16h32c8.8 0 16 7.2 16 16v64c0 8.8-7.2 16-16 16h-32c-8.8 0-16-7.2-16-16zM232 176a88 88 0 1 1 176 0 88 88 0 1 1-176 0m88-48c-8.8 0-16 7.2-16 16v32c0 8.8 7.2 16 16 16h32c8.8 0 16-7.2 16-16s-7.2-16-16-16h-16v-16c0-8.8-7.2-16-16-16"/></svg></span>: FCS Innovation Academy STEM High School</p>
-<p><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M17.9 17.39c-.26-.8-1.01-1.39-1.9-1.39h-1v-3a1 1 0 0 0-1-1H8v-2h2a1 1 0 0 0 1-1V7h2a2 2 0 0 0 2-2v-.41a7.984 7.984 0 0 1 2.9 12.8M11 19.93c-3.95-.49-7-3.85-7-7.93 0-.62.08-1.22.21-1.79L9 15v1a2 2 0 0 0 2 2m1-16A10 10 0 0 0 2 12a10 10 0 0 0 10 10 10 10 0 0 0 10-10A10 10 0 0 0 12 2"/></svg></span>: Georgia, United States</p>
-<p><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 3 1 9l4 2.18v6L12 21l7-3.82v-6l2-1.09V17h2V9zm6.82 6L12 12.72 5.18 9 12 5.28zM17 16l-5 2.72L7 16v-3.73L12 15l5-2.73z"/></svg></span>: High school</p>
-<p><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m20 8-8 5-8-5V6l8 5 8-5m0-2H4c-1.11 0-2 .89-2 2v12a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2"/></svg></span>: Reach me on Slack</p>
-<p><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 2h2v2c0 1.44.68 2.61 1.88 3.78.86.83 2.01 1.63 3.21 2.42l-1.83 1.19C8.27 10.72 7.31 10 6.5 9.21 5.07 7.82 4 6.1 4 4zm14 0h2v2c0 2.1-1.07 3.82-2.5 5.21-1.41 1.38-3.21 2.52-4.96 3.63-1.75 1.12-3.45 2.21-4.66 3.38C6.68 17.39 6 18.56 6 20v2H4v-2c0-2.1 1.07-3.82 2.5-5.21 1.41-1.38 3.21-2.52 4.96-3.63 1.75-1.12 3.45-2.21 4.66-3.38C17.32 6.61 18 5.44 18 4zm-3.26 10.61c.99.67 1.95 1.39 2.76 2.18C18.93 16.18 20 17.9 20 20v2h-2v-2c0-1.44-.68-2.61-1.88-3.78-.86-.83-2.01-1.63-3.21-2.42zM7 3h10v1l-.06.5H7.06L7 4zm.68 3h8.64c-.24.34-.52.69-.9 1.06l-.51.44H9.07l-.49-.44c-.38-.37-.66-.72-.9-1.06m1.41 10.5h5.84l.49.44c.38.37.66.72.9 1.06H7.68c.24-.34.52-.69.9-1.06zm-2.03 3h9.88l.06.5v1H7v-1z"/></svg></span>: 16S DNA Barcoding, Phage Genomes</p>
-<p><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M2.494 18.913h3.52v-3.52c0-.43.35-.78.781-.78h3.52v-3.52c0-.432.35-.783.781-.783h3.52V6.791c0-.432.35-.782.782-.782h3.519V2.49c0-.432.35-.782.782-.782h3.52c.43 0 .781.35.781.782v20.724c0 .432-.35.782-.782.782H2.494a.78.78 0 0 1-.782-.782v-3.52c0-.43.35-.78.782-.78ZM.172 15.928a.587.587 0 0 1 0-.83L15.102.168a.587.587 0 0 1 .83.83l-14.93 14.93c-.23.23-.6.23-.83 0"/></svg></span>: Getting started with Nanopore</p>
-<p><strong>About Bob</strong></p>
-<p><strong>Classroom research question(s)</strong></p>
-<p>How do bacterial abundance and assemblages change across environments and scales?</p>
-<p><strong>Using Nanopore in the classroom</strong></p>
-<p>We have used Nanopore 16S barcoding to investigate simple variable differences such as bean beetles dosed with probiotics, salamander species skin swabs, different vegetables in kimchi, and bacterial profiles in Georgia lakes. We also hope to begin bacteriophage genome sequencing in fall 2025 as part of our phage discovery program.</p>
-<p><strong>URLs</strong></p>
-<p><img alt="🔗" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@15.1.0/assets/svg/1f517.svg" title=":link:" /> <a href="https://fcsinnovationacademy.fultonschools.org/">https://fcsinnovationacademy.fultonschools.org/</a></p>
-<p><strong>Publications</strong></p>
-</li>
-<li>
 <p><span class="twemoji lg middle"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.7.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M219.3.5c3.1-.6 6.3-.6 9.4 0l200 40C439.9 42.7 448 52.6 448 64s-8.1 21.3-19.3 23.5L352 102.9V160c0 70.7-57.3 128-128 128S96 230.7 96 160v-57.1l-48-9.6v65.1l15.7 78.4c.9 4.7-.3 9.6-3.3 13.3S52.8 256 48 256H16c-4.8 0-9.3-2.1-12.4-5.9s-4.3-8.6-3.3-13.3L16 158.4V86.6C6.5 83.3 0 74.3 0 64c0-11.4 8.1-21.3 19.3-23.5zM111.9 327.7c10.5-3.4 21.8.4 29.4 8.5l71 75.5c6.3 6.7 17 6.7 23.3 0l71-75.5c7.6-8.1 18.9-11.9 29.4-8.5 65 20.9 112 81.7 112 153.6 0 17-13.8 30.7-30.7 30.7H30.7C13.8 512 0 498.2 0 481.3c0-71.9 47-132.7 111.9-153.6"/></svg></span> <strong>Karen Barnard-Kubow</strong></p>
 <hr />
 <p><figure markdown="span" align="left">
@@ -9342,7 +9328,111 @@ drive.mount('/content/drive')
 <p>The module utilizes the plant species, Campanula americana, which exhibits cytonuclear incompatibility in the form of hybrid seedlings exhibiting chlorosis (reduced chlorophyll production) leading to yellow or white seedlings. The week before the module starts each group plants hybrid seeds from a different cross, which they will score for strength of incompatibility once the plants germinate by scoring their phenotype (green=no incompatibility, yellow=moderate incompatibility, while=strong incompatibility). We start the first week with an introductory presentation about the project and Minion sequencing. The students then interact with used <abbr title="A consumable device containing nanopores through which nucleic acids pass during sequencing.">flow cells</abbr>, where each student practices priming and loading a used <abbr title="A consumable device containing nanopores through which nucleic acids pass during sequencing.">flow cell</abbr> with water. The students then do a trial run-through of the bioinformatic analysis pipeline which is carried out in Google Colab, so all students can run the pipeline on their own computers. The following week, students use the bioinformatics pipeline to analyze Minion sequence data and assemble the chloroplast genome of one of the parents of their seedlings. In the pipeline they check the quality of the reads using Nanoplot, assemble the chloroplast genome using Flye, visualize the assembly using Bandage, and annotate it using GeSeq. They then get the genome assembly for the second parent of their hybrid seeds from another group and align the two assemblies and score structural variation between the two chloroplast genomes using Assemblytics. Then we combine data across all eight groups and make a graph with number of structural variants on the x and strength of genetic incompatibility on the y, to ask if there is a relationship between extent of structural variation between chloroplast genomes and strength of genetic incompatibility.</p>
 <p><strong>URLs</strong></p>
 <p><img alt="🔗" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@15.1.0/assets/svg/1f517.svg" title=":link:" /> <a href="https://github.com/kbkubow/NanoporePlastidAssemblyModule/tree/main">https://github.com/kbkubow/NanoporePlastidAssemblyModule/tree/main</a></p>
-<p><strong>Publications</strong></p>
+</li>
+<li>
+<p><span class="twemoji lg middle"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.7.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M219.3.5c3.1-.6 6.3-.6 9.4 0l200 40C439.9 42.7 448 52.6 448 64s-8.1 21.3-19.3 23.5L352 102.9V160c0 70.7-57.3 128-128 128S96 230.7 96 160v-57.1l-48-9.6v65.1l15.7 78.4c.9 4.7-.3 9.6-3.3 13.3S52.8 256 48 256H16c-4.8 0-9.3-2.1-12.4-5.9s-4.3-8.6-3.3-13.3L16 158.4V86.6C6.5 83.3 0 74.3 0 64c0-11.4 8.1-21.3 19.3-23.5zM111.9 327.7c10.5-3.4 21.8.4 29.4 8.5l71 75.5c6.3 6.7 17 6.7 23.3 0l71-75.5c7.6-8.1 18.9-11.9 29.4-8.5 65 20.9 112 81.7 112 153.6 0 17-13.8 30.7-30.7 30.7H30.7C13.8 512 0 498.2 0 481.3c0-71.9 47-132.7 111.9-153.6"/></svg></span> <strong>Yokshitha Bathula</strong></p>
+<hr />
+<p><figure markdown="span" align="left">
+  <img src="../img/profile_photos/yokshitha_bathula.jpg" width="300">
+  <figcaption></figcaption>
+</figure></p>
+<p><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512"><!--! Font Awesome Free 6.7.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M337.8 5.4c-10.8-7.2-24.8-7.2-35.6 0L166.3 96H48c-26.5 0-48 21.5-48 48v320c0 26.5 21.5 48 48 48h208v-96c0-35.3 28.7-64 64-64s64 28.7 64 64v96h208c26.5 0 48-21.5 48-48V144c0-26.5-21.5-48-48-48H473.7zM96 192h32c8.8 0 16 7.2 16 16v64c0 8.8-7.2 16-16 16H96c-8.8 0-16-7.2-16-16v-64c0-8.8 7.2-16 16-16m400 16c0-8.8 7.2-16 16-16h32c8.8 0 16 7.2 16 16v64c0 8.8-7.2 16-16 16h-32c-8.8 0-16-7.2-16-16zM96 320h32c8.8 0 16 7.2 16 16v64c0 8.8-7.2 16-16 16H96c-8.8 0-16-7.2-16-16v-64c0-8.8 7.2-16 16-16m400 16c0-8.8 7.2-16 16-16h32c8.8 0 16 7.2 16 16v64c0 8.8-7.2 16-16 16h-32c-8.8 0-16-7.2-16-16zM232 176a88 88 0 1 1 176 0 88 88 0 1 1-176 0m88-48c-8.8 0-16 7.2-16 16v32c0 8.8 7.2 16 16 16h32c8.8 0 16-7.2 16-16s-7.2-16-16-16h-16v-16c0-8.8-7.2-16-16-16"/></svg></span>: HudsonAlpha Institute for Biotechnology</p>
+<p><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M17.9 17.39c-.26-.8-1.01-1.39-1.9-1.39h-1v-3a1 1 0 0 0-1-1H8v-2h2a1 1 0 0 0 1-1V7h2a2 2 0 0 0 2-2v-.41a7.984 7.984 0 0 1 2.9 12.8M11 19.93c-3.95-.49-7-3.85-7-7.93 0-.62.08-1.22.21-1.79L9 15v1a2 2 0 0 0 2 2m1-16A10 10 0 0 0 2 12a10 10 0 0 0 10 10 10 10 0 0 0 10-10A10 10 0 0 0 12 2"/></svg></span>: Huntsville, Alabama, United States</p>
+<p><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 3 1 9l4 2.18v6L12 21l7-3.82v-6l2-1.09V17h2V9zm6.82 6L12 12.72 5.18 9 12 5.28zM17 16l-5 2.72L7 16v-3.73L12 15l5-2.73z"/></svg></span>: High school</p>
+<p><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m20 8-8 5-8-5V6l8 5 8-5m0-2H4c-1.11 0-2 .89-2 2v12a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2"/></svg></span>: <a href="mailto:ybathula@hudsonalpha.org">email</a></p>
+<p><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 2h2v2c0 1.44.68 2.61 1.88 3.78.86.83 2.01 1.63 3.21 2.42l-1.83 1.19C8.27 10.72 7.31 10 6.5 9.21 5.07 7.82 4 6.1 4 4zm14 0h2v2c0 2.1-1.07 3.82-2.5 5.21-1.41 1.38-3.21 2.52-4.96 3.63-1.75 1.12-3.45 2.21-4.66 3.38C6.68 17.39 6 18.56 6 20v2H4v-2c0-2.1 1.07-3.82 2.5-5.21 1.41-1.38 3.21-2.52 4.96-3.63 1.75-1.12 3.45-2.21 4.66-3.38C17.32 6.61 18 5.44 18 4zm-3.26 10.61c.99.67 1.95 1.39 2.76 2.18C18.93 16.18 20 17.9 20 20v2h-2v-2c0-1.44-.68-2.61-1.88-3.78-.86-.83-2.01-1.63-3.21-2.42zM7 3h10v1l-.06.5H7.06L7 4zm.68 3h8.64c-.24.34-.52.69-.9 1.06l-.51.44H9.07l-.49-.44c-.38-.37-.66-.72-.9-1.06m1.41 10.5h5.84l.49.44c.38.37.66.72.9 1.06H7.68c.24-.34.52-.69.9-1.06zm-2.03 3h9.88l.06.5v1H7v-1z"/></svg></span>: eDNA</p>
+<p><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M2.494 18.913h3.52v-3.52c0-.43.35-.78.781-.78h3.52v-3.52c0-.432.35-.783.781-.783h3.52V6.791c0-.432.35-.782.782-.782h3.519V2.49c0-.432.35-.782.782-.782h3.52c.43 0 .781.35.781.782v20.724c0 .432-.35.782-.782.782H2.494a.78.78 0 0 1-.782-.782v-3.52c0-.43.35-.78.782-.78ZM.172 15.928a.587.587 0 0 1 0-.83L15.102.168a.587.587 0 0 1 .83.83l-14.93 14.93c-.23.23-.6.23-.83 0"/></svg></span>: Some experience with Nanopore</p>
+<p><strong>About Yokshitha</strong></p>
+<p><strong>Educational Goal</strong></p>
+<p>Exploring bacterial biodiversity and antibiotic resistance across different soil ecosystems.</p>
+<p><strong>Using Nanopore in the classroom</strong></p>
+<p>We use Nanopore sequencing as part of a semester-long independent project with high school students. The students extract eDNA from soil samples and perform 16S sequencing. They use the results from the <abbr title="Oxford Nanopore's software suite for sequence data analysis.">EPI2ME</abbr> workflow to do a comparative study of bacterial diversity and look for antibiotic-resistance genes that align with the microbial lab results.</p>
+</li>
+<li>
+<p><span class="twemoji lg middle"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.7.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M219.3.5c3.1-.6 6.3-.6 9.4 0l200 40C439.9 42.7 448 52.6 448 64s-8.1 21.3-19.3 23.5L352 102.9V160c0 70.7-57.3 128-128 128S96 230.7 96 160v-57.1l-48-9.6v65.1l15.7 78.4c.9 4.7-.3 9.6-3.3 13.3S52.8 256 48 256H16c-4.8 0-9.3-2.1-12.4-5.9s-4.3-8.6-3.3-13.3L16 158.4V86.6C6.5 83.3 0 74.3 0 64c0-11.4 8.1-21.3 19.3-23.5zM111.9 327.7c10.5-3.4 21.8.4 29.4 8.5l71 75.5c6.3 6.7 17 6.7 23.3 0l71-75.5c7.6-8.1 18.9-11.9 29.4-8.5 65 20.9 112 81.7 112 153.6 0 17-13.8 30.7-30.7 30.7H30.7C13.8 512 0 498.2 0 481.3c0-71.9 47-132.7 111.9-153.6"/></svg></span> <strong>Bob Kuhn</strong></p>
+<hr />
+<p><figure markdown="span" align="left">
+  <img src="../img/profile_photos/bob_kuhn.png" width="300">
+  <figcaption></figcaption>
+</figure></p>
+<p><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512"><!--! Font Awesome Free 6.7.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M337.8 5.4c-10.8-7.2-24.8-7.2-35.6 0L166.3 96H48c-26.5 0-48 21.5-48 48v320c0 26.5 21.5 48 48 48h208v-96c0-35.3 28.7-64 64-64s64 28.7 64 64v96h208c26.5 0 48-21.5 48-48V144c0-26.5-21.5-48-48-48H473.7zM96 192h32c8.8 0 16 7.2 16 16v64c0 8.8-7.2 16-16 16H96c-8.8 0-16-7.2-16-16v-64c0-8.8 7.2-16 16-16m400 16c0-8.8 7.2-16 16-16h32c8.8 0 16 7.2 16 16v64c0 8.8-7.2 16-16 16h-32c-8.8 0-16-7.2-16-16zM96 320h32c8.8 0 16 7.2 16 16v64c0 8.8-7.2 16-16 16H96c-8.8 0-16-7.2-16-16v-64c0-8.8 7.2-16 16-16m400 16c0-8.8 7.2-16 16-16h32c8.8 0 16 7.2 16 16v64c0 8.8-7.2 16-16 16h-32c-8.8 0-16-7.2-16-16zM232 176a88 88 0 1 1 176 0 88 88 0 1 1-176 0m88-48c-8.8 0-16 7.2-16 16v32c0 8.8 7.2 16 16 16h32c8.8 0 16-7.2 16-16s-7.2-16-16-16h-16v-16c0-8.8-7.2-16-16-16"/></svg></span>: FCS Innovation Academy STEM High School</p>
+<p><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M17.9 17.39c-.26-.8-1.01-1.39-1.9-1.39h-1v-3a1 1 0 0 0-1-1H8v-2h2a1 1 0 0 0 1-1V7h2a2 2 0 0 0 2-2v-.41a7.984 7.984 0 0 1 2.9 12.8M11 19.93c-3.95-.49-7-3.85-7-7.93 0-.62.08-1.22.21-1.79L9 15v1a2 2 0 0 0 2 2m1-16A10 10 0 0 0 2 12a10 10 0 0 0 10 10 10 10 0 0 0 10-10A10 10 0 0 0 12 2"/></svg></span>: Georgia, United States</p>
+<p><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 3 1 9l4 2.18v6L12 21l7-3.82v-6l2-1.09V17h2V9zm6.82 6L12 12.72 5.18 9 12 5.28zM17 16l-5 2.72L7 16v-3.73L12 15l5-2.73z"/></svg></span>: High school</p>
+<p><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m20 8-8 5-8-5V6l8 5 8-5m0-2H4c-1.11 0-2 .89-2 2v12a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2"/></svg></span>: Reach me on Slack</p>
+<p><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 2h2v2c0 1.44.68 2.61 1.88 3.78.86.83 2.01 1.63 3.21 2.42l-1.83 1.19C8.27 10.72 7.31 10 6.5 9.21 5.07 7.82 4 6.1 4 4zm14 0h2v2c0 2.1-1.07 3.82-2.5 5.21-1.41 1.38-3.21 2.52-4.96 3.63-1.75 1.12-3.45 2.21-4.66 3.38C6.68 17.39 6 18.56 6 20v2H4v-2c0-2.1 1.07-3.82 2.5-5.21 1.41-1.38 3.21-2.52 4.96-3.63 1.75-1.12 3.45-2.21 4.66-3.38C17.32 6.61 18 5.44 18 4zm-3.26 10.61c.99.67 1.95 1.39 2.76 2.18C18.93 16.18 20 17.9 20 20v2h-2v-2c0-1.44-.68-2.61-1.88-3.78-.86-.83-2.01-1.63-3.21-2.42zM7 3h10v1l-.06.5H7.06L7 4zm.68 3h8.64c-.24.34-.52.69-.9 1.06l-.51.44H9.07l-.49-.44c-.38-.37-.66-.72-.9-1.06m1.41 10.5h5.84l.49.44c.38.37.66.72.9 1.06H7.68c.24-.34.52-.69.9-1.06zm-2.03 3h9.88l.06.5v1H7v-1z"/></svg></span>: 16S DNA Barcoding, Phage Genomes</p>
+<p><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M2.494 18.913h3.52v-3.52c0-.43.35-.78.781-.78h3.52v-3.52c0-.432.35-.783.781-.783h3.52V6.791c0-.432.35-.782.782-.782h3.519V2.49c0-.432.35-.782.782-.782h3.52c.43 0 .781.35.781.782v20.724c0 .432-.35.782-.782.782H2.494a.78.78 0 0 1-.782-.782v-3.52c0-.43.35-.78.782-.78ZM.172 15.928a.587.587 0 0 1 0-.83L15.102.168a.587.587 0 0 1 .83.83l-14.93 14.93c-.23.23-.6.23-.83 0"/></svg></span>: Getting started with Nanopore</p>
+<p><strong>About Bob</strong></p>
+<p><strong>Classroom research question(s)</strong></p>
+<p>How do bacterial abundance and assemblages change across environments and scales?</p>
+<p><strong>Using Nanopore in the classroom</strong></p>
+<p>We have used Nanopore 16S barcoding to investigate simple variable differences such as bean beetles dosed with probiotics, salamander species skin swabs, different vegetables in kimchi, and bacterial profiles in Georgia lakes. We also hope to begin bacteriophage genome sequencing in fall 2025 as part of our phage discovery program.</p>
+<p><strong>URLs</strong></p>
+<p><img alt="🔗" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@15.1.0/assets/svg/1f517.svg" title=":link:" /> <a href="https://fcsinnovationacademy.fultonschools.org/">https://fcsinnovationacademy.fultonschools.org/</a></p>
+</li>
+<li>
+<p><span class="twemoji lg middle"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.7.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M219.3.5c3.1-.6 6.3-.6 9.4 0l200 40C439.9 42.7 448 52.6 448 64s-8.1 21.3-19.3 23.5L352 102.9V160c0 70.7-57.3 128-128 128S96 230.7 96 160v-57.1l-48-9.6v65.1l15.7 78.4c.9 4.7-.3 9.6-3.3 13.3S52.8 256 48 256H16c-4.8 0-9.3-2.1-12.4-5.9s-4.3-8.6-3.3-13.3L16 158.4V86.6C6.5 83.3 0 74.3 0 64c0-11.4 8.1-21.3 19.3-23.5zM111.9 327.7c10.5-3.4 21.8.4 29.4 8.5l71 75.5c6.3 6.7 17 6.7 23.3 0l71-75.5c7.6-8.1 18.9-11.9 29.4-8.5 65 20.9 112 81.7 112 153.6 0 17-13.8 30.7-30.7 30.7H30.7C13.8 512 0 498.2 0 481.3c0-71.9 47-132.7 111.9-153.6"/></svg></span> <strong>Sylvia Franke McDevitt</strong></p>
+<hr />
+<p><figure markdown="span" align="left">
+<img src="../img/profile_photos/sylvia_mcdevitt.jpg" width="300">
+<figcaption></figcaption>
+</figure></p>
+<p><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512"><!--! Font Awesome Free 6.7.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M337.8 5.4c-10.8-7.2-24.8-7.2-35.6 0L166.3 96H48c-26.5 0-48 21.5-48 48v320c0 26.5 21.5 48 48 48h208v-96c0-35.3 28.7-64 64-64s64 28.7 64 64v96h208c26.5 0 48-21.5 48-48V144c0-26.5-21.5-48-48-48H473.7zM96 192h32c8.8 0 16 7.2 16 16v64c0 8.8-7.2 16-16 16H96c-8.8 0-16-7.2-16-16v-64c0-8.8 7.2-16 16-16m400 16c0-8.8 7.2-16 16-16h32c8.8 0 16 7.2 16 16v64c0 8.8-7.2 16-16 16h-32c-8.8 0-16-7.2-16-16zM96 320h32c8.8 0 16 7.2 16 16v64c0 8.8-7.2 16-16 16H96c-8.8 0-16-7.2-16-16v-64c0-8.8 7.2-16 16-16m400 16c0-8.8 7.2-16 16-16h32c8.8 0 16 7.2 16 16v64c0 8.8-7.2 16-16 16h-32c-8.8 0-16-7.2-16-16zM232 176a88 88 0 1 1 176 0 88 88 0 1 1-176 0m88-48c-8.8 0-16 7.2-16 16v32c0 8.8 7.2 16 16 16h32c8.8 0 16-7.2 16-16s-7.2-16-16-16h-16v-16c0-8.8-7.2-16-16-16"/></svg></span>: Skidmore College</p>
+<p><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M17.9 17.39c-.26-.8-1.01-1.39-1.9-1.39h-1v-3a1 1 0 0 0-1-1H8v-2h2a1 1 0 0 0 1-1V7h2a2 2 0 0 0 2-2v-.41a7.984 7.984 0 0 1 2.9 12.8M11 19.93c-3.95-.49-7-3.85-7-7.93 0-.62.08-1.22.21-1.79L9 15v1a2 2 0 0 0 2 2m1-16A10 10 0 0 0 2 12a10 10 0 0 0 10 10 10 10 0 0 0 10-10A10 10 0 0 0 12 2"/></svg></span>: Saratoga Springs, NY, United States</p>
+<p><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 3 1 9l4 2.18v6L12 21l7-3.82v-6l2-1.09V17h2V9zm6.82 6L12 12.72 5.18 9 12 5.28zM17 16l-5 2.72L7 16v-3.73L12 15l5-2.73z"/></svg></span>: Undergraduates</p>
+<p><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m20 8-8 5-8-5V6l8 5 8-5m0-2H4c-1.11 0-2 .89-2 2v12a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2"/></svg></span>: <a href="mailto:sfranke@skidmore.edu">email</a></p>
+<p><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 2h2v2c0 1.44.68 2.61 1.88 3.78.86.83 2.01 1.63 3.21 2.42l-1.83 1.19C8.27 10.72 7.31 10 6.5 9.21 5.07 7.82 4 6.1 4 4zm14 0h2v2c0 2.1-1.07 3.82-2.5 5.21-1.41 1.38-3.21 2.52-4.96 3.63-1.75 1.12-3.45 2.21-4.66 3.38C6.68 17.39 6 18.56 6 20v2H4v-2c0-2.1 1.07-3.82 2.5-5.21 1.41-1.38 3.21-2.52 4.96-3.63 1.75-1.12 3.45-2.21 4.66-3.38C17.32 6.61 18 5.44 18 4zm-3.26 10.61c.99.67 1.95 1.39 2.76 2.18C18.93 16.18 20 17.9 20 20v2h-2v-2c0-1.44-.68-2.61-1.88-3.78-.86-.83-2.01-1.63-3.21-2.42zM7 3h10v1l-.06.5H7.06L7 4zm.68 3h8.64c-.24.34-.52.69-.9 1.06l-.51.44H9.07l-.49-.44c-.38-.37-.66-.72-.9-1.06m1.41 10.5h5.84l.49.44c.38.37.66.72.9 1.06H7.68c.24-.34.52-.69.9-1.06zm-2.03 3h9.88l.06.5v1H7v-1z"/></svg></span>: 16S barcoding</p>
+<p><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M2.494 18.913h3.52v-3.52c0-.43.35-.78.781-.78h3.52v-3.52c0-.432.35-.783.781-.783h3.52V6.791c0-.432.35-.782.782-.782h3.519V2.49c0-.432.35-.782.782-.782h3.52c.43 0 .781.35.781.782v20.724c0 .432-.35.782-.782.782H2.494a.78.78 0 0 1-.782-.782v-3.52c0-.43.35-.78.782-.78ZM.172 15.928a.587.587 0 0 1 0-.83L15.102.168a.587.587 0 0 1 .83.83l-14.93 14.93c-.23.23-.6.23-.83 0"/></svg></span>: Some experience using Nanopore</p>
+<p><strong>About Sylvia</strong></p>
+<p><strong>Educational Goal</strong></p>
+<p>We are analyzing microbial communities from a variety of sources to answer questions like changes in the microbiome of mice, impact of heavy metal contamination in soil, or bacteria in sourdough.</p>
+<p><strong>Using Nanopore in the classroom</strong></p>
+<p>In my research we are looking at the microbial communities of creek sediments near old manufacturing sites, which have historically released heavy metals. Additionally we are analyzing fecal samples of mice with and without zinc supplement. The latter project is being done both in my research group as well as in my upper-level class. In my intermediate level General Microbiology students are proposing their own research question comparing microbial communities using the 16S Barcoding workflow.</p>
+</li>
+<li>
+<p><span class="twemoji lg middle"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.7.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M219.3.5c3.1-.6 6.3-.6 9.4 0l200 40C439.9 42.7 448 52.6 448 64s-8.1 21.3-19.3 23.5L352 102.9V160c0 70.7-57.3 128-128 128S96 230.7 96 160v-57.1l-48-9.6v65.1l15.7 78.4c.9 4.7-.3 9.6-3.3 13.3S52.8 256 48 256H16c-4.8 0-9.3-2.1-12.4-5.9s-4.3-8.6-3.3-13.3L16 158.4V86.6C6.5 83.3 0 74.3 0 64c0-11.4 8.1-21.3 19.3-23.5zM111.9 327.7c10.5-3.4 21.8.4 29.4 8.5l71 75.5c6.3 6.7 17 6.7 23.3 0l71-75.5c7.6-8.1 18.9-11.9 29.4-8.5 65 20.9 112 81.7 112 153.6 0 17-13.8 30.7-30.7 30.7H30.7C13.8 512 0 498.2 0 481.3c0-71.9 47-132.7 111.9-153.6"/></svg></span> <strong>James Melton</strong></p>
+<hr />
+<p><figure markdown="span" align="left">
+  <img src="../img/profile_photos/james_melton.jpeg" width="300">
+  <figcaption></figcaption>
+</figure></p>
+<p><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512"><!--! Font Awesome Free 6.7.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M337.8 5.4c-10.8-7.2-24.8-7.2-35.6 0L166.3 96H48c-26.5 0-48 21.5-48 48v320c0 26.5 21.5 48 48 48h208v-96c0-35.3 28.7-64 64-64s64 28.7 64 64v96h208c26.5 0 48-21.5 48-48V144c0-26.5-21.5-48-48-48H473.7zM96 192h32c8.8 0 16 7.2 16 16v64c0 8.8-7.2 16-16 16H96c-8.8 0-16-7.2-16-16v-64c0-8.8 7.2-16 16-16m400 16c0-8.8 7.2-16 16-16h32c8.8 0 16 7.2 16 16v64c0 8.8-7.2 16-16 16h-32c-8.8 0-16-7.2-16-16zM96 320h32c8.8 0 16 7.2 16 16v64c0 8.8-7.2 16-16 16H96c-8.8 0-16-7.2-16-16v-64c0-8.8 7.2-16 16-16m400 16c0-8.8 7.2-16 16-16h32c8.8 0 16 7.2 16 16v64c0 8.8-7.2 16-16 16h-32c-8.8 0-16-7.2-16-16zM232 176a88 88 0 1 1 176 0 88 88 0 1 1-176 0m88-48c-8.8 0-16 7.2-16 16v32c0 8.8 7.2 16 16 16h32c8.8 0 16-7.2 16-16s-7.2-16-16-16h-16v-16c0-8.8-7.2-16-16-16"/></svg></span>: Spelman College</p>
+<p><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M17.9 17.39c-.26-.8-1.01-1.39-1.9-1.39h-1v-3a1 1 0 0 0-1-1H8v-2h2a1 1 0 0 0 1-1V7h2a2 2 0 0 0 2-2v-.41a7.984 7.984 0 0 1 2.9 12.8M11 19.93c-3.95-.49-7-3.85-7-7.93 0-.62.08-1.22.21-1.79L9 15v1a2 2 0 0 0 2 2m1-16A10 10 0 0 0 2 12a10 10 0 0 0 10 10 10 10 0 0 0 10-10A10 10 0 0 0 12 2"/></svg></span>: Atlanta, Georgia, United States</p>
+<p><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 3 1 9l4 2.18v6L12 21l7-3.82v-6l2-1.09V17h2V9zm6.82 6L12 12.72 5.18 9 12 5.28zM17 16l-5 2.72L7 16v-3.73L12 15l5-2.73z"/></svg></span>: Undergraduates</p>
+<p><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m20 8-8 5-8-5V6l8 5 8-5m0-2H4c-1.11 0-2 .89-2 2v12a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2"/></svg></span>: <a href="mailto:jmelton@spelman.edu">email</a></p>
+<p><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 2h2v2c0 1.44.68 2.61 1.88 3.78.86.83 2.01 1.63 3.21 2.42l-1.83 1.19C8.27 10.72 7.31 10 6.5 9.21 5.07 7.82 4 6.1 4 4zm14 0h2v2c0 2.1-1.07 3.82-2.5 5.21-1.41 1.38-3.21 2.52-4.96 3.63-1.75 1.12-3.45 2.21-4.66 3.38C6.68 17.39 6 18.56 6 20v2H4v-2c0-2.1 1.07-3.82 2.5-5.21 1.41-1.38 3.21-2.52 4.96-3.63 1.75-1.12 3.45-2.21 4.66-3.38C17.32 6.61 18 5.44 18 4zm-3.26 10.61c.99.67 1.95 1.39 2.76 2.18C18.93 16.18 20 17.9 20 20v2h-2v-2c0-1.44-.68-2.61-1.88-3.78-.86-.83-2.01-1.63-3.21-2.42zM7 3h10v1l-.06.5H7.06L7 4zm.68 3h8.64c-.24.34-.52.69-.9 1.06l-.51.44H9.07l-.49-.44c-.38-.37-.66-.72-.9-1.06m1.41 10.5h5.84l.49.44c.38.37.66.72.9 1.06H7.68c.24-.34.52-.69.9-1.06zm-2.03 3h9.88l.06.5v1H7v-1z"/></svg></span>: Bacteriophage</p>
+<p><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M2.494 18.913h3.52v-3.52c0-.43.35-.78.781-.78h3.52v-3.52c0-.432.35-.783.781-.783h3.52V6.791c0-.432.35-.782.782-.782h3.519V2.49c0-.432.35-.782.782-.782h3.52c.43 0 .781.35.781.782v20.724c0 .432-.35.782-.782.782H2.494a.78.78 0 0 1-.782-.782v-3.52c0-.43.35-.78.782-.78ZM.172 15.928a.587.587 0 0 1 0-.83L15.102.168a.587.587 0 0 1 .83.83l-14.93 14.93c-.23.23-.6.23-.83 0"/></svg></span>: Experienced with Nanopore</p>
+<p><strong>About James</strong></p>
+<p><strong>Educational Goal</strong></p>
+<p>This research is conducted as a part of the <a href="https://seaphages.org/">SEA-PHAGES</a> (Science Education Alliance- Phage Hunters Advancing Genomics and Evolutionary Sciences) program to isolate and characterize phages from soil.</p>
+<p><strong>Using Nanopore in the classroom</strong></p>
+<p>In the classroom, we perform whole genome sequencing of Arthrobacter globiformis and Gordonia rubripertincta phages. Approximately ten students isolate a phage from soil and gain hands-on experience with Nanopore sequencing and bioinformatics.</p>
+<p><strong>URLs</strong></p>
+<ul>
+<li><img alt="🔗" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@15.1.0/assets/svg/1f517.svg" title=":link:" /> <a href="https://www.spelman.edu/staff/profiles/james-melton-iii.html">James Melton</a></li>
+</ul>
+</li>
+<li>
+<p><span class="twemoji lg middle"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.7.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M219.3.5c3.1-.6 6.3-.6 9.4 0l200 40C439.9 42.7 448 52.6 448 64s-8.1 21.3-19.3 23.5L352 102.9V160c0 70.7-57.3 128-128 128S96 230.7 96 160v-57.1l-48-9.6v65.1l15.7 78.4c.9 4.7-.3 9.6-3.3 13.3S52.8 256 48 256H16c-4.8 0-9.3-2.1-12.4-5.9s-4.3-8.6-3.3-13.3L16 158.4V86.6C6.5 83.3 0 74.3 0 64c0-11.4 8.1-21.3 19.3-23.5zM111.9 327.7c10.5-3.4 21.8.4 29.4 8.5l71 75.5c6.3 6.7 17 6.7 23.3 0l71-75.5c7.6-8.1 18.9-11.9 29.4-8.5 65 20.9 112 81.7 112 153.6 0 17-13.8 30.7-30.7 30.7H30.7C13.8 512 0 498.2 0 481.3c0-71.9 47-132.7 111.9-153.6"/></svg></span> <strong>Fernando Nieto</strong></p>
+<hr />
+<p><figure markdown="span" align="left">
+  <img src="../img/profile_photos/fernando_nieto.jpg" width="300">
+  <figcaption></figcaption>
+</figure></p>
+<p><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512"><!--! Font Awesome Free 6.7.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M337.8 5.4c-10.8-7.2-24.8-7.2-35.6 0L166.3 96H48c-26.5 0-48 21.5-48 48v320c0 26.5 21.5 48 48 48h208v-96c0-35.3 28.7-64 64-64s64 28.7 64 64v96h208c26.5 0 48-21.5 48-48V144c0-26.5-21.5-48-48-48H473.7zM96 192h32c8.8 0 16 7.2 16 16v64c0 8.8-7.2 16-16 16H96c-8.8 0-16-7.2-16-16v-64c0-8.8 7.2-16 16-16m400 16c0-8.8 7.2-16 16-16h32c8.8 0 16 7.2 16 16v64c0 8.8-7.2 16-16 16h-32c-8.8 0-16-7.2-16-16zM96 320h32c8.8 0 16 7.2 16 16v64c0 8.8-7.2 16-16 16H96c-8.8 0-16-7.2-16-16v-64c0-8.8 7.2-16 16-16m400 16c0-8.8 7.2-16 16-16h32c8.8 0 16 7.2 16 16v64c0 8.8-7.2 16-16 16h-32c-8.8 0-16-7.2-16-16zM232 176a88 88 0 1 1 176 0 88 88 0 1 1-176 0m88-48c-8.8 0-16 7.2-16 16v32c0 8.8 7.2 16 16 16h32c8.8 0 16-7.2 16-16s-7.2-16-16-16h-16v-16c0-8.8-7.2-16-16-16"/></svg></span>: State University of New York, Old Westbury</p>
+<p><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M17.9 17.39c-.26-.8-1.01-1.39-1.9-1.39h-1v-3a1 1 0 0 0-1-1H8v-2h2a1 1 0 0 0 1-1V7h2a2 2 0 0 0 2-2v-.41a7.984 7.984 0 0 1 2.9 12.8M11 19.93c-3.95-.49-7-3.85-7-7.93 0-.62.08-1.22.21-1.79L9 15v1a2 2 0 0 0 2 2m1-16A10 10 0 0 0 2 12a10 10 0 0 0 10 10 10 10 0 0 0 10-10A10 10 0 0 0 12 2"/></svg></span>: New York, United States</p>
+<p><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 3 1 9l4 2.18v6L12 21l7-3.82v-6l2-1.09V17h2V9zm6.82 6L12 12.72 5.18 9 12 5.28zM17 16l-5 2.72L7 16v-3.73L12 15l5-2.73z"/></svg></span>: High school, Undergraduates</p>
+<p><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m20 8-8 5-8-5V6l8 5 8-5m0-2H4c-1.11 0-2 .89-2 2v12a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2"/></svg></span>: <a href="mailto:nietof@oldwestbury.edu">email</a></p>
+<p><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 2h2v2c0 1.44.68 2.61 1.88 3.78.86.83 2.01 1.63 3.21 2.42l-1.83 1.19C8.27 10.72 7.31 10 6.5 9.21 5.07 7.82 4 6.1 4 4zm14 0h2v2c0 2.1-1.07 3.82-2.5 5.21-1.41 1.38-3.21 2.52-4.96 3.63-1.75 1.12-3.45 2.21-4.66 3.38C6.68 17.39 6 18.56 6 20v2H4v-2c0-2.1 1.07-3.82 2.5-5.21 1.41-1.38 3.21-2.52 4.96-3.63 1.75-1.12 3.45-2.21 4.66-3.38C17.32 6.61 18 5.44 18 4zm-3.26 10.61c.99.67 1.95 1.39 2.76 2.18C18.93 16.18 20 17.9 20 20v2h-2v-2c0-1.44-.68-2.61-1.88-3.78-.86-.83-2.01-1.63-3.21-2.42zM7 3h10v1l-.06.5H7.06L7 4zm.68 3h8.64c-.24.34-.52.69-.9 1.06l-.51.44H9.07l-.49-.44c-.38-.37-.66-.72-.9-1.06m1.41 10.5h5.84l.49.44c.38.37.66.72.9 1.06H7.68c.24-.34.52-.69.9-1.06zm-2.03 3h9.88l.06.5v1H7v-1z"/></svg></span>: Bacteriophages, and 16S/18S metabarcoding.</p>
+<p><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M2.494 18.913h3.52v-3.52c0-.43.35-.78.781-.78h3.52v-3.52c0-.432.35-.783.781-.783h3.52V6.791c0-.432.35-.782.782-.782h3.519V2.49c0-.432.35-.782.782-.782h3.52c.43 0 .781.35.781.782v20.724c0 .432-.35.782-.782.782H2.494a.78.78 0 0 1-.782-.782v-3.52c0-.43.35-.78.782-.78ZM.172 15.928a.587.587 0 0 1 0-.83L15.102.168a.587.587 0 0 1 .83.83l-14.93 14.93c-.23.23-.6.23-.83 0"/></svg></span>: Some experience with Nanopore</p>
+<p><strong>About Fernando</strong></p>
+<p><strong>Educational Goal</strong></p>
+<p>We are interested in understanding microbial diversity and microbiome change patterns in the environment and in humans.</p>
+<p><strong>Using Nanopore in the classroom</strong></p>
+<p>We are using Nanopore sequencing for sequencing bacteriophage genomes isolated by students from soil samples as part of the SEA-PHAGES program. We are also trying for the first time to use ONT for 16S and 18S sequencing to analyze environmental and human oral microbiome. These activities are integrated as CUREs into our undergraduate biology courses that are part of the major,  i.e. ecology and microbial ecology. HS students are also involved as part of of their participation in the Science Technology Entry Program (STEP) funded by NYSED.</p>
+<p><strong>URLs</strong></p>
+<ul>
+<li><img alt="🔗" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@15.1.0/assets/svg/1f517.svg" title=":link:" /> <a href="https://www.oldwestbury.edu/people/fernando-nieto">Fernando Nieto</a></li>
+</ul>
 </li>
 <li>
 <p><span class="twemoji lg middle"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M5 3v18h6v-3.5h2V21h6V3zm2 2h2v2H7zm4 0h2v2h-2zm4 0h2v2h-2zM7 9h2v2H7zm4 0h2v2h-2zm4 0h2v2h-2zm-8 4h2v2H7zm4 0h2v2h-2zm4 0h2v2h-2zm-8 4h2v2H7zm8 0h2v2h-2z"/></svg></span> <strong>Jonathan Pugh</strong></p>
@@ -9376,7 +9466,36 @@ drive.mount('/content/drive')
 </ul>
 </li>
 </ul>
-</div></section><h1 class='nav-section-title-end'>Ended: Teaching Resources</h1>
+</div>
+<ul>
+<li>
+<p><span class="twemoji lg middle"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.7.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M219.3.5c3.1-.6 6.3-.6 9.4 0l200 40C439.9 42.7 448 52.6 448 64s-8.1 21.3-19.3 23.5L352 102.9V160c0 70.7-57.3 128-128 128S96 230.7 96 160v-57.1l-48-9.6v65.1l15.7 78.4c.9 4.7-.3 9.6-3.3 13.3S52.8 256 48 256H16c-4.8 0-9.3-2.1-12.4-5.9s-4.3-8.6-3.3-13.3L16 158.4V86.6C6.5 83.3 0 74.3 0 64c0-11.4 8.1-21.3 19.3-23.5zM111.9 327.7c10.5-3.4 21.8.4 29.4 8.5l71 75.5c6.3 6.7 17 6.7 23.3 0l71-75.5c7.6-8.1 18.9-11.9 29.4-8.5 65 20.9 112 81.7 112 153.6 0 17-13.8 30.7-30.7 30.7H30.7C13.8 512 0 498.2 0 481.3c0-71.9 47-132.7 111.9-153.6"/></svg></span> <strong>FIRST LAST</strong></p>
+<hr />
+<p><figure markdown="span" align="left">
+  <img src="../img/profile_photos/first_last.jpg" width="300">
+  <figcaption></figcaption>
+</figure></p>
+<p><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512"><!--! Font Awesome Free 6.7.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M337.8 5.4c-10.8-7.2-24.8-7.2-35.6 0L166.3 96H48c-26.5 0-48 21.5-48 48v320c0 26.5 21.5 48 48 48h208v-96c0-35.3 28.7-64 64-64s64 28.7 64 64v96h208c26.5 0 48-21.5 48-48V144c0-26.5-21.5-48-48-48H473.7zM96 192h32c8.8 0 16 7.2 16 16v64c0 8.8-7.2 16-16 16H96c-8.8 0-16-7.2-16-16v-64c0-8.8 7.2-16 16-16m400 16c0-8.8 7.2-16 16-16h32c8.8 0 16 7.2 16 16v64c0 8.8-7.2 16-16 16h-32c-8.8 0-16-7.2-16-16zM96 320h32c8.8 0 16 7.2 16 16v64c0 8.8-7.2 16-16 16H96c-8.8 0-16-7.2-16-16v-64c0-8.8 7.2-16 16-16m400 16c0-8.8 7.2-16 16-16h32c8.8 0 16 7.2 16 16v64c0 8.8-7.2 16-16 16h-32c-8.8 0-16-7.2-16-16zM232 176a88 88 0 1 1 176 0 88 88 0 1 1-176 0m88-48c-8.8 0-16 7.2-16 16v32c0 8.8 7.2 16 16 16h32c8.8 0 16-7.2 16-16s-7.2-16-16-16h-16v-16c0-8.8-7.2-16-16-16"/></svg></span>: Affiliation</p>
+<p><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M17.9 17.39c-.26-.8-1.01-1.39-1.9-1.39h-1v-3a1 1 0 0 0-1-1H8v-2h2a1 1 0 0 0 1-1V7h2a2 2 0 0 0 2-2v-.41a7.984 7.984 0 0 1 2.9 12.8M11 19.93c-3.95-.49-7-3.85-7-7.93 0-.62.08-1.22.21-1.79L9 15v1a2 2 0 0 0 2 2m1-16A10 10 0 0 0 2 12a10 10 0 0 0 10 10 10 10 0 0 0 10-10A10 10 0 0 0 12 2"/></svg></span>: City, Country</p>
+<p><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 3 1 9l4 2.18v6L12 21l7-3.82v-6l2-1.09V17h2V9zm6.82 6L12 12.72 5.18 9 12 5.28zM17 16l-5 2.72L7 16v-3.73L12 15l5-2.73z"/></svg></span>: Support for all educators</p>
+<p><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m20 8-8 5-8-5V6l8 5 8-5m0-2H4c-1.11 0-2 .89-2 2v12a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2"/></svg></span>: <a href="mailto:">email</a></p>
+<p><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 2h2v2c0 1.44.68 2.61 1.88 3.78.86.83 2.01 1.63 3.21 2.42l-1.83 1.19C8.27 10.72 7.31 10 6.5 9.21 5.07 7.82 4 6.1 4 4zm14 0h2v2c0 2.1-1.07 3.82-2.5 5.21-1.41 1.38-3.21 2.52-4.96 3.63-1.75 1.12-3.45 2.21-4.66 3.38C6.68 17.39 6 18.56 6 20v2H4v-2c0-2.1 1.07-3.82 2.5-5.21 1.41-1.38 3.21-2.52 4.96-3.63 1.75-1.12 3.45-2.21 4.66-3.38C17.32 6.61 18 5.44 18 4zm-3.26 10.61c.99.67 1.95 1.39 2.76 2.18C18.93 16.18 20 17.9 20 20v2h-2v-2c0-1.44-.68-2.61-1.88-3.78-.86-.83-2.01-1.63-3.21-2.42zM7 3h10v1l-.06.5H7.06L7 4zm.68 3h8.64c-.24.34-.52.69-.9 1.06l-.51.44H9.07l-.49-.44c-.38-.37-.66-.72-.9-1.06m1.41 10.5h5.84l.49.44c.38.37.66.72.9 1.06H7.68c.24-.34.52-.69.9-1.06zm-2.03 3h9.88l.06.5v1H7v-1z"/></svg></span>:</p>
+<p><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M2.494 18.913h3.52v-3.52c0-.43.35-.78.781-.78h3.52v-3.52c0-.432.35-.783.781-.783h3.52V6.791c0-.432.35-.782.782-.782h3.519V2.49c0-.432.35-.782.782-.782h3.52c.43 0 .781.35.781.782v20.724c0 .432-.35.782-.782.782H2.494a.78.78 0 0 1-.782-.782v-3.52c0-.43.35-.78.782-.78ZM.172 15.928a.587.587 0 0 1 0-.83L15.102.168a.587.587 0 0 1 .83.83l-14.93 14.93c-.23.23-.6.23-.83 0"/></svg></span>: Level</p>
+<p><strong>About Name</strong></p>
+<p><strong>Educational Goal</strong></p>
+<p>Text</p>
+<p><strong>Using Nanopore in the classroom</strong></p>
+<p>Text</p>
+<p><strong>URLs</strong></p>
+<ul>
+<li><img alt="🔗" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@15.1.0/assets/svg/1f517.svg" title=":link:" /> <a href="#teaching_resources-profiles-url">URL</a></li>
+</ul>
+<p><strong>Publications</strong></p>
+<ul>
+<li><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 9h5.5L13 3.5zM6 2h8l6 6v12a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V4c0-1.11.89-2 2-2m9 16v-2H6v2zm3-4v-2H6v2z"/></svg></span> <a href="#teaching_resources-profiles-url">URL</a></li>
+</ul>
+</li>
+</ul></section><h1 class='nav-section-title-end'>Ended: Teaching Resources</h1>
                         <h1 class='nav-section-title' id='section-other-resources'>
                             Other Resources <a class='headerlink' href='#section-other-resources' title='Permanent link'>↵</a>
                         </h1>

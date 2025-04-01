@@ -942,15 +942,6 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#dna-barcoding-student-project-examples" class="md-nav__link">
-    <span class="md-ellipsis">
-      DNA Barcoding Student Project Examples
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
   <a href="#sample-collection" class="md-nav__link">
     <span class="md-ellipsis">
       Sample Collection
@@ -1729,12 +1720,12 @@ e=d.getElementsByTagName(s)[0];e.parentNode.insertBefore(i, e);
 <p><strong>Protocol Credits</strong></p>
 <ul>
 <li><strong>Author(s)</strong><ul>
-<li>Anna Feitzinger, CSHL</li>
-<li>Jeffry Petracca, CSHL</li>
+<li>Anna Feitzinger, Cold Spring Harbor Laboratory</li>
+<li>Jeffry Petracca, Cold Spring Harbor Laboratory</li>
 </ul>
 </li>
-<li><strong>Maintainer/contact</strong>: Anna Feitzinger, CSHL <a href="mailto:feitzin@cshl.edu">email</a></li>
-<li><strong>Last updated</strong>: January, 2025</li>
+<li><strong>Maintainer/contact</strong>: Anna Feitzinger, Cold Spring Harbor Laboratory: <a href="mailto:feitzin@cshl.edu">email</a></li>
+<li><strong>Last updated</strong>: March, 2025</li>
 <li><strong>Source materials and references</strong><ul>
 <li><a href="https://dnabarcoding101.org/lab/">Barcoding 101 Lab Resources</a></li>
 <li><a href="https://community.nanoporetech.com/protocols/rapid-sequencing-gdna-barcoding-sqk-rbk114"><abbr title="A library preparation kit that uses a transposase complex to attach sequencing adapters; is quicker and uses fewer 3rd party reagents than the native barcoding kit but also sheers the DNA resulting in smaller fragment lengths.">Rapid barcoding</abbr> protocol</a></li>
@@ -1743,11 +1734,11 @@ e=d.getElementsByTagName(s)[0];e.parentNode.insertBefore(i, e);
 </ul>
 <p><strong>Nanopore Sequencing</strong></p>
 <ul>
-<li><strong>Sequencing format</strong>: [<abbr title="A smaller, lower-cost flow cell.">Flongle</abbr>]</li>
-<li><strong>Sequencing kit</strong>: <a href="URL"><abbr title="A library preparation kit that uses a transposase complex to attach sequencing adapters; is quicker and uses fewer 3rd party reagents than the native barcoding kit but also sheers the DNA resulting in smaller fragment lengths.">Rapid Barcoding</abbr> Kit (product number)</a></li>
+<li><strong>Sequencing format</strong>: <abbr title="A smaller, lower-cost flow cell.">Flongle</abbr></li>
+<li><strong>Sequencing kit</strong>: <a href="https://store.nanoporetech.com/us/rapid-barcoding-sequencing-kit-24-v14.html"><abbr title="A library preparation kit that uses a transposase complex to attach sequencing adapters; is quicker and uses fewer 3rd party reagents than the native barcoding kit but also sheers the DNA resulting in smaller fragment lengths.">Rapid Barcoding</abbr> Kit 24 v14 (SQK-RBK114.24)</a></li>
 <li><strong>Oxford Nanopore Sequencing protocol</strong>: <a href="https://community.nanoporetech.com/protocols/rapid-sequencing-gdna-barcoding-sqk-rbk114"><abbr title="A library preparation kit that uses a transposase complex to attach sequencing adapters; is quicker and uses fewer 3rd party reagents than the native barcoding kit but also sheers the DNA resulting in smaller fragment lengths.">Rapid Barcoding</abbr> Kit (SQK-RBK114.24)</a></li>
-<li><strong>Indexed/Barcoded</strong>: [Yes, 24 indicies]</li>
-<li><strong>Samples per run</strong>: [24 of samples]</li>
+<li><strong>Indexed/Barcoded</strong>: Yes, 24 indicies</li>
+<li><strong>Samples per run</strong>: 24  samples</li>
 </ul>
 <p><strong>Computer and Bioinformatics</strong></p>
 <ul>
@@ -1779,7 +1770,7 @@ e=d.getElementsByTagName(s)[0];e.parentNode.insertBefore(i, e);
 <summary>Reagents</summary>
 <p><strong>Sample collection and prep</strong></p>
 <ul>
-<li>See resources at <a href="https://community.nanoporetech.com/protocols/rapid-sequencing-gdna-barcoding-sqk-rbk114">barcoding101 Sample Collections</a></li>
+<li>See resources and recipies at <a href="https://community.nanoporetech.com/protocols/rapid-sequencing-gdna-barcoding-sqk-rbk114">barcoding101 Sample Collections</a></li>
 </ul>
 <p><strong>DNA extraction</strong></p>
 <p>For rapid DNA extraction only:</p>
@@ -1801,9 +1792,11 @@ e=d.getElementsByTagName(s)[0];e.parentNode.insertBefore(i, e);
 </ul>
 <p><strong>PCR</strong></p>
 <ul>
-<li>For Ready-To-Go PCR Bead Amplification:
-    o   2 Ready-To-Go PCR Beads in 0.2- or 0.5-mL PCR tubes
-    o   Appropriate primer/loading dye mix (50 µL; 23 µL per reaction)*</li>
+<li>For Ready-To-Go PCR Bead Amplification:<ul>
+<li>2 Ready-To-Go PCR Beads in 0.2- or 0.5-mL PCR tubes</li>
+<li>Appropriate primer/loading dye mix (50 µL; 23 µL per reaction)*</li>
+</ul>
+</li>
 </ul>
 <p><strong>Barcoding Primers</strong></p>
 <p>Plant Primers:</p>
@@ -1872,29 +1865,31 @@ e=d.getElementsByTagName(s)[0];e.parentNode.insertBefore(i, e);
 </details>
 <hr />
 <h3 id="background">Background</h3>
-<p>Identifying organisms has grown in importance as we monitor the biological effects of global climate change and attempt to preserve species diversity in the face of accelerating habitat destruction. We know very little about the diversity of plants and animals – let alone microbes – living in many unique ecosystems on earth. Less than two million of the estimated 5-50 million plant and animal species have been identified. Scientists agree that the yearly rate of extinction has increased from about one species per million to 100-1,000 per million. This means that thousands of plants and animals are lost each year. Most of these have not yet been identified.</p>
+<p>Identifying organisms has grown in importance as we monitor the biological effects of global climate change and attempt to preserve species diversity in the face of accelerating habitat destruction. We know very little about the diversity of plants and animals—let alone microbes—living in many unique ecosystems on earth. Less than two million of the estimated 5-50 million plant and animal species have been identified. Scientists agree that the yearly rate of extinction has increased from about one species per million to 100-1,000 per million. This means that thousands of plants and animals are lost each year. Most of these have not yet been identified.</p>
 <p>Classical taxonomy falls short in this race to catalog biological diversity before it disappears. Specimens must be carefully collected and handled to preserve their distinguishing features. Differentiating subtle anatomical differences between closely related species requires the subjective judgment of a highly trained specialist – and few are being produced in colleges today.</p>
-<p>DNA barcodes allow non-experts to objectively identify species – even from small, damaged, or industrially processed material. Just as the unique pattern of bars in a universal product code (UPC) identifies each consumer product, a “DNA barcode” is a unique pattern of DNA sequence that can potentially identify each living thing. Short DNA barcodes, about 700 nucleotides in length, can be quickly processed from thousands of specimens and unambiguously analyzed by computer programs.
-DNA amplicons are the copied sections of DNA produced by an amplification process that replicates a particμLar target region of a DNA molecule. For example, DNA amplicons are commonly generated via the polymerase chain reaction (PCR).</p>
+<p>DNA barcodes allow non-experts to objectively identify species – even from small, damaged, or industrially processed material. Just as the unique pattern of bars in a universal product code (UPC) identifies each consumer product, a “DNA barcode” is a unique pattern of DNA sequence that can potentially identify each living thing. Short DNA barcodes, about 700 nucleotides in length, can be quickly processed from thousands of specimens and unambiguously analyzed by computer programs.</p>
+<p>DNA amplicons are the copied sections of DNA produced by an amplification process that replicates a particμLar target region of a DNA molecule. For example, DNA amplicons are commonly generated via the polymerase chain reaction (PCR).</p>
 <p>In DNA barcoding, a DNA amplicon might represent a region of DNA that can be used to determine the species of an organism. In medical research, amplicon DNA sequences might be used to detect pathogens, search for inherited diseases, or identify single nucleotide polymorphisms (SNPs) that are associated with a particular disease phenotype. More broadly, amplicon sequencing can be used to assess and analyze genetic variation at particular positions in a genome.</p>
 <div class="admonition nanopore">
 <p class="admonition-title">Explanation</p>
 <p>Because the regions of DNA used for identification are approximately ~70% conversved, differences can be used to distinguish between species but allows the same primer pair to be use across many species.</p>
 <ul>
-<li>RbCl or MatK located on the chloroplast are used to identify plants</li>
-<li>CO1 located on the mitochondria is used for animals, including invertebrates.</li>
-<li>ITS located in nuclear ribosomal DNA (rDNA) is used for fungi</li>
+<li><em>rbcL</em> or <em>matK</em> located on the chloroplast are used to identify plants</li>
+<li><em>CO1</em> located on the mitochondria is used for animals, including invertebrates.</li>
+<li><em>ITS</em> located in nuclear ribosomal DNA (rDNA) is used for fungi</li>
 </ul>
 </div>
 <p>DNA sequencing can be carried out in a number of different ways depending on the needs of an experiment. The ONT <abbr title="A portable nanopore sequencing device developed by Oxford Nanopore Technologies.">MinION</abbr> sequencing device offers a portable, versatile, efficient, and relatively inexpensive way to sequence DNA in a classroom setting. In order to sequence DNA amplicons on this platform, they must first be prepared using an ONT kit. One efficient option for amplicons is the <abbr title="A library preparation kit that uses a transposase complex to attach sequencing adapters; is quicker and uses fewer 3rd party reagents than the native barcoding kit but also sheers the DNA resulting in smaller fragment lengths.">Rapid Barcoding</abbr> Kit, which we used in this protocol.</p>
-<h3 id="dna-barcoding-student-project-examples">DNA Barcoding Student Project Examples</h3>
+<div class="admonition classroom">
+<p class="admonition-title">Example Projects</p>
+<p><strong>DNA Barcoding Student Project Examples</strong></p>
 <p>Example of DNA Barcoding student projects can be found for the DNALC's barcoding programs below:</p>
 <ul>
 <li><a href="https://dnabarcoding101.org/symposium/program/ubrp">Urban <abbr title="Short, unique sequences added to DNA fragments to identify and differentiate multiple samples sequenced together. See also—Indexing.">Barcode</abbr> Research Project</a></li>
 <li><a href="https://dnabarcoding101.org/symposium/program/ubrp"><abbr title="Short, unique sequences added to DNA fragments to identify and differentiate multiple samples sequenced together. See also—Indexing.">Barcode</abbr> Long Island</a></li>
 <li><a href="https://dnabarcoding101.org/symposium/program/ubrp">Urban <abbr title="Short, unique sequences added to DNA fragments to identify and differentiate multiple samples sequenced together. See also—Indexing.">Barcode</abbr> Research Project</a></li>
 </ul>
-<p>Information on the annual Symposium</p>
+</div>
 <details class="references">
 <summary>Additional Reading</summary>
 <ol>
@@ -2118,8 +2113,7 @@ Chelex inhibits DNA amplification by PCR.</p>
 <div class="tabbed-set tabbed-alternate" data-tabs="2:3"><input checked="checked" id="__tabbed_2_1" name="__tabbed_2" type="radio" /><input id="__tabbed_2_2" name="__tabbed_2" type="radio" /><input id="__tabbed_2_3" name="__tabbed_2" type="radio" /><div class="tabbed-labels"><label for="__tabbed_2_1">RbCl</label><label for="__tabbed_2_2">COI</label><label for="__tabbed_2_3">ITS</label></div>
 <div class="tabbed-content">
 <div class="tabbed-block">
-<p>Plant
-rbcL primers:
+<p>Primers:
 (rbcLaF / rbcLa rev)</p>
 <table>
 <thead>
@@ -2159,8 +2153,7 @@ rbcL primers:
 </table>
 </div>
 <div class="tabbed-block">
-<p>Plant
-rbcL primers:
+<p>Primers:
 (LCO1490 / HC02198)</p>
 <table>
 <thead>
@@ -2200,8 +2193,7 @@ rbcL primers:
 </table>
 </div>
 <div class="tabbed-block">
-<p>Plant
-rbcL primers:
+<p>Primers:
 (ITS1F / ITS4)</p>
 <table>
 <thead>
@@ -2536,7 +2528,7 @@ Keeping the tube on the magnetic rack, use an appropriate pipette to remove all 
 <p>The DNA sequence from the .fasta file can be copied and pasted into the blue line of <a href="https://dnasubway.cyverse.org/">DNA Subway</a> under "Enter sequences in FASTA format".</p>
 <div class="admonition classroom">
 <p class="admonition-title">Instruction tip</p>
-<p>DNA Subway2.0 is coming late Spring/Summer 2025 and is equiped with a new "Blue Line" for Nanopore sequencing data which contains tools for generating the consensus Nanopore sequence reads.</p>
+<p>DNA Subway 2.0 is coming late Spring/Summer 2025 and is equiped with a new "Blue Line" for Nanopore sequencing data which contains tools for generating the consensus Nanopore sequence reads.</p>
 </div>
 <hr />
 <p><strong>Comments and discussion</strong></p>
