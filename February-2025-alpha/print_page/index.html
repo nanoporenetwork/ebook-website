@@ -4558,36 +4558,32 @@ Cloud storage provides scalable and convenient options for managing sequencing d
                             Annotated Experiments <a class='headerlink' href='#section-annotated-experiments' title='Permanent link'>↵</a>
                         </h1>
                         <section class="print-page" id="annotated_experiments-dna_barcoding"><h1 id="annotated_experiments-dna_barcoding-curated-experiment-dna-barcoding">Curated Experiment: DNA Barcoding</h1>
-<h2 id="annotated_experiments-dna_barcoding-identifying-organisms-from-dna-samples">Identifying Organisms from DNA samples</h2>
-<p><strong>Summary</strong>:</p>
-<div class="admonition downloads">
-<p class="admonition-title">Downloads</p>
-<p><strong>Download</strong>: Download a copy of this template <a href="#annotated_experiments">In Markdown</a> or <a href="#annotated_experiments">Microsoft Word</a></p>
-</div>
+<h2 id="annotated_experiments-dna_barcoding-identifying-taxa">Identifying Taxa</h2>
+<p><strong>Summary</strong>: Identifying species by sequencing "DNA Barcodes" and compare sequences to a reference <abbr title="A collection of DNA fragments prepared for sequencing.">library</abbr>.</p>
 <details class="note" open="open">
 <summary>Protocol information</summary>
 <p><strong>Protocol Credits</strong></p>
 <ul>
 <li><strong>Author(s)</strong><ul>
-<li>Anna Feitzinger, Cold Spring Harbor Laboratory</li>
-<li>Jeffry Petracca, Cold Spring Harbor Laboratory</li>
+<li>Anna Feitzinger, CSHL</li>
+<li>Jeffry Petracca, CSHL</li>
 </ul>
 </li>
-<li><strong>Maintainer/contact</strong>: Anna Feitzinger, Cold Spring Harbor Laboratory: <a href="mailto:feitzin@cshl.edu">email</a></li>
-<li><strong>Last updated</strong>: March, 2025</li>
+<li><strong>Maintainer/contact</strong>: Anna Feitzinger, CSHL <a href="mailto:feitzin@cshl.edu">email</a></li>
+<li><strong>Last updated</strong>: January, 2025</li>
 <li><strong>Source materials and references</strong><ul>
-<li><a href="https://dnabarcoding101.org/lab/">DNA Barcoding 101 Lab Resources</a></li>
+<li><a href="https://dnabarcoding101.org/lab/">Barcoding 101 Lab Resources</a></li>
 <li><a href="https://community.nanoporetech.com/protocols/rapid-sequencing-gdna-barcoding-sqk-rbk114"><abbr title="A library preparation kit that uses a transposase complex to attach sequencing adapters; is quicker and uses fewer 3rd party reagents than the native barcoding kit but also sheers the DNA resulting in smaller fragment lengths.">Rapid barcoding</abbr> protocol</a></li>
 </ul>
 </li>
 </ul>
 <p><strong>Nanopore Sequencing</strong></p>
 <ul>
-<li><strong>Sequencing format</strong>: <abbr title="A smaller, lower-cost flow cell.">Flongle</abbr></li>
+<li><strong>Sequencing format</strong>: [<abbr title="A smaller, lower-cost flow cell.">Flongle</abbr>]</li>
 <li><strong>Sequencing kit</strong>: <a href="#annotated_experiments-dna_barcoding-url"><abbr title="A library preparation kit that uses a transposase complex to attach sequencing adapters; is quicker and uses fewer 3rd party reagents than the native barcoding kit but also sheers the DNA resulting in smaller fragment lengths.">Rapid Barcoding</abbr> Kit (product number)</a></li>
 <li><strong>Oxford Nanopore Sequencing protocol</strong>: <a href="https://community.nanoporetech.com/protocols/rapid-sequencing-gdna-barcoding-sqk-rbk114"><abbr title="A library preparation kit that uses a transposase complex to attach sequencing adapters; is quicker and uses fewer 3rd party reagents than the native barcoding kit but also sheers the DNA resulting in smaller fragment lengths.">Rapid Barcoding</abbr> Kit (SQK-RBK114.24)</a></li>
-<li><strong>Indexed/Barcoded</strong>: Yes, 24 indices</li>
-<li><strong>Samples per run</strong>: 24 of samples</li>
+<li><strong>Indexed/Barcoded</strong>: [Yes, 24 indicies]</li>
+<li><strong>Samples per run</strong>: [24 of samples]</li>
 </ul>
 <p><strong>Computer and Bioinformatics</strong></p>
 <ul>
@@ -4619,12 +4615,9 @@ Cloud storage provides scalable and convenient options for managing sequencing d
 <summary>Reagents</summary>
 <p><strong>Sample collection and prep</strong></p>
 <ul>
-<li>See resources at <a href="https://dnabarcoding101.org/lab/planning-prep.html#samples">DNA Barcoding 101—Sample Collections</a></li>
+<li>See resources at <a href="https://community.nanoporetech.com/protocols/rapid-sequencing-gdna-barcoding-sqk-rbk114">barcoding101 Sample Collections</a></li>
 </ul>
 <p><strong>DNA extraction</strong></p>
-<ul>
-<li>See reagent recipes at <a href="https://dnabarcoding101.org/lab/planning-prep.html#isolate">DNA Barcoding 101—Isolate DNA</a></li>
-</ul>
 <p>For rapid DNA extraction only:</p>
 <ul>
 <li>Lysis solution (6 M Guanidine Hydrochloride GuHCl) (120 µL)</li>
@@ -4644,16 +4637,11 @@ Cloud storage provides scalable and convenient options for managing sequencing d
 </ul>
 <p><strong>PCR</strong></p>
 <ul>
-<li>For Ready-To-Go PCR Bead Amplification:<ul>
-<li>2 Ready-To-Go PCR Beads in 0.2- or 0.5-mL PCR tubes</li>
-<li>Appropriate primer/loading dye mix (50 µL; 23 µL per reaction)*</li>
-</ul>
-</li>
+<li>For Ready-To-Go PCR Bead Amplification:
+    o   2 Ready-To-Go PCR Beads in 0.2- or 0.5-mL PCR tubes
+    o   Appropriate primer/loading dye mix (50 µL; 23 µL per reaction)*</li>
 </ul>
 <p><strong>Barcoding Primers</strong></p>
-<ul>
-<li>See reagent recipes at <a href="https://dnabarcoding101.org/lab/planning-prep.html#mix">DNA Barcoding 101—Primer/Loading Dye Mix</a></li>
-</ul>
 <p>Plant Primers:</p>
 <ul>
 <li>rbcLa Forward 5’- TGTAAAACGACGGCCAGTATGTCACCACAAACAGAGACTAAAGC-3’</li>
@@ -4663,6 +4651,11 @@ Cloud storage provides scalable and convenient options for managing sequencing d
 <ul>
 <li>LCO1490   5'-TGTAAAACGACGGCCAGTGGTCAACAAATCATAAAGATATTGG-3'</li>
 <li>HC02198   5'-CAGGAAACAGCTATGACTAAACTTCAGGGTGACCAAAAAATCA-3'</li>
+</ul>
+<p>Fungi Primers:</p>
+<ul>
+<li>ITS1F     5'-TGTAAAACGACGGCCAGTTCCGTAGGTGAACCTGCGG-3'</li>
+<li>ITS4      5'-CAGGAAACAGCTATGACTCCTCCGCTTATTGATATGC-3'</li>
 </ul>
 <p><strong>DNA prep, <abbr title="A collection of DNA fragments prepared for sequencing.">library</abbr> creation, and sequencing</strong></p>
 <ul>
@@ -4701,30 +4694,55 @@ Cloud storage provides scalable and convenient options for managing sequencing d
 <details class="time">
 <summary>Estimated timings</summary>
 <ul>
-<li><strong>Sample collection</strong>:</li>
-<li><strong>DNA extraction</strong>:<ul>
-<li><em>Rapid extraction</em>:</li>
-<li><em>Chelex extraction</em>:</li>
+<li><strong>Sample Collection</strong>: Variable</li>
+<li><strong>DNA extraction</strong>: 60-75 minutes</li>
+<li><strong>PCR, DNA quality control, and <abbr title="A collection of DNA fragments prepared for sequencing.">library</abbr> prep</strong>:<ul>
+<li><strong>PCR</strong>: ~2 hours</li>
+<li><strong>Quality control</strong>: 10 min (Qubit); 60-75 min (electrophoresis)</li>
+<li><strong><abbr title="A collection of DNA fragments prepared for sequencing.">Library</abbr> prep</strong>: 30-60 min</li>
 </ul>
 </li>
-<li><strong>PCR</strong>:</li>
-<li><strong>PCR Clean-Up (optional)</strong>:</li>
-<li><strong>Rapid <abbr title="Short, unique sequences added to DNA fragments to identify and differentiate multiple samples sequenced together. See also—Indexing.">Barcode</abbr> Index Attachment</strong>:</li>
-<li><strong><abbr title="A collection of DNA fragments prepared for sequencing.">Library</abbr> Clean-Up</strong>:</li>
-<li><strong><abbr title="Short DNA sequence ligated to sample fragments to facilitate their translocation through the nanopore.">Rapid Adapter</abbr> Attachment</strong>:</li>
-<li><strong><abbr title="A consumable device containing nanopores through which nucleic acids pass during sequencing.">Flow cell</abbr> check, priming, and Loading</strong>:</li>
-<li><strong>Data analysis</strong>:</li>
+<li><strong>Sequencing</strong>: Atleast 60 min</li>
+<li><strong>Data analysis</strong>: 30-60 min</li>
 </ul>
 </details>
+<hr />
 <h3 id="annotated_experiments-dna_barcoding-background">Background</h3>
 <p>Identifying organisms has grown in importance as we monitor the biological effects of global climate change and attempt to preserve species diversity in the face of accelerating habitat destruction. We know very little about the diversity of plants and animals – let alone microbes – living in many unique ecosystems on earth. Less than two million of the estimated 5-50 million plant and animal species have been identified. Scientists agree that the yearly rate of extinction has increased from about one species per million to 100-1,000 per million. This means that thousands of plants and animals are lost each year. Most of these have not yet been identified.</p>
 <p>Classical taxonomy falls short in this race to catalog biological diversity before it disappears. Specimens must be carefully collected and handled to preserve their distinguishing features. Differentiating subtle anatomical differences between closely related species requires the subjective judgment of a highly trained specialist – and few are being produced in colleges today.</p>
 <p>DNA barcodes allow non-experts to objectively identify species – even from small, damaged, or industrially processed material. Just as the unique pattern of bars in a universal product code (UPC) identifies each consumer product, a “DNA barcode” is a unique pattern of DNA sequence that can potentially identify each living thing. Short DNA barcodes, about 700 nucleotides in length, can be quickly processed from thousands of specimens and unambiguously analyzed by computer programs.
-DNA amplicons are the copied sections of DNA produced by an amplification process that replicates a particuLar target region of a DNA molecule. For example, DNA amplicons are commonly generated via the polymerase chain reaction (PCR).</p>
+DNA amplicons are the copied sections of DNA produced by an amplification process that replicates a particμLar target region of a DNA molecule. For example, DNA amplicons are commonly generated via the polymerase chain reaction (PCR).</p>
 <p>In DNA barcoding, a DNA amplicon might represent a region of DNA that can be used to determine the species of an organism. In medical research, amplicon DNA sequences might be used to detect pathogens, search for inherited diseases, or identify single nucleotide polymorphisms (SNPs) that are associated with a particular disease phenotype. More broadly, amplicon sequencing can be used to assess and analyze genetic variation at particular positions in a genome.</p>
-<p>For DNA Barcoding of plants, the gene RbCl is used for identification.
-For DNA Barcoding of animals, including invertebrates, the gene CO1 is used for identification.</p>
+<div class="admonition nanopore">
+<p class="admonition-title">Explanation</p>
+<p>Because the regions of DNA used for identification are approximately ~70% conversved, differences can be used to distinguish between species but allows the same primer pair to be use across many species.</p>
+<ul>
+<li>RbCl or MatK located on the chloroplast are used to identify plants</li>
+<li>CO1 located on the mitochondria is used for animals, including invertebrates.</li>
+<li>ITS located in nuclear ribosomal DNA (rDNA) is used for fungi</li>
+</ul>
+</div>
 <p>DNA sequencing can be carried out in a number of different ways depending on the needs of an experiment. The ONT <abbr title="A portable nanopore sequencing device developed by Oxford Nanopore Technologies.">MinION</abbr> sequencing device offers a portable, versatile, efficient, and relatively inexpensive way to sequence DNA in a classroom setting. In order to sequence DNA amplicons on this platform, they must first be prepared using an ONT kit. One efficient option for amplicons is the <abbr title="A library preparation kit that uses a transposase complex to attach sequencing adapters; is quicker and uses fewer 3rd party reagents than the native barcoding kit but also sheers the DNA resulting in smaller fragment lengths.">Rapid Barcoding</abbr> Kit, which we used in this protocol.</p>
+<h3 id="annotated_experiments-dna_barcoding-dna-barcoding-student-project-examples">DNA Barcoding Student Project Examples</h3>
+<p>Example of DNA Barcoding student projects can be found for the DNALC's barcoding programs below:</p>
+<ul>
+<li><a href="https://dnabarcoding101.org/symposium/program/ubrp">Urban <abbr title="Short, unique sequences added to DNA fragments to identify and differentiate multiple samples sequenced together. See also—Indexing.">Barcode</abbr> Research Project</a></li>
+<li><a href="https://dnabarcoding101.org/symposium/program/ubrp"><abbr title="Short, unique sequences added to DNA fragments to identify and differentiate multiple samples sequenced together. See also—Indexing.">Barcode</abbr> Long Island</a></li>
+<li><a href="https://dnabarcoding101.org/symposium/program/ubrp">Urban <abbr title="Short, unique sequences added to DNA fragments to identify and differentiate multiple samples sequenced together. See also—Indexing.">Barcode</abbr> Research Project</a></li>
+</ul>
+<p>Information on the annual Symposium</p>
+<details class="references">
+<summary>Additional Reading</summary>
+<ol>
+<li>Hebert P.D., Cywinska A., Ball S.L., deWaard J.R. (2003). Biological identifications through DNA barcodes. Proceedings of the Royal Society B: Biological Sciences 270(1512): 313-21.</li>
+<li>Hebert P.D.N., Penton E.H., Burns J.M., Janzen D.H., Hallwachs W. (2004). Ten species in one: DNA barcoding reveals cryptic species in the neotropical skipper butterfly Astraptes fulgerator. Proc Natl Acad Sci USA. 101(41):14812-7.</li>
+<li>Hollingsworth P.M. et al (2009). A DNA barcode for land plants. Proc Natl Acad Sci USA 106(31): 12794-7.</li>
+<li>Ratnasingham, S., Hebert, P.D.N (2007). BOLD: The <abbr title="Short, unique sequences added to DNA fragments to identify and differentiate multiple samples sequenced together. See also—Indexing.">Barcode</abbr> of Life Data System. Molecular Ecology Notes 7(3): 355-64.</li>
+<li>Stoeckle M. (2003). Taxonomy, DNA, and the Bar Code of Life. BioScience 53(9): 2-3.</li>
+<li>Van Den Berg C., Higgins W.E., Dressler R.L., Whitten W.M., Soto-Arenas M.A., Chase M.W. (2009) A phylogenetic study of Laeliinae (Orchidaceae) based on combined nuclear and plastid DNA sequences. Annals of Botany 104(3): 417-30.</li>
+<li>Benson D.A., Cavanaugh M., Clark K., Karsch-Mizrachi I, Lipman D.J., Ostell J., Sayers E.W. (2013). Nucleic Acids Res. GenBank. 41(D1): D36–D42.</li>
+</ol>
+</details>
 <h3 id="annotated_experiments-dna_barcoding-sample-collection">Sample Collection</h3>
 <p><strong>Goal</strong>: Collect samples for DNA Barcoding</p>
 <div class="admonition classroom">
@@ -4733,7 +4751,7 @@ For DNA Barcoding of animals, including invertebrates, the gene CO1 is used for 
 </div>
 <div class="admonition example">
 <p class="admonition-title">Summary</p>
-<p>Your collection of specimens may support a census of life in a specific area or habitat, an evaluation of products purchased in restaurants or supermarkets, or may contribute to a larger “campaign” to assess biodiversity across large areas. It may make sense for you to use sampling techniques from ecology. For example, a quadrat samples the plant and/or animal life in one square meter (or ¼ square meter) of habitat, while a transect collects samples along a fixed path through a habitat. A “Hula Hoop” can be used as an acceptable substitute for a quadrat. Do not take more sample than you need. Only a small amount of tissue is needed for DNA extraction—a piece of plant leaf about ⅛- to ¼-inch diameter or a piece of animal or fungal the size of a grain of rice.</p>
+<p>Your collection of specimens may support a census of life in a specific area or habitat, an evaluation of products purchased in restaurants or supermarkets, or may contribute to a larger “campaign” to assess biodiversity across large areas. It may make sense for you to use sampling techniques from ecology. For example, a quadrat samples the plant and/or animal life in one square meter (or ¼ square meter) of habitat, while a transect collects samples along a fixed path through a habitat. A “Hula Hoop” can be used as an acceptable substitute for a quadrat.Do not take more sample than you need. Only a small amount of tissue is needed for DNA extraction—a piece of plant leaf about ⅛- to ¼-inch diameter or a piece of animal or fungal the size of a grain of rice.</p>
 <p>Minimize damage to living plants by collecting a single leaf or bud, or several needles. When possible, use young, fresh leaves or buds. Flexible, non-waxy leaves work best. Tougher materials, such as pine needles or holly leaves, can work if the sample is kept small and is ground well. Dormant leaf buds can often be obtained from bushes and trees that have dropped leaves. Fresh, frozen leaves work well. Dried leaves and herbarium samples are variable.</p>
 <p>Avoid twigs or bark. If woody material must be used, select flexible twigs with soft pith inside. As a last resort, scrape a small sample of the softer, growing cambium just beneath the bark. Roots and tubers are a poor choice, because high concentrations of storage starches and other sugars can interfere with DNA extraction.</p>
 </div>
@@ -4741,139 +4759,199 @@ For DNA Barcoding of animals, including invertebrates, the gene CO1 is used for 
 <p><strong>Goal</strong>: Extract DNA from tissue samples</p>
 <div class="admonition example">
 <p class="admonition-title">Summary</p>
-<p>The Chelex and Rapid protocol are both simple and efficient DNA extraction methods suitable for the classroom.</p>
-<p>This Rapid DNA extraction protocol works extremely well for plants and for select groups of terrestrial invertebrates. This method eliminates the need for equipment such as water baths and centrifuges, and students can complete the DNA isolation and have DNA ready for PCR in &lt;30 min.</p>
-<p>The Chelex DNA extraction uses chelex resin which binds to substances that can inhibit PCR (polymerase chain reaction, a common DNA analysis technique), like metal ions. The DNA is then released from the sample by heating.</p>
-</div>
-<div class="tabbed-set tabbed-alternate" data-tabs="1:2"><input checked="checked" id="annotated_experiments-dna_barcoding-__tabbed_1_1" name="annotated_experiments-dna_barcoding-__tabbed_1" type="radio" /><input id="annotated_experiments-dna_barcoding-__tabbed_1_2" name="annotated_experiments-dna_barcoding-__tabbed_1" type="radio" /><div class="tabbed-labels"><label for="annotated_experiments-dna_barcoding-__tabbed_1_1">Rapid Extraction</label><label for="annotated_experiments-dna_barcoding-__tabbed_1_2">Chelex</label></div>
+<p>The Chelex, Silica, and Rapid protocol are all simple and efficient DNA extraction methods suitable for the classroom.</p>
+<ul>
+<li>The Rapid DNA extraction protocol works extremely well for plants and for select groups of terrestrial invertebrates. This method eliminates the need for equipment such as water baths and centrifuges, and students can complete the DNA isolation and have DNA ready for PCR in &lt;30 min.</li>
+<li>The Chelex DNA extraction uses chelex resin which binds to substances that can inhibit PCR (polymerase chain reaction, a common DNA analysis technique), like metal ions. The DNA is then released from the sample by heating.</li>
+<li>The Silica DNA extraction method is inexpensive and has the advantage of working reproducibly with almost any kind of plant, fungus, or animal specimen.</li>
+</ul>
+<p>More information about the percentage of success of theses DNA extraction methods for different organism types can be found under the "Isolation DNA" section in <a href="https://dnabarcoding101.org/lab/planning-prep.html#prseq">here</a>.</p>
+<p>Pre-isolation preparation: If sample has been stored in 95%+ EtOH prior to DNA isolation, remove the sample from the EtOH using a sterile toothpick and allow it to dry for &gt;10 min on a clean surface. Proceed when sample no longer smells of EtOH. Ethanol carried through the DNA isolation can inhibit DNA amplification later.</p>
+<div class="tabbed-set tabbed-alternate" data-tabs="1:3"><input checked="checked" id="annotated_experiments-dna_barcoding-__tabbed_1_1" name="annotated_experiments-dna_barcoding-__tabbed_1" type="radio" /><input id="annotated_experiments-dna_barcoding-__tabbed_1_2" name="annotated_experiments-dna_barcoding-__tabbed_1" type="radio" /><input id="annotated_experiments-dna_barcoding-__tabbed_1_3" name="annotated_experiments-dna_barcoding-__tabbed_1" type="radio" /><div class="tabbed-labels"><label for="annotated_experiments-dna_barcoding-__tabbed_1_1">Rapid Extraction</label><label for="annotated_experiments-dna_barcoding-__tabbed_1_2">Chelex</label><label for="annotated_experiments-dna_barcoding-__tabbed_1_3">Silica</label></div>
 <div class="tabbed-content">
 <div class="tabbed-block">
-<p>Pre-isolation preparation: If sample has been stored in 95%+ EtOH prior to DNA isolation, remove the sample from the EtOH using a sterile toothpick and allow it to dry for &gt;10 min on a clean surface. Proceed when sample no longer smells of EtOH. Ethanol carried through the DNA isolation can inhibit DNA amplification later.</p>
 <p><strong>Steps</strong>:</p>
 <ol>
-<li>
-<p>Obtain tissue ~10 mg or ⅛- to ¼-inch diameter in size by removing a piece of the tissue with a razor blade or sterile tweezer. Be sure to preserve remainder of the organism, as well as additional collected specimens, at -20°C, in 95%+ EtOH, or both. Place tissue in a clean 1.5-mL tube labeled with a sample identification number.</p>
-</li>
-<li>
-<p>Add 50 µL of lysis solution to each tube.</p>
-<div class="admonition info">
-<p class="admonition-title">Info</p>
-<p>Lysis solution dissolves membrane-bound organelles including the nucleus, mitochondria, and chloroplast.</p>
+<li>Obtain tissue ~10 mg or ⅛- to ¼-inch diameter in size by removing a piece of the tissue with a razor blade or sterile tweezer. Be sure to preserve remainder of the organism, as well as additional collected specimens, at -20°C, in 95%+ EtOH, or both. Place tissue in a clean 1.5-mL tube labeled with a sample identification number.</li>
+<li>Add 50 µL of lysis solution to each tube.</li>
+</ol>
+<div class="admonition nanopore">
+<p class="admonition-title">Explanation</p>
+<p>Lysis solution dissolves membrane-bound organelles including the nucleus, mitochondria, and chloroplast..</p>
 </div>
-</li>
-<li>
-<p>Twist a clean plastic pestle against the inner surface of 1.5-mL tube to forcefully grind the tissue for at least 2 minutes. Use a clean pestle for each sample. Ensure the sample is ground into fine particles.</p>
-<div class="admonition tip">
-<p class="admonition-title">Tip</p>
+<ol>
+<li>Twist a clean plastic pestle against the inner surface of 1.5-mL tube to forcefully grind the tissue for at least 2 minutes. Use a clean pestle for each sample. Ensure the sample is ground into fine particles.</li>
+</ol>
+<div class="admonition nanopore">
+<p class="admonition-title">Explanation</p>
 <p>Grinding breaks up cell walls and other tough material. Once ground, the sample should be liquid, but there may be some particulate matter remaining.</p>
 </div>
-</li>
-<li>
-<p>For each sample, use a separate sterile tweezer to add one 3-mm diameter disc of Whatman No. 1 Chromatography paper to the lysed extract. Tap or flick the tube gently to ensure the disc is fully submerged in the extract. Allow the disc to soak in the extract for 1 minute.</p>
-<div class="admonition info">
-<p class="admonition-title">Info</p>
+<ol>
+<li>For each sample, use a separate sterile tweezer to add one 3-mm diameter disc of Whatman No. 1 Chromatography paper to the lysed extract. Tap or flick the tube gently to ensure the disc is fully submerged in the extract. Allow the disc to soak in the extract for 1 minute.</li>
+</ol>
+<div class="admonition nanopore">
+<p class="admonition-title">Explanation</p>
 <p>Whatman chromatography paper binds the DNA, helping separate DNA from contaminants.</p>
 </div>
-</li>
-<li>
-<p>While the disc is soaking, add 200 µL of wash buffer to a clean 1.5-mL tube labeled with the sample identification number. Wash buffer will remove contaminants that can inhibit PCR while the DNA remains bound to the paper.</p>
-</li>
-<li>
-<p>Remove the disc from the extract using a sterile tweezer or pipette tip and transfer the disc into the fresh tube containing wash buffer. Tap or flick the tube to mix for 5 seconds, then allow the disc to sit in the wash buffer for 1 minute. Discard/set-aside the tweezer following Step 7. Use of the tweezer to transfer the disc in future steps will contaminate the disc with impurities that may affect PCR.</p>
-</li>
-<li>
-<p>Use a sterile pipette tip to gently drag the disc out of the wash buffer and up the tube wall to dry at the top of the tube. Ensure that little to no debris is attached to the disk. Allow the disc to air dry for 2 minutes to evaporate the ethanol on the disc.</p>
-<div class="admonition tip">
-<p class="admonition-title">Tip</p>
+<ol>
+<li>While the disc is soaking, add 200 µL of wash buffer to a clean 1.5-mL tube labeled with the sample identification number.
+Wash buffer will remove contaminants that can inhibit PCR while the DNA remains bound to the paper.</li>
+<li>Remove the disc from the extract using a sterile tweezer or pipette tip and transfer the disc into the fresh tube containing wash buffer. Tap or flick the tube to mix for 5 seconds, then allow the disc to sit in the wash buffer for 1 minute.
+Discard/set-aside the tweezer following Step 7. Use of the tweezer to transfer the disc in future steps will contaminate the disc with impurities that may affect PCR.</li>
+<li>Use a sterile pipette tip to gently drag the disc out of the wash buffer and up the tube wall to dry at the top of the tube. Ensure that little to no debris is attached to the disk. Allow the disc to air dry for 2 minutes to evaporate the ethanol on the disc.</li>
+</ol>
+<div class="admonition nanopore">
+<p class="admonition-title">Explanation</p>
 <p>Ethanol in the wash buffer can inhibit PCR, so drying the paper after the wash step is required.</p>
 </div>
-</li>
-<li>
-<p>While the disc is air-drying, add 30 µL of TE to a clean 1.5-mL tube labeled with the sample identification number.</p>
-</li>
-<li>
-<p>Once dry, carefully transfer the disc using a sterile tweezer or pipette tip into the fresh tube containing 30 µL of TE. Allow the disc to soak for a minimum of 15 minutes at ambient temperature (soaking the disc overnight at 4° C is optimal) to elute the purified DNA.</p>
-</li>
-<li>
-<p>The disc in TE can be stored at 4° C temporarily or frozen at -20° C for long-term storage until ready to begin Part III; ensure that the disc has incubated at ambient temperature for at least 15 minutes before storage at 4° C or -20° C. In Part III, you will use 2 μL of DNA for each PCR reaction. This is a crude DNA extract and contains nucleases that will eventually fragment the DNA at room temperature. Keep the sample cold to limit this activity.</p>
-</li>
+<ol>
+<li>While the disc is air-drying, add 30 µL of TE to a clean 1.5-mL tube labeled with the sample identification number.</li>
+<li>Once dry, carefully transfer the disc using a sterile tweezer or pipette tip into the fresh tube containing 30 µL of TE. Allow the disc to soak for a minimum of 15 minutes at ambient temperature (soaking the disc overnight at 4° C is optimal) to elute the purified DNA</li>
+<li>The disc in TE can be stored at 4° C temporarily or frozen at -20° C for long-term storage until ready to begin Part III; ensure that the disc has incubated at ambient temperature for at least 15 minutes before storage at 4° C or -20° C. In Part III, you will use 2 μL of DNA for each PCR reaction. This is a crude DNA extract and contains nucleases that will eventually fragment the DNA at room temperature. Keep the sample cold to limit this activity.</li>
 </ol>
 </div>
 <div class="tabbed-block">
-<p>Pre-isolation preparation: If sample has been stored in 95%+ EtOH prior to DNA isolation, remove the sample from the EtOH using a sterile toothpick and allow it to dry for &gt;10 min on a clean surface. Proceed when sample no longer smells of EtOH. Ethanol carried through the DNA isolation can inhibit DNA amplification later.</p>
 <p><strong>Steps</strong>:</p>
 <ol>
-<li>
-<p>Obtain tissue ~10 mg or ⅛- to ¼-inch diameter in size by removing a piece of the tissue with a razor blade or sterile tweezer. Some organisms or samples will be small enough that the entire specimen should be used. If you are working with more than one sample, be careful not to cross-contaminate specimens. Be sure to preserve remainder of the organism, as well as additional collected specimens, at -20°C, in 95%+ EtOH, or both.</p>
-<div class="admonition tip">
-<p class="admonition-title">Tip</p>
+<li>Obtain tissue ~10 mg or ⅛- to ¼-inch diameter in size by removing a piece of the tissue with a razor blade or sterile tweezer. Some organisms or samples will be small enough that the entire specimen should be used. If you are working with more than one sample, be careful not to cross-contaminate specimens. Be sure to preserve remainder of the organism, as well as additional collected specimens, at -20°C, in 95%+ EtOH, or both.</li>
+</ol>
+<div class="admonition nanopore">
+<p class="admonition-title">Explanation</p>
 <p>Tissue should be no larger than a grain of rice. Using more than the recommended amount can inhibit amplification.</p>
 </div>
-</li>
-<li>
-<p>Gently tap 10% Chelex solution tube on a hard surface to ensure the solution is at the bottom. Place tissue into Chelex tube labeled with a sample identification number.</p>
-<div class="admonition info">
-<p class="admonition-title">Info</p>
+<ol>
+<li>Gently tap 10% Chelex solution tube on a hard surface to ensure the solution is at the bottom. Place tissue into Chelex tube labeled with a sample identification number.</li>
+</ol>
+<div class="admonition nanopore">
+<p class="admonition-title">Explanation</p>
 <p>Chelex binds positively charged contaminants that could be inhibitors of DNA amplification and binds magnesium ions that are cofactors of DNA nucleases.</p>
 </div>
-</li>
-<li>
-<p>Twist a clean plastic pestle against the inner surface of Chelex tube to forcefully grind the tissue for at least 2 minutes. Use a clean pestle for each sample. Ensure the sample is ground into fine particles. Securely close the cap of the tube.</p>
-<div class="admonition tip">
-<p class="admonition-title">Tip</p>
+<ol>
+<li>Twist a clean plastic pestle against the inner surface of Chelex tube to forcefully grind the tissue for at least 2 minutes. Use a clean pestle for each sample. Ensure the sample is ground into fine particles. Securely close the cap of the tube.</li>
+</ol>
+<div class="admonition nanopore">
+<p class="admonition-title">Explanation</p>
 <p>Grinding breaks up cell walls and other tough material. Once ground, the sample should be liquid, but there may be some particulate matter remaining.</p>
 </div>
-</li>
-<li>
-<p>Fill a mug nearly to the top with boiling water and cover with aluminum foil. Punch small guide holes in the foil for the number of samples you are processing. Prevent the tube from opening in the following step by using a cap lock to secure the cap to the rim of the tube. Be sure that both the tube rim and cap are held within the cap lock so that steam can’t force the cap open. Place tubes through foil so that the Chelex and sample mixture is fully submerged, but do not submerge the top of the tube.</p>
-<div class="admonition info">
-<p class="admonition-title">Info</p>
+<ol>
+<li>Fill a mug nearly to the top with boiling water and cover with aluminum foil. Punch small guide holes in the foil for the number of samples you are processing. Prevent the tube from opening in the following step by using a cap lock to secure the cap to the rim of the tube. Be sure that both the tube rim and cap are held within the cap lock so that steam can’t force the cap open. Place tubes through foil so that the Chelex and sample mixture is fully submerged, but do not submerge the top of the tube.</li>
+</ol>
+<div class="admonition nanopore">
+<p class="admonition-title">Explanation</p>
 <p>The heat will help to lyse cell and organelle membranes, releasing the DNA.</p>
 </div>
-</li>
+<ol>
 <li>
-<p>Incubate tubes for 10 minutes. It is not necessary to keep water boiling. Alternatively, you can use a water bath or thermocycler to incubate tubes at 95°C for 10 minutes. Discard water from mug and return the tubes in foil to the mug. Allow Chelex to settle for an additional 10 minutes. Alternatively, place tubes in a balanced configuration in a microcentrifuge, with cap hinges pointing outward. Centrifuge for 30 seconds at maximum speed to pellet Chelex.
+<p>Incubate tubes for 10 minutes. It is not necessary to keep water boiling. Alternatively, you can use a water bath or thermocycler to incubate tubes at 95°C for 10 minutes.
+Discard water from mug and return the tubes in foil to the mug. Allow Chelex to settle for an additional 10 minutes. Alternatively, place tubes in a balanced configuration in a microcentrifuge, with cap hinges pointing outward. Centrifuge for 30 seconds at maximum speed to pellet Chelex.
 Once boiled, the DNA and Chelex mixture can be stored at 4° C temporarily, frozen at -20° C for long-term storage, or shipped at ambient temperature.</p>
 </li>
 <li>
-<p>Carefully transfer ~30 µL of supernatant from the Chelex tube, avoiding the Chelex, into a clean 1.5mL microcentrifuge tube labelled with the sample identification number. This tube can be stored at 4° C temporarily or frozen at -20° C for long-term storage until ready to begin Part III. Alternatively, 2 µL of the supernatant from the Chelex tube can be used directly for future PCR reactions. Do not transfer any of the white Chelex resin along with the supernatant. This is a crude DNA extract and contains nucleases that will eventually fragment the DNA at room temperature. Keep the sample cold to limit this activity. Chelex inhibits DNA amplification by PCR.</p>
+<p>Carefully transfer ~30 µL of supernatant from the Chelex tube, avoiding the Chelex, into a clean 1.5mL microcentrifuge tube labelled with the sample identification number. This tube can be stored at 4° C temporarily or frozen at -20° C for long-term storage until ready to begin Part III. Alternatively, 2 µL of the supernatant from the Chelex tube can be used directly for future PCR reactions. Do not transfer any of the white Chelex resin along with the supernatant. This is a crude DNA extract and contains nucleases that will eventually fragment the DNA at room temperature. Keep the sample cold to limit this activity.
+Chelex inhibits DNA amplification by PCR.</p>
 </li>
 </ol>
+</div>
+<div class="tabbed-block">
+<p><strong>Steps</strong>:</p>
+<ol>
+<li>Obtain plant, fungal, or animal tissue ~10 mg or ⅛- to ¼-inch diameter by removing a piece of the tissue with a razor blade, clean tweezers, scissors, or back of a 10-µL pipette tip to enable efficient lysis. If you are working with more than one sample, be careful not to cross-contaminate specimens. (If you only have one specimen, make a balance tube with the appropriate volume of water for centrifugation steps.)</li>
+</ol>
+<div class="admonition nanopore">
+<p class="admonition-title">Explanation</p>
+<p>Tissue should be no larger than a grain of rice. Using more than the recommended amount can affect amplification.</p>
+</div>
+<ol>
+<li>Place sample in a clean 1.5-mL tube labeled with an identification number.</li>
+<li>Add 300 µL of lysis solution to each tube.</li>
+</ol>
+<div class="admonition nanopore">
+<p class="admonition-title">Explanation</p>
+<p>Lysis solution dissolves membrane-bound organelles including the nucleus, mitochondria, and chloroplast.</p>
+</div>
+<ol>
+<li>Twist a clean plastic pestle against the inner surface of the 1.5-mL tube to forcefully grind the tissue for 2 minutes. Use a clean pestle for each tube if you are doing more than one sample.</li>
+</ol>
+<div class="admonition nanopore">
+<p class="admonition-title">Explanation</p>
+<p>Grinding the tissue breaks up cell walls and other tough material. Once fully ground, the sample should be liquid, but there may be some particulate matter remaining.</p>
+</div>
+<ol>
+<li>Incubate the tube in a water bath or heat block at 65° C for 10 minutes.</li>
+<li>Place your tube and those of other groups in a balanced configuration in a microcentrifuge, with cap hinges pointing outward. Centrifuge for one minute at maximum speed to pellet debris.</li>
+<li>Label a clean 1.5-mL tube with your sample number. Transfer 150 μL of the supernatant (clear solution above pellet at bottom of tube) to the fresh tube. Be careful not to disturb the debris pellet when transferring the supernatant. Discard old tube containing the debris.</li>
+<li>Add 3 μL of silica resin to tube; ensure silica resin is mixed and homogenous. Close tube and mix well by flicking or vortexing (solution will turn cloudy, but silica will settle shortly after). Close and incubate the tube for 5 minutes in a water bath or heat block at 57° C.</li>
+</ol>
+<div class="admonition nanopore">
+<p class="admonition-title">Explanation</p>
+<p>Silica resin is a DNA binding matrix that is white. In the presence of the lysis solution the silica resin binds readily to nucleic acids.</p>
+</div>
+<ol>
+<li>Place your tube and those of other groups in a balanced configuration in a microcentrifuge, with cap hinges pointing outward. Centrifuge for 30 seconds at maximum speed to pellet the resin. Use a micropipette with fresh tip to remove all supernatant, being careful not to disrupt the white silica resin pellet at the bottom of the tube.</li>
+</ol>
+<div class="admonition nanopore">
+<p class="admonition-title">Explanation</p>
+<p>Centrifugation pellets the silica resin, which is now bound to nucleic acid. The pellet will appear as a tiny teardrop-shaped smear or particles on the bottom side of the tube underneath the hinge.</p>
+</div>
+<ol>
+<li>Add 500 μL of ice cold wash buffer to the pellet. Mix well by pipetting up and down (or by closing the tube and flicking or vortexing) to resuspend the silica resin.</li>
+</ol>
+<div class="admonition nanopore">
+<p class="admonition-title">Explanation</p>
+<p>Wash buffer removes contaminants from the sample while nucleic acids remain bound to the resin. The silica resin is not soluble in the wash buffer. The silica resin may stay as a pellet or break up during the washing.</p>
+</div>
+<ol>
+<li>Place your tube and those of other groups in a balanced configuration in a microcentrifuge, with cap hinges pointing outward. Centrifuge for 30 seconds at maximum speed to pellet the resin. Use a micropipette with fresh tip to remove all supernatant, being careful not to disrupt the white silica resin pellet at the bottom of the tube.</li>
+<li>Once again, add 500 μL of ice cold wash buffer to the pellet. Close tube and mix well by vortexing or by pipetting up and down to resuspend the silica resin.</li>
+</ol>
+<div class="admonition nanopore">
+<p class="admonition-title">Explanation</p>
+<p>Washing twice is much more effective than washing once with twice the volume.</p>
+</div>
+<ol>
+<li>Place your tube and those of other groups in a balanced configuration in a microcentrifuge, with cap hinges pointing outward. Centrifuge for 30 seconds at maximum speed to pellet the silica resin.</li>
+<li>There will be approximately 50 μL of supernatant remaining after the brief spin to be removed. In the presence of water or TE buffer, nucleic acids are eluted from the silica resin.</li>
+<li>Use a micropipette with fresh tip to remove the supernatant, being careful not to disrupt the white pellet at the bottom of the tube. Spin the tube again for ~15 seconds to collect any drops of supernatant and then remove these with a micropipette.</li>
+<li>Add 100 μL of distilled water (or TE buffer) to the silica resin and mix well by vortexing or by pipetting up and down. Incubate the mixture at 57° C for 5 minutes.</li>
+<li>
+<p>For long-term storage it is recommended DNA samples be stored in TE buffer (Tris/EDTA). Tris provides a pH 8.0 environment to keep DNA and RNA nucleases less active. EDTA further inactivates nucleases by binding cations required by nucleases.</p>
+</li>
+<li>
+<p>Place your tube and those of other groups in a balanced configuration in a microcentrifuge, with cap hinges pointing outward. Centrifuge for 30 seconds at maximum speed to pellet the silica resin.</p>
+</li>
+<li>Label a clean 1.5-mL tube with your sample number. Transfer 50 μL of the supernatant (clear solution) to the fresh tube. Be careful not to disturb the pellet when transferring the supernatant. Discard old tube containing the silica resin.</li>
+</ol>
+<div class="admonition nanopore">
+<p class="admonition-title">Explanation</p>
+<p>Transferring silica resin to the PCR reaction in Part III can inhibit the PCR amplification.</p>
+</div>
+<p>Store your sample on ice or at -20° C until you are ready to begin the PCR.</p>
+</div>
 </div>
 </div>
 </div>
 <h3 id="annotated_experiments-dna_barcoding-pcr">PCR</h3>
 <p><strong>Goal</strong>: Extract DNA from tissue samples</p>
-<p>** Steps **:</p>
+<div class="admonition example">
+<p class="admonition-title">Summary</p>
+<p><strong>Steps</strong>:</p>
 <ol>
-<li>
-<p>Obtain PCR tube containing Ready-To-Go PCR Bead containing dehydrated Taq polymerase, nucleotides, and buffer. Label the tube with your identification number.</p>
-</li>
-<li>
-<p>Use a micropipette with a fresh tip to add 23 µL of the appropriate primer/loading dye mix to each tube (refer to primer table below). Allow the beads to dissolve for 1 minute at ambient temperature.</p>
-</li>
-<li>
-<p>Place the PCR tubes on ice to prevent premature replication of unwanted primer dimers.</p>
-</li>
-<li>
-<p>Use a micropipette with fresh tip to add 2 µL of your DNA (from Part II) directly into PCR tube with primer and polymerase mixture. Ensure that no DNA remains in the tip after pipetting.</p>
+<li>Obtain PCR tube containing Ready-To-Go PCR Bead containing dehydrated Taq polymerase, nucleotides, and buffer. Label the tube with your identification number.</li>
+<li>Use a micropipette with a fresh tip to add 23 µL of the appropriate primer/loading dye mix to each tube (refer to primer table below). Allow the beads to dissolve for 1 minute at ambient temperature.</li>
+<li>Place the PCR tubes on ice to prevent premature replication of unwanted primer dimers.</li>
+<li>Use a micropipette with fresh tip to add 2 µL of your DNA (from Part II) directly into PCR tube with primer and polymerase mixture. Ensure that no DNA remains in the tip after pipetting.</li>
+</ol>
 <div class="admonition tip">
 <p class="admonition-title">Tip</p>
 <p>If the reagents become splattered on the wall of the tube, pool them by briefly spinning the sample in a microcentrifuge (with tube adapters) or by sharply tapping the tube bottom on the lab bench.</p>
 <p>If your DNA was extracted using Chelex, allow the tubes containing DNA to sit upright for 10 minutes (or centrifuge for 30 seconds) to ensure that any residual Chelex settles on the bottom of the tubes. When removing DNA for PCR, be careful to only pipet from the very top of the liquid to avoid transferring Chelex into the PCR tube as Chelex inhibits PCR.</p>
 </div>
-</li>
-<li>
-<p>Store your sample on ice until your class is ready to begin thermal cycling.</p>
-</li>
-<li>
-<p>Place your PCR tube, along with those of the other students, in a thermal cycler that has been programmed with the appropriate PCR protocol.</p>
-</li>
-<li>
-<p>Amplification from some templates, such as the COI barcode region, may be improved by transferring PCR tubes directly from ice into a hot thermal cycler that has been temporarily paused at the beginning of the first 95°C denaturation step. This limits the formation of undesirable primer dimers. Resume the program when all of the PCR tubes are in the thermal cycler.</p>
-</li>
+<ol>
+<li>Store your sample on ice until your class is ready to begin thermal cycling.</li>
+<li>Place your PCR tube, along with those of the other students, in a thermal cycler that has been programmed with the appropriate PCR protocol.</li>
+<li>Amplification from some templates, such as the COI barcode region, may be improved by transferring PCR tubes directly from ice into a hot thermal cycler that has been temporarily paused at the beginning of the first 95°C denaturation step. This limits the formation of undesirable primer dimers. Resume the program when all of the PCR tubes are in the thermal cycler.</li>
 </ol>
-<div class="tabbed-set tabbed-alternate" data-tabs="2:2"><input checked="checked" id="annotated_experiments-dna_barcoding-__tabbed_2_1" name="annotated_experiments-dna_barcoding-__tabbed_2" type="radio" /><input id="annotated_experiments-dna_barcoding-__tabbed_2_2" name="annotated_experiments-dna_barcoding-__tabbed_2" type="radio" /><div class="tabbed-labels"><label for="annotated_experiments-dna_barcoding-__tabbed_2_1">RbCl</label><label for="annotated_experiments-dna_barcoding-__tabbed_2_2">COI</label></div>
+<div class="tabbed-set tabbed-alternate" data-tabs="2:3"><input checked="checked" id="annotated_experiments-dna_barcoding-__tabbed_2_1" name="annotated_experiments-dna_barcoding-__tabbed_2" type="radio" /><input id="annotated_experiments-dna_barcoding-__tabbed_2_2" name="annotated_experiments-dna_barcoding-__tabbed_2" type="radio" /><input id="annotated_experiments-dna_barcoding-__tabbed_2_3" name="annotated_experiments-dna_barcoding-__tabbed_2" type="radio" /><div class="tabbed-labels"><label for="annotated_experiments-dna_barcoding-__tabbed_2_1">RbCl</label><label for="annotated_experiments-dna_barcoding-__tabbed_2_2">COI</label><label for="annotated_experiments-dna_barcoding-__tabbed_2_3">ITS</label></div>
 <div class="tabbed-content">
 <div class="tabbed-block">
 <p>Plant
@@ -4957,6 +5035,48 @@ rbcL primers:
 </tbody>
 </table>
 </div>
+<div class="tabbed-block">
+<p>Plant
+rbcL primers:
+(ITS1F / ITS4)</p>
+<table>
+<thead>
+<tr>
+<th>Temperature</th>
+<th>Time</th>
+<th>Cyles</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>94 °C</td>
+<td>1:00 minutes</td>
+<td>1</td>
+</tr>
+<tr>
+<td>94 °C</td>
+<td>1 minute</td>
+<td>35</td>
+</tr>
+<tr>
+<td>55 °C</td>
+<td>1 seconds</td>
+<td>35</td>
+</tr>
+<tr>
+<td>72 °C</td>
+<td>2 minutes</td>
+<td>35</td>
+</tr>
+<tr>
+<td>4 °C</td>
+<td>ad infinitum</td>
+<td>1</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
 </div>
 </div>
 <h2 id="annotated_experiments-dna_barcoding-ampure-xp-solid-phase-reversible-immobilization-spri-bead-pcr-clean-up-optional">AMPure XP Solid Phase Reversible Immobilization (SPRI) Bead PCR Clean-Up (optional)</h2>
@@ -4966,49 +5086,19 @@ rbcL primers:
 </div>
 <p><strong>Steps</strong>:</p>
 <ol>
-<li>
-<p>Re-suspend AMPure XP beads by using the pipette to mix.</p>
-</li>
-<li>
-<p>Add the entire PCR reaction (~20 μL) directly to a labeled 1.5 mL microfuge tube containing 36 μL AMPure XP beads. Use the pipette to carefμLly mix the beads and DNA.</p>
-</li>
-<li>
-<p>Incubate for 5 minutes at room temperature on a microfuge tube rack.</p>
-</li>
-<li>
-<p>Spin down the tube for 15 seconds and place the tube on a magnetic rack. Wait for about 1 minute for the beads to completely pellet near the magnet. Note that the liquid</p>
-</li>
-<li>
-<p>Keeping the tube on the magnet, pipette off the supernatant and discard without disturbing the pellet.</p>
-</li>
-<li>
-<p>Keeping the tube on the magnet, add 200 μL of freshly prepared 70% ethanol without disturbing the pellet. Remove the ethanol using a pipette and discard.</p>
-</li>
-<li>
-<p>Repeat Step 5.</p>
-</li>
-<li>
-<p>Remove the tube from the magnetic rack and spin down the tube for 15 seconds. Replace the tube on the magnetic rack and allow the pellet to reform.</p>
-</li>
-<li>
-<p>Keeping the tube on the magnet, remove any residual liquid (~10-30 μL). With the tube open, allow the pellet to dry for 30 seconds.</p>
-<div class="admonition warning">
-<p class="admonition-title">Caution</p>
-<p>Do not allow the pellet to dry to the point of cracking. Be prepared to immediately move on to Step 10.</p>
-</div>
-</li>
-<li>
-<p>Remove the tube from the magnetic rack and resuspend the pellet in 10 μL of EB. Use the pipette to continuously wash the EB over the pellet until it completely dissociates.</p>
-</li>
-<li>
-<p>Incubate the tube for 5 minutes away from the magnetic rack.</p>
-</li>
-<li>
-<p>Spin down the tube for 15 seconds and replace the tube on the magnetic rack. Wait for about 1 minute for the beads to completely pellet near the magnet. Note that the liquid supernatant shoμLd be completely clear.</p>
-</li>
-<li>
-<p>Remove and retain 10 μL of supernatant. Pipette the supernatant into a thin-walled PCR tube. Discard the tube containing the pellet. The PCR product is now ready for the ONT Rapid <abbr title="Short, unique sequences added to DNA fragments to identify and differentiate multiple samples sequenced together. See also—Indexing.">Barcode</abbr> Kit.</p>
-</li>
+<li>Re-suspend AMPure XP beads by using the pipette to mix.</li>
+<li>Add the entire PCR reaction (~20 μL) directly to a labeled 1.5 mL microfuge tube containing 36 μL AMPure XP beads. Use the pipette to carefμLly mix the beads and DNA.</li>
+<li>Incubate for 5 minutes at room temperature on a microfuge tube rack.</li>
+<li>Spin down the tube for 15 seconds and place the tube on a magnetic rack. Wait for about 1 minute for the beads to completely pellet near the magnet. Note that the liquid</li>
+<li>Keeping the tube on the magnet, pipette off the supernatant and discard without disturbing the pellet.</li>
+<li>Keeping the tube on the magnet, add 200 μL of freshly prepared 70% ethanol without disturbing the pellet. Remove the ethanol using a pipette and discard.</li>
+<li>Repeat Step 5.</li>
+<li>Remove the tube from the magnetic rack and spin down the tube for 15 seconds. Replace the tube on the magnetic rack and allow the pellet to reform.</li>
+<li>Keeping the tube on the magnet, remove any residual liquid (~10-30 μL). With the tube open, allow the pellet to dry for 30 seconds. Caution: Do not allow the pellet to dry to the point of cracking. Be prepared to immediately move on to Step 10.</li>
+<li>Remove the tube from the magnetic rack and resuspend the pellet in 10 μL of EB. Use the pipette to continuously wash the EB over the pellet until it completely dissociates.</li>
+<li>Incubate the tube for 5 minutes away from the magnetic rack.</li>
+<li>Spin down the tube for 15 seconds and replace the tube on the magnetic rack. Wait for about 1 minute for the beads to completely pellet near the magnet. Note that the liquid supernatant shoμLd be completely clear.</li>
+<li>Remove and retain 10 μL of supernatant. Pipette the supernatant into a thin-walled PCR tube. Discard the tube containing the pellet. The PCR product is now ready for the ONT Rapid <abbr title="Short, unique sequences added to DNA fragments to identify and differentiate multiple samples sequenced together. See also—Indexing.">Barcode</abbr> Kit.</li>
 </ol>
 <h2 id="annotated_experiments-dna_barcoding-rapid-barcode-index-attachment">Rapid <abbr title="Short, unique sequences added to DNA fragments to identify and differentiate multiple samples sequenced together. See also—Indexing.">Barcode</abbr> Index Attachment</h2>
 <div class="admonition example">
@@ -5017,14 +5107,10 @@ rbcL primers:
 </div>
 <p><strong>Steps</strong></p>
 <ol>
-<li>
-<p>Obtain one unique Rapid <abbr title="Short, unique sequences added to DNA fragments to identify and differentiate multiple samples sequenced together. See also—Indexing.">Barcode</abbr> (RB) mix for each PCR amplicon. Record each sample number and its associated RB.</p>
-</li>
-<li>
-<p>Spin down RB tubes. Pipette 1.5 μL of each unique RB directly into a PCR tube containing 10 μL of its associated DNA amplicon. Vortex briefly or pipette to mix.</p>
-</li>
-<li>
-<p>Ensure that PCR tubes are sealed shut, and then incubate tubes in a thermal cycler using the following conditions:</p>
+<li>Obtain one unique Rapid <abbr title="Short, unique sequences added to DNA fragments to identify and differentiate multiple samples sequenced together. See also—Indexing.">Barcode</abbr> (RB) mix for each PCR amplicon. Record each sample number and its associated RB.</li>
+<li>Spin down RB tubes. Pipette 1 μL of each unique RB directly into a PCR tube containing 10 μL of its associated DNA amplicon. Vortex briefly or pipette to mix.</li>
+<li>Ensure that PCR tubes are sealed shut, and then incubate tubes in a thermal cycler using the following conditions:</li>
+</ol>
 <table>
 <thead>
 <tr>
@@ -5035,11 +5121,11 @@ rbcL primers:
 <tbody>
 <tr>
 <td>30 °C</td>
-<td>2:00 min</td>
+<td>2:00 minutes</td>
 </tr>
 <tr>
 <td>80 °C</td>
-<td>2:00 min</td>
+<td>2:00 minutes</td>
 </tr>
 <tr>
 <td>4 °C</td>
@@ -5051,13 +5137,9 @@ rbcL primers:
 <p class="admonition-title">Explanation</p>
 <p>The 20 °C incubation step will first ensure optimal transposase activity, promoting the addition of the RB indexes. The 80 °C step will denature and inactivate the transposase to prevent erroneous addition of unique indexes to the wrong DNA amplicons during pooling.</p>
 </div>
-</li>
-<li>
-<p>Spin down PCR tubes. DNA amplicons are now uniquely tagged using the ONT RBs.</p>
-</li>
-<li>
-<p>Pipette each tagged DNA amplicon (~11.5 μL) into a single class-wide 1.5 mL microfuge tube. This represents the pooled amplicon <abbr title="A collection of DNA fragments prepared for sequencing.">library</abbr>.  </p>
-</li>
+<ol>
+<li>Spin down PCR tubes. DNA amplicons are now uniquely tagged using the ONT RBs.</li>
+<li>Pipette each tagged DNA amplicon (~11.5 μL) into a single class-wide 1.5 mL microfuge tube. This represents the pooled amplicon <abbr title="A collection of DNA fragments prepared for sequencing.">library</abbr>.  </li>
 </ol>
 <h2 id="annotated_experiments-dna_barcoding-library-clean-up-with-solid-phase-reversible-immobilization-spri-beads"><abbr title="A collection of DNA fragments prepared for sequencing.">Library</abbr> Clean-Up with Solid Phase Reversible Immobilization (SPRI) Beads</h2>
 <div class="admonition example">
@@ -5066,46 +5148,21 @@ rbcL primers:
 </div>
 <p><strong>Steps</strong>:</p>
 <ol>
-<li>
-<p>Re-suspend AMPure XP beads by using the pipette to mix or vortexing.</p>
-</li>
-<li>
-<p>Add an appropriate volume of AMPure XP beads to the pooled amplicon <abbr title="A collection of DNA fragments prepared for sequencing.">library</abbr> using the following formula:
-VolumeAMPure XP beads= (11.5 μL)(No. of DNA amplicon samples)</p>
-</li>
-<li>
-<p>Use a pipette to gently mix the beads and amplicon <abbr title="A collection of DNA fragments prepared for sequencing.">library</abbr> such that the beads are evenly distributed throughout the tube.</p>
-</li>
-<li>
-<p>Incubate the mix at room temperature for 10 minutes, flicking occasionally to ensure that beads remain suspended in solution. Note that DNA amplicons are coordinating with SPRI beads during this time.</p>
-</li>
-<li>
-<p>Spin down the mix for 15 minutes to form an initial bead pellet. Then, place the tube on a magnetic rack to pellet the beads. Allow up to one minute for the beads to pellet. Keeping the tube on the magnetic rack, use an appropriate pipette to remove all of the liquid from the tube and discard. Avoid disturbing the pellet. Remember that the DNA is located in the pellet at this point.</p>
-</li>
-<li>
-<p>Keeping the tube on the magnetic rack, add 1000 μL of 80% ethanol to the pellet. Then, remove the supernatant and discard without disturbing the pellet.</p>
-</li>
-<li>
-<p>Repeat Step 6.</p>
-</li>
-<li>
-<p>Remove the tube from the magnetic rack and spin down the tube for 15 seconds. Replace the tube on the magnetic rack and allow the pellet to reform.</p>
-</li>
-<li>
-<p>Keeping the tube on the magnet, remove any residual liquid (~10-30 μL). With the tube open, allow the pellet to dry for 30 seconds. Caution: Do not allow the pellet to dry to the point of cracking. Be prepared to immediately move on to Step 10.</p>
-</li>
-<li>
-<p>Remove the tube from the magnetic rack and resuspend the pellet in 15 μL of EB. Use the pipette to continuously wash the EB over the pellet until it completely dissociates. Note that this may take several repeated washes with the same 15 μL EB.</p>
-</li>
-<li>
-<p>Incubate the tube for 10 minutes away from the magnetic rack at room temperature.</p>
-</li>
-<li>
-<p>Spin down the tube for 15 seconds and replace the tube on the magnetic rack. Wait for about 1 minute for the beads to completely pellet near the magnet. Note that the liquid supernatant shoμLd be completely clear.</p>
-</li>
-<li>
-<p>Remove and retain 11 μL of supernatant. Pipette the supernatant into a 1.5 mL microfuge tube. Discard the tube containing the pellet. The pooled amplicon <abbr title="A collection of DNA fragments prepared for sequencing.">library</abbr> is now ready for the attachment of rapid adapters and motor proteins.</p>
-</li>
+<li>Re-suspend AMPure XP beads by using the pipette to mix or vortexing.</li>
+<li>Add an appropriate volume of AMPure XP beads to the pooled amplicon <abbr title="A collection of DNA fragments prepared for sequencing.">library</abbr> using the following formula:
+VolumeAMPure XP beads= (11.5 μL)(No. of DNA amplicon samples)</li>
+<li>Use a pipette to gently mix the beads and amplicon <abbr title="A collection of DNA fragments prepared for sequencing.">library</abbr> such that the beads are evenly distributed throughout the tube.</li>
+<li>Incubate the mix at room temperature for 10 minutes, flicking occasionally to ensure that beads remain suspended in solution. Note that DNA amplicons are coordinating with SPRI beads during this time.</li>
+<li>Spin down the mix for 15 minutes to form an initial bead pellet. Then, place the tube on a magnetic rack to pellet the beads. Allow up to one minute for the beads to pellet.
+Keeping the tube on the magnetic rack, use an appropriate pipette to remove all of the liquid from the tube and discard. Avoid disturbing the pellet. Remember that the DNA is located in the pellet at this point.</li>
+<li>Keeping the tube on the magnetic rack, add 1000 μL of 80% ethanol to the pellet. Then, remove the supernatant and discard without disturbing the pellet.</li>
+<li>Repeat Step 6.</li>
+<li>Remove the tube from the magnetic rack and spin down the tube for 15 seconds. Replace the tube on the magnetic rack and allow the pellet to reform.</li>
+<li>Keeping the tube on the magnet, remove any residual liquid (~10-30 μL). With the tube open, allow the pellet to dry for 30 seconds. Caution: Do not allow the pellet to dry to the point of cracking. Be prepared to immediately move on to Step 10.</li>
+<li>Remove the tube from the magnetic rack and resuspend the pellet in 15 μL of EB. Use the pipette to continuously wash the EB over the pellet until it completely dissociates. Note that this may take several repeated washes with the same 15 μL EB.</li>
+<li>Incubate the tube for 10 minutes away from the magnetic rack at room temperature.</li>
+<li>Spin down the tube for 15 seconds and replace the tube on the magnetic rack. Wait for about 1 minute for the beads to completely pellet near the magnet. Note that the liquid supernatant shoμLd be completely clear.</li>
+<li>Remove and retain 11 μL of supernatant. Pipette the supernatant into a 1.5 mL microfuge tube. Discard the tube containing the pellet. The pooled amplicon <abbr title="A collection of DNA fragments prepared for sequencing.">library</abbr> is now ready for the attachment of rapid adapters and motor proteins.</li>
 </ol>
 <h2 id="annotated_experiments-dna_barcoding-rapid-adapter-attachment"><abbr title="Short DNA sequence ligated to sample fragments to facilitate their translocation through the nanopore.">Rapid Adapter</abbr> Attachment</h2>
 <div class="admonition example">
@@ -5114,8 +5171,8 @@ VolumeAMPure XP beads= (11.5 μL)(No. of DNA amplicon samples)</p>
 </div>
 <p><strong>Steps</strong>:</p>
 <ol>
-<li>
-<p>In a 1.5ml tube dilute <abbr title="Short DNA sequence ligated to sample fragments to facilitate their translocation through the nanopore.">Rapid Adapter</abbr> (RA) as follows:</p>
+<li>In a 1.5ml tube dilute <abbr title="Short DNA sequence ligated to sample fragments to facilitate their translocation through the nanopore.">Rapid Adapter</abbr> (RA) as follows:</li>
+</ol>
 <table>
 <thead>
 <tr>
@@ -5126,73 +5183,49 @@ VolumeAMPure XP beads= (11.5 μL)(No. of DNA amplicon samples)</p>
 <tbody>
 <tr>
 <td><abbr title="Short DNA sequence ligated to sample fragments to facilitate their translocation through the nanopore.">Rapid Adapter</abbr> (RA)</td>
-<td>1.5 μl</td>
+<td>1.5ul</td>
 </tr>
 <tr>
 <td><abbr title="Short DNA or RNA sequences ligated to sample fragments to facilitate their attachment to sequencing platforms.">Adapter</abbr> Buffer (ADB)</td>
-<td>3.5 μl</td>
+<td>3.5ul</td>
 </tr>
 <tr>
 <td>Total</td>
-<td>5 μl</td>
+<td>5ul</td>
 </tr>
 </tbody>
 </table>
-</li>
-<li>
-<p>Add 1 μl of diluted <abbr title="Short DNA sequence ligated to sample fragments to facilitate their translocation through the nanopore.">Rapid Adapter</abbr> to indexed DNA.</p>
-</li>
-<li>
-<p>Incubate for 10 min at room temperature.</p>
-</li>
+<ol>
+<li>Add 1ul of diluted <abbr title="Short DNA sequence ligated to sample fragments to facilitate their translocation through the nanopore.">Rapid Adapter</abbr> to indexed DNA.</li>
+<li>Incubate for 10 min at room temperature.</li>
 </ol>
 <h2 id="annotated_experiments-dna_barcoding-flow-cell-check">Flow Cell Check</h2>
 <div class="admonition example">
 <p class="admonition-title">Summary</p>
 <p>The <abbr title="A consumable device containing nanopores through which nucleic acids pass during sequencing.">flow cell</abbr> contains the nanopores which facilitate the sequencing. The number of active pores needs to be determined for every <abbr title="A consumable device containing nanopores through which nucleic acids pass during sequencing.">flow cell</abbr> before it is to be used to ensure that there are an adequate number for the sequencing experiment. Because we are sequencing amplicons and don’t need very high-throughput, we suggest using the <abbr title="A smaller, lower-cost flow cell.">Flongle</abbr> <abbr title="A consumable device containing nanopores through which nucleic acids pass during sequencing.">flow cell</abbr> which has a maximum of 126 pores rather than the Minion, which has maximum of 2048.  </p>
 </div>
-<p><strong>Steps</strong>:</p>
-<ol>
-<li>
-<p>Open <abbr title="Oxford Nanopore software required for operating the sequencing devices.">MinKNOW</abbr> software.</p>
-</li>
-<li>
-<p>Click the “Start” tab on the upper left of the screen.</p>
-</li>
-<li>
-<p>Click “<abbr title="A consumable device containing nanopores through which nucleic acids pass during sequencing.">Flow cell</abbr> check”</p>
-<div class="admonition warning">
-<p class="admonition-title">Important</p>
-<p>The sequencer will take a few minutes to get to the proper temperature and run the <abbr title="A consumable device containing nanopores through which nucleic acids pass during sequencing.">flow cell</abbr> check. When complete, the number of usable pores on the <abbr title="A consumable device containing nanopores through which nucleic acids pass during sequencing.">flow cell</abbr> will be displayed. The <abbr title="A consumable device containing nanopores through which nucleic acids pass during sequencing.">flow cell</abbr> is considered under warranty if it is checked within 2 weeks of the delivery date, was properly stored at 4 degrees, but has less than 50 pores. If under warranty, contact Oxford Nanopore within 2 days of performing the <abbr title="A consumable device containing nanopores through which nucleic acids pass during sequencing.">flow cell</abbr> check.</p>
-</div>
-</li>
-</ol>
+<p><strong>Steps</strong>:
+1. Open <abbr title="Oxford Nanopore software required for operating the sequencing devices.">MinKNOW</abbr> software.
+2. Click the “Start” tab on the upper left of the screen.
+3. Click “<abbr title="A consumable device containing nanopores through which nucleic acids pass during sequencing.">Flow cell</abbr> check”</p>
+<p>!!! warning "Important'
+    The sequencer will take a few minutes to get to the proper temperature and run the <abbr title="A consumable device containing nanopores through which nucleic acids pass during sequencing.">flow cell</abbr> check. When complete, the number of usable pores on the <abbr title="A consumable device containing nanopores through which nucleic acids pass during sequencing.">flow cell</abbr> will be displayed. The <abbr title="A consumable device containing nanopores through which nucleic acids pass during sequencing.">flow cell</abbr> is considered under warranty if it is checked within 2 weeks of the delivery date, was properly stored at 4 degrees, but has less than 50 pores. If under warranty, contact Oxford Nanopore within 2 days of performing the <abbr title="A consumable device containing nanopores through which nucleic acids pass during sequencing.">flow cell</abbr> check.</p>
 <h2 id="annotated_experiments-dna_barcoding-flow-cell-priming">Flow Cell Priming</h2>
 <div class="admonition example">
 <p class="admonition-title">Summary</p>
 <p>Before loading the <abbr title="A consumable device containing nanopores through which nucleic acids pass during sequencing.">flow cell</abbr> with the <abbr title="A collection of DNA fragments prepared for sequencing.">DNA library</abbr>, the <abbr title="A consumable device containing nanopores through which nucleic acids pass during sequencing.">flow cell</abbr> needs to be “primed” for sequencing. The reagents required for priming and loading the <abbr title="A smaller, lower-cost flow cell.">Flongle</abbr> <abbr title="A consumable device containing nanopores through which nucleic acids pass during sequencing.">flow cell</abbr> are contained in the <abbr title="A smaller, lower-cost flow cell.">Flongle</abbr> Sequencing Expansion (EXP-FSE002), a separate box from the <abbr title="A collection of DNA fragments prepared for sequencing.">library</abbr> prep reagents, which contains glass vials of Sequencing Buffer (SB), Flow Cell Flush (FCF), and <abbr title="A collection of DNA fragments prepared for sequencing.">Library</abbr> Beads (LIB).</p>
 </div>
 <ol>
-<li>
-<p>Mix 117 μl FCF (from the <abbr title="A smaller, lower-cost flow cell.">Flongle</abbr> expansion kit)  and 3 μl of FCT (from the <abbr title="A library preparation kit that uses a transposase complex to attach sequencing adapters; is quicker and uses fewer 3rd party reagents than the native barcoding kit but also sheers the DNA resulting in smaller fragment lengths.">Rapid Barcoding</abbr> kit).</p>
-</li>
-<li>
-<p>Peel back the seal from the <abbr title="A smaller, lower-cost flow cell.">Flongle</abbr> <abbr title="A consumable device containing nanopores through which nucleic acids pass during sequencing.">flow cell</abbr>.</p>
-</li>
-<li>
-<p>Slowly expel liquid from the pipette by turning the dial clockwise until a bead of liquid forms at the tip.</p>
-</li>
-<li>
-<p>Place the pipette tip in the sample port, keeping the pipette vertical.</p>
-</li>
-<li>
-<p>Turn the dial clockwise to load the flush buffer and primer into the <abbr title="A consumable device containing nanopores through which nucleic acids pass during sequencing.">flow cell</abbr>, stopping right before all liquid is entirely expelled to avoid pipetting air into the <abbr title="A consumable device containing nanopores through which nucleic acids pass during sequencing.">flow cell</abbr>.</p>
-</li>
+<li>Mix 117ul FCF (from the <abbr title="A smaller, lower-cost flow cell.">Flongle</abbr> expansion kit)  and 3ul of FCT (from the <abbr title="A library preparation kit that uses a transposase complex to attach sequencing adapters; is quicker and uses fewer 3rd party reagents than the native barcoding kit but also sheers the DNA resulting in smaller fragment lengths.">Rapid Barcoding</abbr> kit).</li>
+<li>Peel back the seal from the <abbr title="A smaller, lower-cost flow cell.">Flongle</abbr> <abbr title="A consumable device containing nanopores through which nucleic acids pass during sequencing.">flow cell</abbr>.</li>
+<li>Slowly expel liquid from the pipette by turning the dial clockwise until a bead of liquid forms at the tip.</li>
+<li>Place the pipette tip in the sample port, keeping the pipette vertical.</li>
+<li>Turn the dial clockwise to load the flush buffer and primer into the <abbr title="A consumable device containing nanopores through which nucleic acids pass during sequencing.">flow cell</abbr>, stopping right before all liquid is entirely expelled to avoid pipetting air into the <abbr title="A consumable device containing nanopores through which nucleic acids pass during sequencing.">flow cell</abbr>.</li>
 </ol>
 <h2 id="annotated_experiments-dna_barcoding-flow-cell-loading">Flow Cell Loading</h2>
 <ol>
-<li>
-<p>Make a sequencing mix:</p>
+<li>Make a sequencing mix:</li>
+</ol>
 <table>
 <thead>
 <tr>
@@ -5203,43 +5236,33 @@ VolumeAMPure XP beads= (11.5 μL)(No. of DNA amplicon samples)</p>
 <tbody>
 <tr>
 <td>Sequencing Buffer (SB)</td>
-<td>15 μl</td>
+<td>15ul</td>
 </tr>
 <tr>
 <td>Loading Beads (LIB)</td>
-<td>10 μl</td>
+<td>10ul</td>
 </tr>
 <tr>
 <td><abbr title="A collection of DNA fragments prepared for sequencing.">DNA Library</abbr></td>
-<td>5 μl</td>
+<td>5ul</td>
 </tr>
 <tr>
 <td>Total</td>
-<td>30 μl</td>
+<td>30ul</td>
 </tr>
 </tbody>
 </table>
-</li>
-<li>
-<p>Pipette up sequencing mix, slowly expel liquid from the pipette by turning the dial clockwise until a bead of liquid forms at the tip.</p>
-</li>
-<li>
-<p>Place the pipette tip in the sample port, keeping the pipette vertical.</p>
-</li>
-<li>
-<p>Turn the dial clockwise to load to the flush buffer and primer the <abbr title="A consumable device containing nanopores through which nucleic acids pass during sequencing.">flow cell</abbr>, stopping right before all liquid is entirely expelled to avoid pipetting air into the <abbr title="A consumable device containing nanopores through which nucleic acids pass during sequencing.">flow cell</abbr>.</p>
-</li>
-<li>
-<p>Place the sticker back on.</p>
-</li>
-<li>
-<p>Proceed to "Start Sequencing" on <abbr title="Oxford Nanopore software required for operating the sequencing devices.">MinKNOW</abbr> software.</p>
-</li>
+<ol>
+<li>Pipette up sequencing mix, slowly expel liquid from the pipette by turning the dial clockwise until a bead of liquid forms at the tip.</li>
+<li>Place the pipette tip in the sample port, keeping the pipette vertical.</li>
+<li>Turn the dial clockwise to load to the flush buffer and primer the <abbr title="A consumable device containing nanopores through which nucleic acids pass during sequencing.">flow cell</abbr>, stopping right before all liquid is entirely expelled to avoid pipetting air into the <abbr title="A consumable device containing nanopores through which nucleic acids pass during sequencing.">flow cell</abbr>.</li>
+<li>Place the sticker back on.</li>
+<li>Proceed to "Start Sequencing" on <abbr title="Oxford Nanopore software required for operating the sequencing devices.">MinKNOW</abbr> software.</li>
 </ol>
 <div class="admonition bioinformatics">
 <p class="admonition-title">Bioinformatics</p>
 <p>Full DNA Barcoding Analysis of DNA barcodes can be done using DNA Subway2.0 (coming soon).</p>
-<p>Epi2melabs wf-amplicon may also be used to generate consensus sequences for each sample. This consensus sequence can</p>
+<p>Epi2melabs wf-amplicon may also be used to generate consensus sequences for each sample. This conensus sequence can</p>
 </div>
 <h3 id="annotated_experiments-dna_barcoding-data-analysis">Data analysis <!-- i.e. Data Analysis--></h3>
 <p><strong>Goal</strong>: Determine the taxa sampled.</p>
@@ -5345,11 +5368,11 @@ VolumeAMPure XP beads= (11.5 μL)(No. of DNA amplicon samples)</p>
 </li>
 </ol>
 <h4 id="annotated_experiments-dna_barcoding-interpret-results">Interpret results</h4>
-<p>The wf-amplicon pipeline generates a detailed report (<code>wf-amplicon-report.html</code>) that provides comprehensive insights into sequencing data. However, the file we will need for our analysis in in the folder "output" generated by epi2melabs after the run. The output folder contains folders for each sample (i.e. "barcode01"), which contain a folder named "consensus". A .fasta file in the consensus folder is a consensus DNA sequence of the DNA Barcoding amplicon from all the sequencing reads for the sample.</p>
+<p>The wf-amplicon pipeline generates a detailed report (<code>wf-amplicon-report.html</code>) that provides comprehensive insights into sequencing data. However, the file we will need for our analysis in in the folder "output" generated by epi2melabs afer the run. The output folder contains folders for each sample (i.e. "barcode01"), which contain a folder named "consensus". A .fasta file in the consensus folder is a consensus DNA sequence of the DNA Barcoding amplicon from all the sequencing reads for the sample.</p>
 <p>The DNA sequence from the .fasta file can be copied and pasted into the blue line of <a href="https://dnasubway.cyverse.org/">DNA Subway</a> under "Enter sequences in FASTA format".</p>
 <div class="admonition classroom">
 <p class="admonition-title">Instruction tip</p>
-<p>DNA Subway2.0 is coming late Spring/Summer 2025 and is equipped with a new "Blue Line" for Nanopore sequencing data which contains tools for generating the consensus Nanopore sequence reads.</p>
+<p>DNA Subway2.0 is coming late Spring/Summer 2025 and is equiped with a new "Blue Line" for Nanopore sequencing data which contains tools for generating the consensus Nanopore sequence reads.</p>
 </div>
 <hr />
 <p><strong>Comments and discussion</strong></p>
