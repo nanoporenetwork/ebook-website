@@ -160,7 +160,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#ligation-based-amplicon-barcoding" class="md-skip">
+        <a href="#ligation-based-amplicon-barcoding-long-protocol" class="md-skip">
           Skip to content
         </a>
       
@@ -983,9 +983,9 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#completing-the-experiment" class="md-nav__link">
+  <a href="#ending-the-experiment" class="md-nav__link">
     <span class="md-ellipsis">
-      Completing the experiment
+      Ending the experiment
     </span>
   </a>
   
@@ -1028,6 +1028,8 @@
   
     
     
+      
+        
       
         
       
@@ -1122,6 +1124,27 @@
   
   <span class="md-ellipsis">
     Phage Genomes
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../annotated_experiments/microbial_genomes/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Microbial Genomes
   </span>
   
 
@@ -1717,12 +1740,8 @@ e=d.getElementsByTagName(s)[0];e.parentNode.insertBefore(i, e);
   
 
 
-<h1 id="ligation-based-amplicon-barcoding"><abbr title="The enzymatic process of joining two DNA fragments together.">Ligation</abbr>-based <abbr title="A DNA fragment that has been amplified by PCR.">Amplicon</abbr> Barcoding</h1>
+<h1 id="ligation-based-amplicon-barcoding-long-protocol"><abbr title="The enzymatic process of joining two DNA fragments together.">Ligation</abbr>-based <abbr title="A DNA fragment that has been amplified by PCR.">Amplicon</abbr> barcoding (Long Protocol)</h1>
 <p><strong>Summary</strong>: This detailed protocol shows how PCR amplicons can be barcoded and prepared for Nanopore sequencing.</p>
-<div class="admonition downloads">
-<p class="admonition-title">Downloads</p>
-<p><strong>Download</strong>: Download a copy of this template <a href="..">In Markdown</a> or <a href="..">Microsoft Word</a></p>
-</div>
 <details class="note" open="open">
 <summary>Protocol information</summary>
 <p><strong>Protocol Credits</strong></p>
@@ -1856,14 +1875,23 @@ e=d.getElementsByTagName(s)[0];e.parentNode.insertBefore(i, e);
 </details>
 <details class="time">
 <summary>Estimated timings</summary>
-<p><strong>DNA End preperation</strong></p>
-<p><strong><abbr title="Short, unique sequences added to DNA fragments to identify and differentiate multiple samples sequenced together. See also—Indexing.">Barcode</abbr> <abbr title="The enzymatic process of joining two DNA fragments together.">ligation</abbr></strong></p>
-<p><strong><abbr title="Short DNA or RNA sequences ligated to sample fragments to facilitate their attachment to sequencing platforms.">Adapter</abbr> <abbr title="The enzymatic process of joining two DNA fragments together.">ligation</abbr></strong></p>
-<p><strong><abbr title="A consumable device containing nanopores through which nucleic acids pass during sequencing.">Flow cell</abbr> loading</strong></p>
+<p><strong>DNA End preperation</strong>: 30-45 mins</p>
+<ul>
+<li>Stop-point: Store the samples overnight at 4 °C.</li>
+</ul>
+<p><strong><abbr title="Short, unique sequences added to DNA fragments to identify and differentiate multiple samples sequenced together. See also—Indexing.">Barcode</abbr> <abbr title="The enzymatic process of joining two DNA fragments together.">ligation</abbr></strong>: time 60-90 mins</p>
+<ul>
+<li>Stop-point: Store the samples overnight at 4 °C</li>
+</ul>
+<p><strong><abbr title="Short DNA or RNA sequences ligated to sample fragments to facilitate their attachment to sequencing platforms.">Adapter</abbr> <abbr title="The enzymatic process of joining two DNA fragments together.">ligation</abbr></strong>: 60-70 mins</p>
+<ul>
+<li>Stop-point: Store the samples overnight at 4 °C or long-term at -80 °C.</li>
+</ul>
+<p><strong><abbr title="A consumable device containing nanopores through which nucleic acids pass during sequencing.">Flow cell</abbr> loading</strong>: 20-30 mins</p>
 </details>
 <hr />
 <h2 id="background">Background</h2>
-<p>The Nanopore lLigation sequencing procedure is a method of preparing DNA molecules for sequencing in a Nanopore system using different dsDNA sources. It is a flexible method that can be used with gDNA, cDNA or amplicons. The throughput is higher than the rapid methods but is more expensive because of reagents from other companies and has a longer time for preparation. Native Bbarcoding with <abbr title="The enzymatic process of joining two DNA fragments together.">ligation</abbr> is a method for multiplex samples to reduce the cost for sample. <abbr title="Sequencing multiple samples simultaneously by using unique barcodes for each sample.">Multiplexing</abbr> may be used only when the amount of data required is less than the total of data that can be generated from a single <abbr title="A consumable device containing nanopores through which nucleic acids pass during sequencing.">flow cell</abbr>.</p>
+<p>The ONT <abbr title="The enzymatic process of joining two DNA fragments together.">Ligation</abbr> Sequencing procedure is a method of preparing DNA molecules for sequencing in a Nanopore system using different dsDNA sources. It is a flexible method that can be used with gDNA, cDNA, or amplicons. The throughput is higher than the ONT Rapid methods but is more expensive because of reagents from other companies and has a longer time for preparation. <abbr title="A library preparation kit that uses ligation to attach sequencing adapters; is longer and uses additional 3rd party reagents compared to the rapid barcoding kit but also results in longer fragment lengths.">Native Barcoding</abbr> with <abbr title="The enzymatic process of joining two DNA fragments together.">ligation</abbr> is a method for multiplex samples to reduce the cost of the samples. <abbr title="Sequencing multiple samples simultaneously by using unique barcodes for each sample.">Multiplexing</abbr> may be used only when the amount of data required is less than the total of data that can be generated from a single <abbr title="A consumable device containing nanopores through which nucleic acids pass during sequencing.">flow cell</abbr>.</p>
 <p>The preparation of the sample has four principal steps:</p>
 <ol>
 <li>the DNA end preparation,</li>
@@ -1893,7 +1921,7 @@ e=d.getElementsByTagName(s)[0];e.parentNode.insertBefore(i, e);
 <p><input type="checkbox"/> 2. As directed by the manufacturer, prepare the reagents for the <strong>NEBNext Ultra II End Repair / dA-tailing module</strong> and set them on ice.  </p>
 <ul class="task-list">
 <li class="task-list-item">
-<p><input type="checkbox"/> a. Thaw all reagents vials on ice.</p>
+<p><input type="checkbox"/> a. Thaw all reagent vials on ice.</p>
 </li>
 <li class="task-list-item">
 <p><input type="checkbox"/> b. Make sure the reagent tubes are thoroughly mixed by flicking or inverting them and spin them down.</p>
@@ -2854,7 +2882,7 @@ e=d.getElementsByTagName(s)[0];e.parentNode.insertBefore(i, e);
 </li>
 </ul>
 <hr />
-<h3 id="completing-the-experiment">Completing the experiment</h3>
+<h3 id="ending-the-experiment">Ending the experiment</h3>
 <ul class="task-list">
 <li class="task-list-item">
 <p><input type="checkbox"/> 1. Stop the sequencing by clicking on the stop button.</p>
