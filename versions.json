@@ -1,5 +1,12 @@
 [
   {
+    "version": "May-2025-dev",
+    "title": "May-2025-dev",
+    "aliases": [
+      "latest"
+    ]
+  },
+  {
     "version": "April-2025",
     "title": "April-2025",
     "aliases": []

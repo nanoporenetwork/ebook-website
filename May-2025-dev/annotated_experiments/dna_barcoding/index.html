@@ -1,0 +1,2757 @@
+
+
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+        <link rel="canonical" href="https://github.com/nanoporenetwork/ebook-website/latest/annotated_experiments/dna_barcoding/">
+      
+      
+        <link rel="prev" href="../../laboratory_protocols/barcoded_amplicon/">
+      
+      
+        <link rel="next" href="../16s_sequencing/">
+      
+      
+      <link rel="icon" href="../../img/assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.5.49">
+    
+    
+      
+        <title>DNA Barcoding - Nanopore Network eBook</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.6f8fc17f.min.css">
+      
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.06af60db.min.css">
+      
+      
+  
+  
+    
+    
+  
+    
+    
+  
+    
+    
+  
+    
+    
+  
+    
+    
+  
+    
+    
+  
+    
+    
+  
+    
+    
+  
+    
+    
+  
+    
+    
+  
+    
+    
+  
+    
+    
+  
+  
+  <style>:root{--md-admonition-icon--note:url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path d="M1 7.775V2.75C1 1.784 1.784 1 2.75 1h5.025c.464 0 .91.184 1.238.513l6.25 6.25a1.75 1.75 0 0 1 0 2.474l-5.026 5.026a1.75 1.75 0 0 1-2.474 0l-6.25-6.25A1.75 1.75 0 0 1 1 7.775m1.5 0c0 .066.026.13.073.177l6.25 6.25a.25.25 0 0 0 .354 0l5.025-5.025a.25.25 0 0 0 0-.354l-6.25-6.25a.25.25 0 0 0-.177-.073H2.75a.25.25 0 0 0-.25.25ZM6 5a1 1 0 1 1 0 2 1 1 0 0 1 0-2"/></svg>');--md-admonition-icon--abstract:url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path d="M2.5 1.75v11.5c0 .138.112.25.25.25h3.17a.75.75 0 0 1 0 1.5H2.75A1.75 1.75 0 0 1 1 13.25V1.75C1 .784 1.784 0 2.75 0h8.5C12.216 0 13 .784 13 1.75v7.736a.75.75 0 0 1-1.5 0V1.75a.25.25 0 0 0-.25-.25h-8.5a.25.25 0 0 0-.25.25m13.274 9.537zl-4.557 4.45a.75.75 0 0 1-1.055-.008l-1.943-1.95a.75.75 0 0 1 1.062-1.058l1.419 1.425 4.026-3.932a.75.75 0 1 1 1.048 1.074M4.75 4h4.5a.75.75 0 0 1 0 1.5h-4.5a.75.75 0 0 1 0-1.5M4 7.75A.75.75 0 0 1 4.75 7h2a.75.75 0 0 1 0 1.5h-2A.75.75 0 0 1 4 7.75"/></svg>');--md-admonition-icon--info:url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8m8-6.5a6.5 6.5 0 1 0 0 13 6.5 6.5 0 0 0 0-13M6.5 7.75A.75.75 0 0 1 7.25 7h1a.75.75 0 0 1 .75.75v2.75h.25a.75.75 0 0 1 0 1.5h-2a.75.75 0 0 1 0-1.5h.25v-2h-.25a.75.75 0 0 1-.75-.75M8 6a1 1 0 1 1 0-2 1 1 0 0 1 0 2"/></svg>');--md-admonition-icon--tip:url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path d="M3.499.75a.75.75 0 0 1 1.5 0v.996C5.9 2.903 6.793 3.65 7.662 4.376l.24.202c-.036-.694.055-1.422.426-2.163C9.1.873 10.794-.045 12.622.26 14.408.558 16 1.94 16 4.25c0 1.278-.954 2.575-2.44 2.734l.146.508.065.22c.203.701.412 1.455.476 2.226.142 1.707-.4 3.03-1.487 3.898C11.714 14.671 10.27 15 8.75 15h-6a.75.75 0 0 1 0-1.5h1.376a4.5 4.5 0 0 1-.563-1.191 3.84 3.84 0 0 1-.05-2.063 4.65 4.65 0 0 1-2.025-.293.75.75 0 0 1 .525-1.406c1.357.507 2.376-.006 2.698-.318l.009-.01a.747.747 0 0 1 1.06 0 .75.75 0 0 1-.012 1.074c-.912.92-.992 1.835-.768 2.586.221.74.745 1.337 1.196 1.621H8.75c1.343 0 2.398-.296 3.074-.836.635-.507 1.036-1.31.928-2.602-.05-.603-.216-1.224-.422-1.93l-.064-.221c-.12-.407-.246-.84-.353-1.29a2.4 2.4 0 0 1-.507-.441 3.1 3.1 0 0 1-.633-1.248.75.75 0 0 1 1.455-.364c.046.185.144.436.31.627.146.168.353.305.712.305.738 0 1.25-.615 1.25-1.25 0-1.47-.95-2.315-2.123-2.51-1.172-.196-2.227.387-2.706 1.345-.46.92-.27 1.774.019 3.062l.042.19.01.05c.348.443.666.949.94 1.553a.75.75 0 1 1-1.365.62c-.553-1.217-1.32-1.94-2.3-2.768L6.7 5.527c-.814-.68-1.75-1.462-2.692-2.619a3.7 3.7 0 0 0-1.023.88c-.406.495-.663 1.036-.722 1.508.116.122.306.21.591.239.388.038.797-.06 1.032-.19a.75.75 0 0 1 .728 1.31c-.515.287-1.23.439-1.906.373-.682-.067-1.473-.38-1.879-1.193L.75 5.677V5.5c0-.984.48-1.94 1.077-2.664.46-.559 1.05-1.055 1.673-1.353z"/></svg>');--md-admonition-icon--success:url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path d="M13.78 4.22a.75.75 0 0 1 0 1.06l-7.25 7.25a.75.75 0 0 1-1.06 0L2.22 9.28a.75.75 0 0 1 .018-1.042.75.75 0 0 1 1.042-.018L6 10.94l6.72-6.72a.75.75 0 0 1 1.06 0"/></svg>');--md-admonition-icon--question:url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8m8-6.5a6.5 6.5 0 1 0 0 13 6.5 6.5 0 0 0 0-13M6.92 6.085h.001a.749.749 0 1 1-1.342-.67c.169-.339.436-.701.849-.977C6.845 4.16 7.369 4 8 4a2.76 2.76 0 0 1 1.637.525c.503.377.863.965.863 1.725 0 .448-.115.83-.329 1.15-.205.307-.47.513-.692.662-.109.072-.22.138-.313.195l-.006.004a6 6 0 0 0-.26.16 1 1 0 0 0-.276.245.75.75 0 0 1-1.248-.832c.184-.264.42-.489.692-.661q.154-.1.313-.195l.007-.004c.1-.061.182-.11.258-.161a1 1 0 0 0 .277-.245C8.96 6.514 9 6.427 9 6.25a.61.61 0 0 0-.262-.525A1.27 1.27 0 0 0 8 5.5c-.369 0-.595.09-.74.187a1 1 0 0 0-.34.398M9 11a1 1 0 1 1-2 0 1 1 0 0 1 2 0"/></svg>');--md-admonition-icon--warning:url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path d="M6.457 1.047c.659-1.234 2.427-1.234 3.086 0l6.082 11.378A1.75 1.75 0 0 1 14.082 15H1.918a1.75 1.75 0 0 1-1.543-2.575Zm1.763.707a.25.25 0 0 0-.44 0L1.698 13.132a.25.25 0 0 0 .22.368h12.164a.25.25 0 0 0 .22-.368Zm.53 3.996v2.5a.75.75 0 0 1-1.5 0v-2.5a.75.75 0 0 1 1.5 0M9 11a1 1 0 1 1-2 0 1 1 0 0 1 2 0"/></svg>');--md-admonition-icon--failure:url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path d="M2.344 2.343za8 8 0 0 1 11.314 11.314A8.002 8.002 0 0 1 .234 10.089a8 8 0 0 1 2.11-7.746m1.06 10.253a6.5 6.5 0 1 0 9.108-9.275 6.5 6.5 0 0 0-9.108 9.275M6.03 4.97 8 6.94l1.97-1.97a.749.749 0 0 1 1.275.326.75.75 0 0 1-.215.734L9.06 8l1.97 1.97a.749.749 0 0 1-.326 1.275.75.75 0 0 1-.734-.215L8 9.06l-1.97 1.97a.749.749 0 0 1-1.275-.326.75.75 0 0 1 .215-.734L6.94 8 4.97 6.03a.75.75 0 0 1 .018-1.042.75.75 0 0 1 1.042-.018"/></svg>');--md-admonition-icon--danger:url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path d="M9.504.43a1.516 1.516 0 0 1 2.437 1.713L10.415 5.5h2.123c1.57 0 2.346 1.909 1.22 3.004l-7.34 7.142a1.25 1.25 0 0 1-.871.354h-.302a1.25 1.25 0 0 1-1.157-1.723L5.633 10.5H3.462c-1.57 0-2.346-1.909-1.22-3.004zm1.047 1.074L3.286 8.571A.25.25 0 0 0 3.462 9H6.75a.75.75 0 0 1 .694 1.034l-1.713 4.188 6.982-6.793A.25.25 0 0 0 12.538 7H9.25a.75.75 0 0 1-.683-1.06l2.008-4.418.003-.006-.004-.009-.006-.006-.008-.001q-.005 0-.009.004"/></svg>');--md-admonition-icon--bug:url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path d="M4.72.22a.75.75 0 0 1 1.06 0l1 .999a3.5 3.5 0 0 1 2.441 0l.999-1a.748.748 0 0 1 1.265.332.75.75 0 0 1-.205.729l-.775.776c.616.63.995 1.493.995 2.444v.327q0 .15-.025.292c.408.14.764.392 1.029.722l1.968-.787a.75.75 0 0 1 .556 1.392L13 7.258V9h2.25a.75.75 0 0 1 0 1.5H13v.5q-.002.615-.141 1.186l2.17.868a.75.75 0 0 1-.557 1.392l-2.184-.873A5 5 0 0 1 8 16a5 5 0 0 1-4.288-2.427l-2.183.873a.75.75 0 0 1-.558-1.392l2.17-.868A5 5 0 0 1 3 11v-.5H.75a.75.75 0 0 1 0-1.5H3V7.258L.971 6.446a.75.75 0 0 1 .558-1.392l1.967.787c.265-.33.62-.583 1.03-.722a1.7 1.7 0 0 1-.026-.292V4.5c0-.951.38-1.814.995-2.444L4.72 1.28a.75.75 0 0 1 0-1.06m.53 6.28a.75.75 0 0 0-.75.75V11a3.5 3.5 0 1 0 7 0V7.25a.75.75 0 0 0-.75-.75ZM6.173 5h3.654A.17.17 0 0 0 10 4.827V4.5a2 2 0 1 0-4 0v.327c0 .096.077.173.173.173"/></svg>');--md-admonition-icon--example:url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path d="M5 5.782V2.5h-.25a.75.75 0 0 1 0-1.5h6.5a.75.75 0 0 1 0 1.5H11v3.282l3.666 5.76C15.619 13.04 14.543 15 12.767 15H3.233c-1.776 0-2.852-1.96-1.899-3.458Zm-2.4 6.565a.75.75 0 0 0 .633 1.153h9.534a.75.75 0 0 0 .633-1.153L12.225 10.5h-8.45ZM9.5 2.5h-3V6c0 .143-.04.283-.117.403L4.73 9h6.54L9.617 6.403A.75.75 0 0 1 9.5 6Z"/></svg>');--md-admonition-icon--quote:url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path d="M1.75 2.5h10.5a.75.75 0 0 1 0 1.5H1.75a.75.75 0 0 1 0-1.5m4 5h8.5a.75.75 0 0 1 0 1.5h-8.5a.75.75 0 0 1 0-1.5m0 5h8.5a.75.75 0 0 1 0 1.5h-8.5a.75.75 0 0 1 0-1.5M2.5 7.75v6a.75.75 0 0 1-1.5 0v-6a.75.75 0 0 1 1.5 0"/></svg>');}</style>
+
+
+  
+  
+  
+  
+  <style>:root{--md-annotation-icon:url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M22 12a10 10 0 0 1-10 10A10 10 0 0 1 2 12 10 10 0 0 1 12 2a10 10 0 0 1 10 10M6 13h8l-3.5 3.5 1.42 1.42L17.84 12l-5.92-5.92L10.5 7.5 14 11H6z"/></svg>');}</style>
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Open Sans";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../../css/print-site-enum-headings1.css">
+    
+      <link rel="stylesheet" href="../../css/print-site-enum-headings2.css">
+    
+      <link rel="stylesheet" href="../../css/print-site-enum-headings3.css">
+    
+      <link rel="stylesheet" href="../../css/print-site-enum-headings4.css">
+    
+      <link rel="stylesheet" href="../../css/print-site-enum-headings5.css">
+    
+      <link rel="stylesheet" href="../../css/print-site-enum-headings6.css">
+    
+      <link rel="stylesheet" href="../../css/print-site.css">
+    
+      <link rel="stylesheet" href="../../css/print-site-material.css">
+    
+      <link rel="stylesheet" href="../../stylesheets/extra.css">
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+  
+
+
+  
+  
+
+<script id="__analytics">function __md_analytics(){function e(){dataLayer.push(arguments)}window.dataLayer=window.dataLayer||[],e("js",new Date),e("config","G-GQ3F37FQ8H"),document.addEventListener("DOMContentLoaded",(function(){document.forms.search&&document.forms.search.query.addEventListener("blur",(function(){this.value&&e("event","search",{search_term:this.value})}));document$.subscribe((function(){var t=document.forms.feedback;if(void 0!==t)for(var a of t.querySelectorAll("[type=submit]"))a.addEventListener("click",(function(a){a.preventDefault();var n=document.location.pathname,d=this.getAttribute("data-md-value");e("event","feedback",{page:n,data:d}),t.firstElementChild.disabled=!0;var r=t.querySelector(".md-feedback__note [data-md-value='"+d+"']");r&&(r.hidden=!1)})),t.hidden=!1})),location$.subscribe((function(t){e("config","G-GQ3F37FQ8H",{page_path:t.pathname})}))}));var t=document.createElement("script");t.async=!0,t.src="https://www.googletagmanager.com/gtag/js?id=G-GQ3F37FQ8H",document.getElementById("__analytics").insertAdjacentElement("afterEnd",t)}</script>
+  
+    <script>"undefined"!=typeof __md_analytics&&__md_analytics()</script>
+  
+
+    
+    
+    
+   <link href="../../assets/stylesheets/glightbox.min.css" rel="stylesheet"/><style>
+    html.glightbox-open { overflow: initial; height: 100%; }
+    .gslide-title { margin-top: 0px; user-select: text; }
+    .gslide-desc { color: #666; user-select: text; }
+    .gslide-image img { background: white; }
+    .gscrollbar-fixer { padding-right: 15px; }
+    .gdesc-inner { font-size: 0.75rem; }
+    body[data-md-color-scheme="slate"] .gdesc-inner { background: var(--md-default-bg-color);}
+    body[data-md-color-scheme="slate"] .gslide-title { color: var(--md-default-fg-color);}
+    body[data-md-color-scheme="slate"] .gslide-desc { color: var(--md-default-fg-color);}</style> <script src="../../assets/javascripts/glightbox.min.js"></script></head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="custom" data-md-color-accent="indigo">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#curated-experiment-dna-barcoding" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+      <div data-md-color-scheme="default" data-md-component="outdated" hidden>
+        
+          <aside class="md-banner md-banner--warning">
+            <div class="md-banner__inner md-grid md-typeset">
+              
+  You're not viewing the latest version.
+  <a href="../../..">
+    <strong>Click here to go to latest.</strong>
+  </a>
+
+            </div>
+            <script>var el=document.querySelector("[data-md-component=outdated]"),outdated=__md_get("__outdated",sessionStorage);!0===outdated&&el&&(el.hidden=!1)</script>
+          </aside>
+        
+      </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../.." title="Nanopore Network eBook" class="md-header__button md-logo" aria-label="Nanopore Network eBook" data-md-component="logo">
+      
+  <img src="../../img/assets/images/logo.png" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Nanopore Network eBook
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              DNA Barcoding
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="default" data-md-color-primary="custom" data-md-color-accent="indigo"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a4 4 0 0 0-4 4 4 4 0 0 0 4 4 4 4 0 0 0 4-4 4 4 0 0 0-4-4m0 10a6 6 0 0 1-6-6 6 6 0 0 1 6-6 6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="slate" data-md-color-primary="custom" data-md-color-accent="indigo"  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 18c-.89 0-1.74-.2-2.5-.55C11.56 16.5 13 14.42 13 12s-1.44-4.5-3.5-5.45C10.26 6.2 11.11 6 12 6a6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/nanoporenetwork/ebook-website" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.7.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81"/></svg>
+  </div>
+  <div class="md-source__repository">
+    nanoporenetwork/ebook-website
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+  
+
+<nav class="md-nav md-nav--primary md-nav--integrated" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="Nanopore Network eBook" class="md-nav__button md-logo" aria-label="Nanopore Network eBook" data-md-component="logo">
+      
+  <img src="../../img/assets/images/logo.png" alt="logo">
+
+    </a>
+    Nanopore Network eBook
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/nanoporenetwork/ebook-website" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.7.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81"/></svg>
+  </div>
+  <div class="md-source__repository">
+    nanoporenetwork/ebook-website
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Home
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+        
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="">
+            
+  
+  <span class="md-ellipsis">
+    Get Started
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            Get Started
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../get_started/get_started/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Start Here
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../get_started/ten-steps/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Ten Steps to Get Started
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../get_started/time-and-cost/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Time and Cost Planning
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../get_started/start-up-checklists/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Start-up Checklists
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+        
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="">
+            
+  
+  <span class="md-ellipsis">
+    Equipment and Lab Management
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            Equipment and Lab Management
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../equipment_and_lab/sequencing_hardware/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Sequencing Devices
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../equipment_and_lab/reagents_and_kits/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Reagents and Kits
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../equipment_and_lab/computers/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Computers and Software
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+    
+    
+      
+        
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" >
+        
+          
+          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="">
+            
+  
+  <span class="md-ellipsis">
+    Laboratory Protocols
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4">
+            <span class="md-nav__icon md-icon"></span>
+            Laboratory Protocols
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+    
+    
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_1" >
+        
+          
+          <label class="md-nav__link" for="__nav_4_1" id="__nav_4_1_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Sample Collection
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_4_1_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4_1">
+            <span class="md-nav__icon md-icon"></span>
+            Sample Collection
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../laboratory_protocols/sample_prep_and_dna_extraction/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Sampling and extracting DNA from samples
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+    
+    
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_4_2" id="__nav_4_2_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Other Sequencing Protocols
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_4_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4_2">
+            <span class="md-nav__icon md-icon"></span>
+            Other Sequencing Protocols
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../laboratory_protocols/barcoded_amplicon/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Barcoded PCR Amplicon
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+        
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="">
+            
+  
+  <span class="md-ellipsis">
+    Annotated Experiments
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_5">
+            <span class="md-nav__icon md-icon"></span>
+            Annotated Experiments
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    DNA Barcoding
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  <span class="md-ellipsis">
+    DNA Barcoding
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#identifying-taxa-through-dna-barocode-sequences" class="md-nav__link">
+    <span class="md-ellipsis">
+      Identifying Taxa through DNA barocode sequences
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Identifying Taxa through DNA barocode sequences">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#background" class="md-nav__link">
+    <span class="md-ellipsis">
+      Background
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#sample-collection" class="md-nav__link">
+    <span class="md-ellipsis">
+      Sample Collection
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#dna-extraction" class="md-nav__link">
+    <span class="md-ellipsis">
+      DNA Extraction
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#pcr" class="md-nav__link">
+    <span class="md-ellipsis">
+      PCR
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#ampure-xp-solid-phase-reversible-immobilization-spri-bead-pcr-clean-up-optional" class="md-nav__link">
+    <span class="md-ellipsis">
+      AMPure XP Solid Phase Reversible Immobilization (SPRI) Bead PCR Clean-Up (optional)
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#rapid-barcode-index-attachment" class="md-nav__link">
+    <span class="md-ellipsis">
+      Rapid Barcode Index Attachment
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#library-clean-up-with-solid-phase-reversible-immobilization-spri-beads" class="md-nav__link">
+    <span class="md-ellipsis">
+      Library Clean-Up with Solid Phase Reversible Immobilization (SPRI) Beads
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#rapid-adapter-attachment" class="md-nav__link">
+    <span class="md-ellipsis">
+      Rapid Adapter Attachment
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#flow-cell-check" class="md-nav__link">
+    <span class="md-ellipsis">
+      Flow Cell Check
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#flow-cell-priming" class="md-nav__link">
+    <span class="md-ellipsis">
+      Flow Cell Priming
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#flow-cell-loading" class="md-nav__link">
+    <span class="md-ellipsis">
+      Flow Cell Loading
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Flow Cell Loading">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#data-analysis" class="md-nav__link">
+    <span class="md-ellipsis">
+      Data analysis
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Data analysis">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#analyze-data" class="md-nav__link">
+    <span class="md-ellipsis">
+      Analyze data
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#interpret-results" class="md-nav__link">
+    <span class="md-ellipsis">
+      Interpret results
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../16s_sequencing/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    16S Sequencing
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../phage/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Phage Genomes
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../microbial_genomes/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Microbial Genomes
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+        
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6" >
+        
+          
+          <label class="md-nav__link" for="__nav_6" id="__nav_6_label" tabindex="">
+            
+  
+  <span class="md-ellipsis">
+    Bioinformatics
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_6_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_6">
+            <span class="md-nav__icon md-icon"></span>
+            Bioinformatics
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../bioinformatics/data_management/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Data Organization and Management
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../bioinformatics/software/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Software Installation and Management
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_6_3" id="__nav_6_3_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Cloud Computing and other Platforms
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_6_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_6_3">
+            <span class="md-nav__icon md-icon"></span>
+            Cloud Computing and other Platforms
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../bioinformatics/subway/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    DNA Subway 2.0
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../bioinformatics/JetStream2/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    JetStream2
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../bioinformatics/aws/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Amazon Web Services
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../bioinformatics/jupyter/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Jupyter
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+        
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_7" >
+        
+          
+          <label class="md-nav__link" for="__nav_7" id="__nav_7_label" tabindex="">
+            
+  
+  <span class="md-ellipsis">
+    Teaching Resources
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_7_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_7">
+            <span class="md-nav__icon md-icon"></span>
+            Teaching Resources
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../teaching_resources/fmn/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Faculty Mentoring Network
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../teaching_resources/cures/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Course-based Research
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../teaching_resources/resources/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Teaching resources
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../teaching_resources/profiles/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Educator profiles
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+    
+    
+      
+        
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_8" >
+        
+          
+          <label class="md-nav__link" for="__nav_8" id="__nav_8_label" tabindex="">
+            
+  
+  <span class="md-ellipsis">
+    Faculty Workshop
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_8_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_8">
+            <span class="md-nav__icon md-icon"></span>
+            Faculty Workshop
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../faculty_workshop/workshop-2025/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Summer of Nanopore 2025
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+    
+    
+      
+        
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_9" >
+        
+          
+          <label class="md-nav__link" for="__nav_9" id="__nav_9_label" tabindex="">
+            
+  
+  <span class="md-ellipsis">
+    Other Resources
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_9_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_9">
+            <span class="md-nav__icon md-icon"></span>
+            Other Resources
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../other_resources/faq/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    FAQ
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../other_resources/glossary/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Glossary
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+    
+    
+      
+        
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_10" >
+        
+          
+          <label class="md-nav__link" for="__nav_10" id="__nav_10_label" tabindex="">
+            
+  
+  <span class="md-ellipsis">
+    Contribute
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_10_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_10">
+            <span class="md-nav__icon md-icon"></span>
+            Contribute
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../contribute/contribution-guidelines/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    How to Contribute
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+<script type="text/javascript">
+/* curator-feed-default-feed-layout */
+(function(){
+var i,e,d=document,s="script";i=d.createElement("script");i.async=1;i.charset="UTF-8";
+i.src="https://cdn.curator.io/published/ac58952c-d540-4ec6-925e-c6e913711287.js";
+e=d.getElementsByTagName(s)[0];e.parentNode.insertBefore(i, e);
+})();
+</script>
+
+
+
+    <a href="../../print_page/" title="Print Site" class="md-content__button md-icon">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M18 3H6v4h12m1 5a1 1 0 0 1-1-1 1 1 0 0 1 1-1 1 1 0 0 1 1 1 1 1 0 0 1-1 1m-3 7H8v-5h8m3-6H5a3 3 0 0 0-3 3v6h4v4h12v-4h4v-6a3 3 0 0 0-3-3"/></svg>
+    </a>
+
+
+
+                  
+
+  
+  
+
+
+<h1 id="curated-experiment-dna-barcoding">Curated Experiment: DNA Barcoding</h1>
+<h2 id="identifying-taxa-through-dna-barocode-sequences">Identifying Taxa through DNA barocode sequences</h2>
+<p><strong>Summary</strong>: Identifying species by sequencing "DNA Barcodes" and compare sequences to a reference <abbr title="A collection of DNA fragments prepared for sequencing.">library</abbr>.</p>
+<details class="note" open="open">
+<summary>Protocol information</summary>
+<p><strong>Protocol Credits</strong></p>
+<ul>
+<li><strong>Author(s)</strong><ul>
+<li>Anna Feitzinger, Cold Spring Harbor Laboratory</li>
+<li>Jeffry Petracca, Cold Spring Harbor Laboratory</li>
+</ul>
+</li>
+<li><strong>Maintainer/contact</strong>: Anna Feitzinger, Cold Spring Harbor Laboratory: <a href="mailto:feitzin@cshl.edu">email</a></li>
+<li><strong>Last updated</strong>: March, 2025</li>
+<li><strong>Source materials and references</strong><ul>
+<li><a href="https://dnabarcoding101.org/lab/">Barcoding 101 Lab Resources</a></li>
+<li><a href="https://community.nanoporetech.com/protocols/rapid-sequencing-gdna-barcoding-sqk-rbk114"><abbr title="A library preparation kit that uses a transposase complex to attach sequencing adapters; is quicker and uses fewer 3rd party reagents than the native barcoding kit but also sheers the DNA resulting in smaller fragment lengths.">Rapid barcoding</abbr> protocol</a></li>
+</ul>
+</li>
+</ul>
+<p><strong>Nanopore Sequencing</strong></p>
+<ul>
+<li><strong>Sequencing format</strong>: <abbr title="A smaller, lower-cost flow cell.">Flongle</abbr></li>
+<li><strong>Sequencing kit</strong>: <a href="https://store.nanoporetech.com/us/rapid-barcoding-sequencing-kit-24-v14.html"><abbr title="A library preparation kit that uses a transposase complex to attach sequencing adapters; is quicker and uses fewer 3rd party reagents than the native barcoding kit but also sheers the DNA resulting in smaller fragment lengths.">Rapid Barcoding</abbr> Kit 24 v14 (SQK-RBK114.24)</a></li>
+<li><strong>Oxford Nanopore Sequencing protocol</strong>: <a href="https://community.nanoporetech.com/protocols/rapid-sequencing-gdna-barcoding-sqk-rbk114"><abbr title="A library preparation kit that uses a transposase complex to attach sequencing adapters; is quicker and uses fewer 3rd party reagents than the native barcoding kit but also sheers the DNA resulting in smaller fragment lengths.">Rapid Barcoding</abbr> Kit (SQK-RBK114.24)</a></li>
+<li><strong>Indexed/Barcoded</strong>: Yes, 24 indicies</li>
+<li><strong>Samples per run</strong>: 24  samples</li>
+</ul>
+<p><strong>Computer and Bioinformatics</strong></p>
+<ul>
+<li><strong>Analysis tools</strong><ul>
+<li><a href="https://labs.epi2me.io/"><abbr title="Oxford Nanopore's software suite for sequence data analysis.">EPI2ME</abbr></a><ul>
+<li><a href="https://github.com/epi2me-labs/wf-amplicon"><abbr title="Oxford Nanopore's software suite for sequence data analysis.">EPI2ME</abbr> amplicon workflow</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><strong>Software to download or install</strong>:<ul>
+<li><a href="https://community.nanoporetech.com/downloads"><strong>Oxford Nanopore Software Downloads</strong></a> <em>Oxford Nanopore account and login required</em>:<ul>
+<li><abbr title="Oxford Nanopore software required for operating the sequencing devices.">MinKNOW</abbr></li>
+<li><abbr title="Oxford Nanopore's software suite for sequence data analysis.">EPI2ME</abbr> Desktop Application</li>
+</ul>
+</li>
+<li><strong>Other software</strong>:<ul>
+<li><a href="https://docs.docker.com/get-started/get-docker/">Docker</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><strong>Analysis difficulty</strong>: Easier</li>
+<li><strong>Command line needed</strong>: No</li>
+<li><strong><abbr title="Graphical Processing Unit; a specialized computer processing chip (analogous to CPU) that can be used to speed-up some types of calculations such as basecalling.">GPU</abbr>/Super-high accuracy <abbr title="The process of determining the sequence of nucleotides (bases) from raw signal data generated by the sequencing platform.">basecalling</abbr> required</strong>: No</li>
+</ul>
+</details>
+<details class="reagents">
+<summary>Reagents</summary>
+<p><strong>Sample collection and prep</strong></p>
+<ul>
+<li>See resources and recipes at <a href="https://community.nanoporetech.com/protocols/rapid-sequencing-gdna-barcoding-sqk-rbk114">barcoding101 Sample Collections</a></li>
+</ul>
+<p><strong>DNA extraction</strong></p>
+<p>For rapid DNA extraction only:</p>
+<ul>
+<li>Lysis solution (6 M Guanidine Hydrochloride GuHCl) (120 µL)</li>
+<li>Wash buffer (480 µL)</li>
+<li>TE buffer (75 µL)</li>
+<li>Specimen tissue sample(s)</li>
+<li>2 Sterile plastic pestles</li>
+<li>Whatman No.1 Chromatography paper discs (2, 3-mm diameter)</li>
+</ul>
+<p>For chelex DNA extraction only:</p>
+<ul>
+<li>10% Chelex Solution (2 tubes of 100 µL)</li>
+<li>2 Sterile plastic pestles</li>
+<li>6 Sterile toothpicks or pipette tips</li>
+<li>Tissue sample(s) (from Part I)</li>
+<li>2 Microcentrifuge tubes (1.5mL)</li>
+</ul>
+<p><strong>PCR</strong></p>
+<ul>
+<li>For Ready-To-Go PCR Bead Amplification:<ul>
+<li>2 Ready-To-Go PCR Beads in 0.2- or 0.5-mL PCR tubes</li>
+<li>Appropriate primer/loading dye mix (50 µL; 23 µL per reaction)*</li>
+</ul>
+</li>
+</ul>
+<p><strong>Barcoding Primers</strong></p>
+<p>Plant Primers:</p>
+<ul>
+<li>rbcLa Forward 5’- TGTAAAACGACGGCCAGTATGTCACCACAAACAGAGACTAAAGC-3’</li>
+<li>rbcLa reverse 5’- CAGGAAACAGCTATGACGTAAAATCAAGTCCACCRCG-3’</li>
+</ul>
+<p>Invertebrate Primers:</p>
+<ul>
+<li>LCO1490   5'-TGTAAAACGACGGCCAGTGGTCAACAAATCATAAAGATATTGG-3'</li>
+<li>HC02198   5'-CAGGAAACAGCTATGACTAAACTTCAGGGTGACCAAAAAATCA-3'</li>
+</ul>
+<p>Fungi Primers:</p>
+<ul>
+<li>ITS1F     5'-TGTAAAACGACGGCCAGTTCCGTAGGTGAACCTGCGG-3'</li>
+<li>ITS4      5'-CAGGAAACAGCTATGACTCCTCCGCTTATTGATATGC-3'</li>
+</ul>
+<p><strong>DNA prep, <abbr title="A collection of DNA fragments prepared for sequencing.">library</abbr> creation, and sequencing</strong></p>
+<ul>
+<li><abbr title="A library preparation kit that uses a transposase complex to attach sequencing adapters; is quicker and uses fewer 3rd party reagents than the native barcoding kit but also sheers the DNA resulting in smaller fragment lengths.">Rapid Barcoding</abbr> Kit (SQK-RBK114.24)</li>
+<li><abbr title="A smaller, lower-cost flow cell.">Flongle</abbr> Expansion Kit (EXP-FLP002)</li>
+<li><abbr title="A smaller, lower-cost flow cell.">Flongle</abbr> Flow Cell (FLG-FLO114)</li>
+</ul>
+</details>
+<details class="equipment">
+<summary>Equipment and consumables</summary>
+<p><strong>Lab equipment</strong></p>
+<ul>
+<li>Micropipettes and tips (2-1000 μL)</li>
+<li>Magnetic microfuge tube racks</li>
+<li>Microfuge tube rack</li>
+<li>Microcentrifuge</li>
+<li>Thermal cycler</li>
+<li>Qubit™ tubes</li>
+</ul>
+<p><strong>Consumables</strong></p>
+<ul>
+<li>1.5 mL microfuge tubes</li>
+<li>PCR tubes</li>
+<li>Qubit™ fluorometer, Nanodrop™, QIAxpert®, or other method of DNA quantification</li>
+</ul>
+<p><strong>Nanopore sequencing equipment</strong></p>
+<ul>
+<li><abbr title="A portable nanopore sequencing device developed by Oxford Nanopore Technologies.">MinION</abbr> <abbr title="A smaller, lower-cost flow cell.">Flongle</abbr> <abbr title="Short DNA or RNA sequences ligated to sample fragments to facilitate their attachment to sequencing platforms.">Adapter</abbr></li>
+<li><abbr title="A portable nanopore sequencing device developed by Oxford Nanopore Technologies.">MinION</abbr> Mk1B or Mk1D sequencer</li>
+</ul>
+<p><strong>Computer equipment</strong></p>
+<ul>
+<li>Desktop or laptop with <abbr title="Oxford Nanopore software required for operating the sequencing devices.">MinKNOW</abbr> software</li>
+</ul>
+</details>
+<details class="time">
+<summary>Estimated timings</summary>
+<ul>
+<li><strong>Sample Collection</strong>: Variable</li>
+<li><strong>DNA extraction</strong>: 60-75 minutes</li>
+<li><strong>PCR, DNA quality control, and <abbr title="A collection of DNA fragments prepared for sequencing.">library</abbr> prep</strong>:<ul>
+<li><strong>PCR</strong>: ~2 hours</li>
+<li><strong>Quality control</strong>: 10 min (Qubit); 60-75 min (electrophoresis)</li>
+<li><strong><abbr title="A collection of DNA fragments prepared for sequencing.">Library</abbr> prep</strong>: 30-60 min</li>
+</ul>
+</li>
+<li><strong>Sequencing</strong>: At least 60 min</li>
+<li><strong>Data analysis</strong>: 30-60 min</li>
+</ul>
+</details>
+<hr />
+<h3 id="background">Background</h3>
+<p>Identifying organisms has grown in importance as we monitor the biological effects of global climate change and attempt to preserve species diversity in the face of accelerating habitat destruction. We know very little about the diversity of plants and animals—let alone microbes—living in many unique ecosystems on earth. Less than two million of the estimated 5-50 million plant and animal species have been identified. Scientists agree that the yearly rate of extinction has increased from about one species per million to 100-1,000 per million. This means that thousands of plants and animals are lost each year. Most of these have not yet been identified.</p>
+<p>Classical taxonomy falls short in this race to catalog biological diversity before it disappears. Specimens must be carefully collected and handled to preserve their distinguishing features. Differentiating subtle anatomical differences between closely related species requires the subjective judgment of a highly trained specialist – and few are being produced in colleges today.</p>
+<p>DNA barcodes allow non-experts to objectively identify species – even from small, damaged, or industrially processed material. Just as the unique pattern of bars in a universal product code (UPC) identifies each consumer product, a “DNA barcode” is a unique pattern of DNA sequence that can potentially identify each living thing. Short DNA barcodes, about 700 nucleotides in length, can be quickly processed from thousands of specimens and unambiguously analyzed by computer programs.</p>
+<p>DNA amplicons are the copied sections of DNA produced by an amplification process that replicates a particular target region of a DNA molecule. For example, DNA amplicons are commonly generated via the polymerase chain reaction (PCR).</p>
+<p>In DNA barcoding, a DNA amplicon might represent a region of DNA that can be used to determine the species of an organism. In medical research, amplicon DNA sequences might be used to detect pathogens, search for inherited diseases, or identify single nucleotide polymorphisms (SNPs) that are associated with a particular disease phenotype. More broadly, amplicon sequencing can be used to assess and analyze genetic variation at particular positions in a genome.</p>
+<div class="admonition nanopore">
+<p class="admonition-title">Explanation</p>
+<p>Because the regions of DNA used for identification are approximately ~70% conserved, differences can be used to distinguish between species but allows the same primer pair to be use across many species.</p>
+<ul>
+<li><em>rbcL</em> or <em>matK</em> located on the chloroplast are used to identify plants</li>
+<li><em>CO1</em> located on the mitochondria is used for animals, including invertebrates.</li>
+<li><em>ITS</em> located in nuclear ribosomal DNA (rDNA) is used for fungi</li>
+</ul>
+</div>
+<p>DNA sequencing can be carried out in a number of different ways depending on the needs of an experiment. The ONT <abbr title="A portable nanopore sequencing device developed by Oxford Nanopore Technologies.">MinION</abbr> sequencing device offers a portable, versatile, efficient, and relatively inexpensive way to sequence DNA in a classroom setting. In order to sequence DNA amplicons on this platform, they must first be prepared using an ONT kit. One efficient option for amplicons is the <abbr title="A library preparation kit that uses a transposase complex to attach sequencing adapters; is quicker and uses fewer 3rd party reagents than the native barcoding kit but also sheers the DNA resulting in smaller fragment lengths.">Rapid Barcoding</abbr> Kit, which we used in this protocol.</p>
+<div class="admonition classroom">
+<p class="admonition-title">Example Projects</p>
+<p><strong>DNA Barcoding Student Project Examples</strong></p>
+<p>Example of DNA Barcoding student projects can be found for the DNALC's barcoding programs below:</p>
+<ul>
+<li><a href="https://dnabarcoding101.org/symposium/program/ubrp">Urban <abbr title="Short, unique sequences added to DNA fragments to identify and differentiate multiple samples sequenced together. See also—Indexing.">Barcode</abbr> Research Project</a></li>
+<li><a href="https://dnabarcoding101.org/symposium/program/ubrp"><abbr title="Short, unique sequences added to DNA fragments to identify and differentiate multiple samples sequenced together. See also—Indexing.">Barcode</abbr> Long Island</a></li>
+<li><a href="https://dnabarcoding101.org/symposium/program/ubrp">Urban <abbr title="Short, unique sequences added to DNA fragments to identify and differentiate multiple samples sequenced together. See also—Indexing.">Barcode</abbr> Research Project</a></li>
+</ul>
+</div>
+<details class="references">
+<summary>Additional Reading</summary>
+<ol>
+<li>Hebert P.D., Cywinska A., Ball S.L., deWaard J.R. (2003). Biological identifications through DNA barcodes. Proceedings of the Royal Society B: Biological Sciences 270(1512): 313-21.</li>
+<li>Hebert P.D.N., Penton E.H., Burns J.M., Janzen D.H., Hallwachs W. (2004). Ten species in one: DNA barcoding reveals cryptic species in the neotropical skipper butterfly Astraptes fulgerator. Proc Natl Acad Sci USA. 101(41):14812-7.</li>
+<li>Hollingsworth P.M. et al (2009). A DNA barcode for land plants. Proc Natl Acad Sci USA 106(31): 12794-7.</li>
+<li>Ratnasingham, S., Hebert, P.D.N (2007). BOLD: The <abbr title="Short, unique sequences added to DNA fragments to identify and differentiate multiple samples sequenced together. See also—Indexing.">Barcode</abbr> of Life Data System. Molecular Ecology Notes 7(3): 355-64.</li>
+<li>Stoeckle M. (2003). Taxonomy, DNA, and the Bar Code of Life. BioScience 53(9): 2-3.</li>
+<li>Van Den Berg C., Higgins W.E., Dressler R.L., Whitten W.M., Soto-Arenas M.A., Chase M.W. (2009) A phylogenetic study of Laeliinae (Orchidaceae) based on combined nuclear and plastid DNA sequences. Annals of Botany 104(3): 417-30.</li>
+<li>Benson D.A., Cavanaugh M., Clark K., Karsch-Mizrachi I, Lipman D.J., Ostell J., Sayers E.W. (2013). Nucleic Acids Res. GenBank. 41(D1): D36–D42.</li>
+</ol>
+</details>
+<h3 id="sample-collection">Sample Collection</h3>
+<p><strong>Goal</strong>: Collect samples for DNA Barcoding</p>
+<div class="admonition classroom">
+<p class="admonition-title">Instruction tip</p>
+<p>Each student (up to 24) can prepare their own sample.</p>
+</div>
+<div class="admonition example">
+<p class="admonition-title">Summary</p>
+<p>Your collection of specimens may support a census of life in a specific area or habitat, an evaluation of products purchased in restaurants or supermarkets, or may contribute to a larger “campaign” to assess biodiversity across large areas. It may make sense for you to use sampling techniques from ecology. For example, a quadrat samples the plant and/or animal life in one square meter (or ¼ square meter) of habitat, while a transect collects samples along a fixed path through a habitat. A “Hula Hoop” can be used as an acceptable substitute for a quadrat. Do not take more sample than you need. Only a small amount of tissue is needed for DNA extraction—a piece of plant leaf about ⅛- to ¼-inch diameter or a piece of animal or fungal the size of a grain of rice.</p>
+<p>Minimize damage to living plants by collecting a single leaf or bud, or several needles. When possible, use young, fresh leaves or buds. Flexible, non-waxy leaves work best. Tougher materials, such as pine needles or holly leaves, can work if the sample is kept small and is ground well. Dormant leaf buds can often be obtained from bushes and trees that have dropped leaves. Fresh, frozen leaves work well. Dried leaves and herbarium samples are variable.</p>
+<p>Avoid twigs or bark. If woody material must be used, select flexible twigs with soft pith inside. As a last resort, scrape a small sample of the softer, growing cambium just beneath the bark. Roots and tubers are a poor choice, because high concentrations of storage starches and other sugars can interfere with DNA extraction.</p>
+</div>
+<h3 id="dna-extraction">DNA Extraction <!-- i.e. DNA Extraction --></h3>
+<p><strong>Goal</strong>: Extract DNA from tissue samples</p>
+<div class="admonition example">
+<p class="admonition-title">Summary</p>
+<p>The Chelex, Silica, and Rapid protocol are all simple and efficient DNA extraction methods suitable for the classroom.</p>
+<ul>
+<li>The Rapid DNA extraction protocol works extremely well for plants and for select groups of terrestrial invertebrates. This method eliminates the need for equipment such as water baths and centrifuges, and students can complete the DNA isolation and have DNA ready for PCR in &lt;30 min.</li>
+<li>The Chelex DNA extraction uses Chelex resin which binds to substances that can inhibit PCR (polymerase chain reaction, a common DNA analysis technique), like metal ions. The DNA is then released from the sample by heating.</li>
+<li>The Silica DNA extraction method is inexpensive and has the advantage of working reproducibly with almost any kind of plant, fungus, or animal specimen.</li>
+</ul>
+<p>More information about the percentage of success of theses DNA extraction methods for different organism types can be found under the "Isolation DNA" section in <a href="https://dnabarcoding101.org/lab/planning-prep.html#prseq">here</a>.</p>
+<p>Pre-isolation preparation: If sample has been stored in 95%+ EtOH prior to DNA isolation, remove the sample from the EtOH using a sterile toothpick and allow it to dry for &gt;10 min on a clean surface. Proceed when sample no longer smells of EtOH. Ethanol carried through the DNA isolation can inhibit DNA amplification later.</p>
+<div class="tabbed-set tabbed-alternate" data-tabs="1:3"><input checked="checked" id="__tabbed_1_1" name="__tabbed_1" type="radio" /><input id="__tabbed_1_2" name="__tabbed_1" type="radio" /><input id="__tabbed_1_3" name="__tabbed_1" type="radio" /><div class="tabbed-labels"><label for="__tabbed_1_1">Rapid Extraction</label><label for="__tabbed_1_2">Chelex</label><label for="__tabbed_1_3">Silica</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
+<p><strong>Steps</strong>:</p>
+<ol>
+<li>Obtain tissue ~10 mg or ⅛- to ¼-inch diameter in size by removing a piece of the tissue with a razor blade or sterile tweezer. Be sure to preserve remainder of the organism, as well as additional collected specimens, at -20°C, in 95%+ EtOH, or both. Place tissue in a clean 1.5-mL tube labeled with a sample identification number.</li>
+<li>
+<p>Add 50 µL of lysis solution to each tube.</p>
+<div class="admonition note">
+<p class="admonition-title">Explanation</p>
+<p>Lysis solution dissolves membrane-bound organelles including the nucleus, mitochondria, and chloroplast..</p>
+</div>
+</li>
+<li>
+<p>Twist a clean plastic pestle against the inner surface of 1.5-mL tube to forcefully grind the tissue for at least 2 minutes. Use a clean pestle for each sample. Ensure the sample is ground into fine particles.</p>
+<div class="admonition note">
+<p class="admonition-title">Explanation</p>
+<p>Grinding breaks up cell walls and other tough material. Once ground, the sample should be liquid, but there may be some particulate matter remaining.</p>
+</div>
+</li>
+<li>
+<p>For each sample, use a separate sterile tweezer to add one 3-mm diameter disc of Whatman No. 1 Chromatography paper to the lysed extract. Tap or flick the tube gently to ensure the disc is fully submerged in the extract. Allow the disc to soak in the extract for 1 minute.</p>
+<div class="admonition note">
+<p class="admonition-title">Explanation</p>
+<p>Whatman chromatography paper binds the DNA, helping separate DNA from contaminants.</p>
+</div>
+</li>
+<li>
+<p>While the disc is soaking, add 200 µL of wash buffer to a clean 1.5-mL tube labeled with the sample identification number.
+Wash buffer will remove contaminants that can inhibit PCR while the DNA remains bound to the paper.</p>
+</li>
+<li>Remove the disc from the extract using a sterile tweezer or pipette tip and transfer the disc into the fresh tube containing wash buffer. Tap or flick the tube to mix for 5 seconds, then allow the disc to sit in the wash buffer for 1 minute.
+Discard/set-aside the tweezer following Step 7. Use of the tweezer to transfer the disc in future steps will contaminate the disc with impurities that may affect PCR.</li>
+<li>
+<p>Use a sterile pipette tip to gently drag the disc out of the wash buffer and up the tube wall to dry at the top of the tube. Ensure that little to no debris is attached to the disk. Allow the disc to air dry for 2 minutes to evaporate the ethanol on the disc.</p>
+<div class="admonition note">
+<p class="admonition-title">Explanation</p>
+<p>Ethanol in the wash buffer can inhibit PCR, so drying the paper after the wash step is required.</p>
+</div>
+</li>
+<li>
+<p>While the disc is air-drying, add 30 µL of TE to a clean 1.5-mL tube labeled with the sample identification number.</p>
+</li>
+<li>Once dry, carefully transfer the disc using a sterile tweezer or pipette tip into the fresh tube containing 30 µL of TE. Allow the disc to soak for a minimum of 15 minutes at ambient temperature (soaking the disc overnight at 4° C is optimal) to elute the purified DNA</li>
+<li>The disc in TE can be stored at 4° C temporarily or frozen at -20° C for long-term storage until ready to begin Part III; ensure that the disc has incubated at ambient temperature for at least 15 minutes before storage at 4° C or -20° C. In Part III, you will use 2 μL of DNA for each PCR reaction. This is a crude DNA extract and contains nucleases that will eventually fragment the DNA at room temperature. Keep the sample cold to limit this activity.</li>
+</ol>
+</div>
+<div class="tabbed-block">
+<p><strong>Steps</strong>:</p>
+<ol>
+<li>
+<p>Obtain tissue ~10 mg or ⅛- to ¼-inch diameter in size by removing a piece of the tissue with a razor blade or sterile tweezer. Some organisms or samples will be small enough that the entire specimen should be used. If you are working with more than one sample, be careful not to cross-contaminate specimens. Be sure to preserve remainder of the organism, as well as additional collected specimens, at -20°C, in 95%+ EtOH, or both.</p>
+<div class="admonition note">
+<p class="admonition-title">Explanation</p>
+<p>Tissue should be no larger than a grain of rice. Using more than the recommended amount can inhibit amplification.</p>
+</div>
+</li>
+<li>
+<p>Gently tap 10% Chelex solution tube on a hard surface to ensure the solution is at the bottom. Place tissue into Chelex tube labeled with a sample identification number.</p>
+<div class="admonition note">
+<p class="admonition-title">Explanation</p>
+<p>Chelex binds positively charged contaminants that could be inhibitors of DNA amplification and binds magnesium ions that are cofactors of DNA nucleases.</p>
+</div>
+</li>
+<li>
+<p>Twist a clean plastic pestle against the inner surface of Chelex tube to forcefully grind the tissue for at least 2 minutes. Use a clean pestle for each sample. Ensure the sample is ground into fine particles. Securely close the cap of the tube.</p>
+<div class="admonition note">
+<p class="admonition-title">Explanation</p>
+<p>Grinding breaks up cell walls and other tough material. Once ground, the sample should be liquid, but there may be some particulate matter remaining.</p>
+</div>
+</li>
+<li>
+<p>Fill a mug nearly to the top with boiling water and cover with aluminum foil. Punch small guide holes in the foil for the number of samples you are processing. Prevent the tube from opening in the following step by using a cap lock to secure the cap to the rim of the tube. Be sure that both the tube rim and cap are held within the cap lock so that steam can’t force the cap open. Place tubes through foil so that the Chelex and sample mixture is fully submerged, but do not submerge the top of the tube.</p>
+<div class="admonition note">
+<p class="admonition-title">Explanation</p>
+<p>The heat will help to lyse cell and organelle membranes, releasing the DNA.</p>
+</div>
+</li>
+<li>
+<p>Incubate tubes for 10 minutes. It is not necessary to keep water boiling. Alternatively, you can use a water bath or thermocycler to incubate tubes at 95°C for 10 minutes.
+Discard water from mug and return the tubes in foil to the mug. Allow Chelex to settle for an additional 10 minutes. Alternatively, place tubes in a balanced configuration in a microcentrifuge, with cap hinges pointing outward. Centrifuge for 30 seconds at maximum speed to pellet Chelex.
+Once boiled, the DNA and Chelex mixture can be stored at 4° C temporarily, frozen at -20° C for long-term storage, or shipped at ambient temperature.</p>
+</li>
+<li>
+<p>Carefully transfer ~30 µL of supernatant from the Chelex tube, avoiding the Chelex, into a clean 1.5mL microcentrifuge tube labelled with the sample identification number. This tube can be stored at 4° C temporarily or frozen at -20° C for long-term storage until ready to begin Part III. Alternatively, 2 µL of the supernatant from the Chelex tube can be used directly for future PCR reactions. Do not transfer any of the white Chelex resin along with the supernatant. This is a crude DNA extract and contains nucleases that will eventually fragment the DNA at room temperature. Keep the sample cold to limit this activity.
+Chelex inhibits DNA amplification by PCR.</p>
+</li>
+</ol>
+</div>
+<div class="tabbed-block">
+<p><strong>Steps</strong>:</p>
+<ol>
+<li>
+<p>Obtain plant, fungal, or animal tissue ~10 mg or ⅛- to ¼-inch diameter by removing a piece of the tissue with a razor blade, clean tweezers, scissors, or back of a 10-µL pipette tip to enable efficient lysis. If you are working with more than one sample, be careful not to cross-contaminate specimens. (If you only have one specimen, make a balance tube with the appropriate volume of water for centrifugation steps.)</p>
+<div class="admonition note">
+<p class="admonition-title">Explanation</p>
+<p>Tissue should be no larger than a grain of rice. Using more than the recommended amount can affect amplification.</p>
+</div>
+</li>
+<li>
+<p>Place sample in a clean 1.5-mL tube labeled with an identification number.</p>
+</li>
+<li>
+<p>Add 300 µL of lysis solution to each tube.</p>
+<div class="admonition note">
+<p class="admonition-title">Explanation</p>
+<p>Lysis solution dissolves membrane-bound organelles including the nucleus, mitochondria, and chloroplast.</p>
+</div>
+</li>
+<li>
+<p>Twist a clean plastic pestle against the inner surface of the 1.5-mL tube to forcefully grind the tissue for 2 minutes. Use a clean pestle for each tube if you are doing more than one sample.</p>
+<div class="admonition note">
+<p class="admonition-title">Explanation</p>
+<p>Grinding the tissue breaks up cell walls and other tough material. Once fully ground, the sample should be liquid, but there may be some particulate matter remaining.</p>
+</div>
+</li>
+<li>
+<p>Incubate the tube in a water bath or heat block at 65° C for 10 minutes.</p>
+</li>
+<li>Place your tube and those of other groups in a balanced configuration in a microcentrifuge, with cap hinges pointing outward. Centrifuge for one minute at maximum speed to pellet debris.</li>
+<li>Label a clean 1.5-mL tube with your sample number. Transfer 150 μL of the supernatant (clear solution above pellet at bottom of tube) to the fresh tube. Be careful not to disturb the debris pellet when transferring the supernatant. Discard old tube containing the debris.</li>
+<li>
+<p>Add 3 μL of silica resin to tube; ensure silica resin is mixed and homogenous. Close tube and mix well by flicking or vortexing (solution will turn cloudy, but silica will settle shortly after). Close and incubate the tube for 5 minutes in a water bath or heat block at 57° C.</p>
+<div class="admonition note">
+<p class="admonition-title">Explanation</p>
+<p>Silica resin is a DNA binding matrix that is white. In the presence of the lysis solution the silica resin binds readily to nucleic acids.</p>
+</div>
+</li>
+<li>
+<p>Place your tube and those of other groups in a balanced configuration in a microcentrifuge, with cap hinges pointing outward. Centrifuge for 30 seconds at maximum speed to pellet the resin. Use a micropipette with fresh tip to remove all supernatant, being careful not to disrupt the white silica resin pellet at the bottom of the tube.</p>
+<div class="admonition note">
+<p class="admonition-title">Explanation</p>
+<p>Centrifugation pellets the silica resin, which is now bound to nucleic acid. The pellet will appear as a tiny teardrop-shaped smear or particles on the bottom side of the tube underneath the hinge.</p>
+</div>
+</li>
+<li>
+<p>Add 500 μL of ice cold wash buffer to the pellet. Mix well by pipetting up and down (or by closing the tube and flicking or vortexing) to resuspend the silica resin.</p>
+<div class="admonition note">
+<p class="admonition-title">Explanation</p>
+<p>Wash buffer removes contaminants from the sample while nucleic acids remain bound to the resin. The silica resin is not soluble in the wash buffer. The silica resin may stay as a pellet or break up during the washing.</p>
+</div>
+</li>
+<li>
+<p>Place your tube and those of other groups in a balanced configuration in a microcentrifuge, with cap hinges pointing outward. Centrifuge for 30 seconds at maximum speed to pellet the resin. Use a micropipette with fresh tip to remove all supernatant, being careful not to disrupt the white silica resin pellet at the bottom of the tube.</p>
+</li>
+<li>
+<p>Once again, add 500 μL of ice cold wash buffer to the pellet. Close tube and mix well by vortexing or by pipetting up and down to resuspend the silica resin.</p>
+<div class="admonition note">
+<p class="admonition-title">Explanation</p>
+<p>Washing twice is much more effective than washing once with twice the volume.</p>
+</div>
+</li>
+<li>
+<p>Place your tube and those of other groups in a balanced configuration in a microcentrifuge, with cap hinges pointing outward. Centrifuge for 30 seconds at maximum speed to pellet the silica resin.</p>
+</li>
+<li>There will be approximately 50 μL of supernatant remaining after the brief spin to be removed. In the presence of water or TE buffer, nucleic acids are eluted from the silica resin.</li>
+<li>Use a micropipette with fresh tip to remove the supernatant, being careful not to disrupt the white pellet at the bottom of the tube. Spin the tube again for ~15 seconds to collect any drops of supernatant and then remove these with a micropipette.</li>
+<li>Add 100 μL of distilled water (or TE buffer) to the silica resin and mix well by vortexing or by pipetting up and down. Incubate the mixture at 57° C for 5 minutes.</li>
+<li>
+<p>For long-term storage it is recommended DNA samples be stored in TE buffer (Tris/EDTA). Tris provides a pH 8.0 environment to keep DNA and RNA nucleases less active. EDTA further inactivates nucleases by binding cations required by nucleases.</p>
+</li>
+<li>
+<p>Place your tube and those of other groups in a balanced configuration in a microcentrifuge, with cap hinges pointing outward. Centrifuge for 30 seconds at maximum speed to pellet the silica resin.</p>
+</li>
+<li>
+<p>Label a clean 1.5-mL tube with your sample number. Transfer 50 μL of the supernatant (clear solution) to the fresh tube. Be careful not to disturb the pellet when transferring the supernatant. Discard old tube containing the silica resin.</p>
+<div class="admonition note">
+<p class="admonition-title">Explanation</p>
+<p>Transferring silica resin to the PCR reaction in Part III can inhibit the PCR amplification.</p>
+</div>
+</li>
+</ol>
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<p>Store your sample on ice or at -20° C until you are ready to begin the PCR.</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+<h3 id="pcr">PCR</h3>
+<p><strong>Goal</strong>: Extract DNA from tissue samples</p>
+<div class="admonition example">
+<p class="admonition-title">Summary</p>
+<p><strong>Steps</strong>:</p>
+<ol>
+<li>Obtain PCR tube containing Ready-To-Go PCR Bead containing dehydrated Taq polymerase, nucleotides, and buffer. Label the tube with your identification number.</li>
+<li>Use a micropipette with a fresh tip to add 23 µL of the appropriate primer/loading dye mix to each tube (refer to primer table below). Allow the beads to dissolve for 1 minute at ambient temperature.</li>
+<li>Place the PCR tubes on ice to prevent premature replication of unwanted primer dimers.</li>
+<li>Use a micropipette with fresh tip to add 2 µL of your DNA (from Part II) directly into PCR tube with primer and polymerase mixture. Ensure that no DNA remains in the tip after pipetting.</li>
+</ol>
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<p>If the reagents become splattered on the wall of the tube, pool them by briefly spinning the sample in a microcentrifuge (with tube adapters) or by sharply tapping the tube bottom on the lab bench.</p>
+<p>If your DNA was extracted using Chelex, allow the tubes containing DNA to sit upright for 10 minutes (or centrifuge for 30 seconds) to ensure that any residual Chelex settles on the bottom of the tubes. When removing DNA for PCR, be careful to only pipet from the very top of the liquid to avoid transferring Chelex into the PCR tube as Chelex inhibits PCR.</p>
+</div>
+<ol>
+<li>Store your sample on ice until your class is ready to begin thermal cycling.</li>
+<li>Place your PCR tube, along with those of the other students, in a thermal cycler that has been programmed with the appropriate PCR protocol.</li>
+<li>Amplification from some templates, such as the COI barcode region, may be improved by transferring PCR tubes directly from ice into a hot thermal cycler that has been temporarily paused at the beginning of the first 95°C denaturation step. This limits the formation of undesirable primer dimers. Resume the program when all of the PCR tubes are in the thermal cycler.</li>
+</ol>
+<div class="tabbed-set tabbed-alternate" data-tabs="2:3"><input checked="checked" id="__tabbed_2_1" name="__tabbed_2" type="radio" /><input id="__tabbed_2_2" name="__tabbed_2" type="radio" /><input id="__tabbed_2_3" name="__tabbed_2" type="radio" /><div class="tabbed-labels"><label for="__tabbed_2_1">RbCl</label><label for="__tabbed_2_2">COI</label><label for="__tabbed_2_3">ITS</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
+<p>Primers:
+(rbcLaF / rbcLa rev)</p>
+<table>
+<thead>
+<tr>
+<th>Temperature</th>
+<th>Time</th>
+<th>Cyles</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>94 °C</td>
+<td>1:00 minutes</td>
+<td>1</td>
+</tr>
+<tr>
+<td>94 °C</td>
+<td>15 seconds</td>
+<td>35</td>
+</tr>
+<tr>
+<td>54 °C</td>
+<td>15 seconds</td>
+<td>35</td>
+</tr>
+<tr>
+<td>72 °C</td>
+<td>30 seconds</td>
+<td>35</td>
+</tr>
+<tr>
+<td>4 °C</td>
+<td>ad infinitum</td>
+<td>1</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="tabbed-block">
+<p>Primers:
+(LCO1490 / HC02198)</p>
+<table>
+<thead>
+<tr>
+<th>Temperature</th>
+<th>Time</th>
+<th>Cyles</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>94 °C</td>
+<td>1:00 minutes</td>
+<td>1</td>
+</tr>
+<tr>
+<td>94 °C</td>
+<td>30 seconds</td>
+<td>35</td>
+</tr>
+<tr>
+<td>50 °C</td>
+<td>30 seconds</td>
+<td>35</td>
+</tr>
+<tr>
+<td>72 °C</td>
+<td>45 seconds</td>
+<td>35</td>
+</tr>
+<tr>
+<td>4 °C</td>
+<td>ad infinitum</td>
+<td>1</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="tabbed-block">
+<p>Primers:
+(ITS1F / ITS4)</p>
+<table>
+<thead>
+<tr>
+<th>Temperature</th>
+<th>Time</th>
+<th>Cyles</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>94 °C</td>
+<td>1:00 minutes</td>
+<td>1</td>
+</tr>
+<tr>
+<td>94 °C</td>
+<td>1 minute</td>
+<td>35</td>
+</tr>
+<tr>
+<td>55 °C</td>
+<td>1 seconds</td>
+<td>35</td>
+</tr>
+<tr>
+<td>72 °C</td>
+<td>2 minutes</td>
+<td>35</td>
+</tr>
+<tr>
+<td>4 °C</td>
+<td>ad infinitum</td>
+<td>1</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</div>
+<h2 id="ampure-xp-solid-phase-reversible-immobilization-spri-bead-pcr-clean-up-optional">AMPure XP Solid Phase Reversible Immobilization (SPRI) Bead PCR Clean-Up (optional)</h2>
+<div class="admonition example">
+<p class="admonition-title">Summary</p>
+<p>This protocol is modified from Beckman Coulter Life Sciences’ protocol for typical PCR cleanup of DNA barcoding PCR products using solid phase reversible immobilization (SPRI) beads (i.e., AMPure XP beads). This protocol will suitably remove the remnants of PCR, selecting for PCR products in the range of 400-800 base pairs, which is consistent with most standard DNA barcode marker regions (e.g., rbcL, COI, etc.). The intent of this protocol is to prepare DNA amplicons for rapid sequencing with ONT’s <abbr title="A library preparation kit that uses a transposase complex to attach sequencing adapters; is quicker and uses fewer 3rd party reagents than the native barcoding kit but also sheers the DNA resulting in smaller fragment lengths.">Rapid Barcoding</abbr> Kit. Note that it is “optional,” because once all samples are pooled, bead clean-up will still need to be conducted on the pooled amplicon <abbr title="A collection of DNA fragments prepared for sequencing.">library</abbr>.</p>
+</div>
+<p><strong>Steps</strong>:</p>
+<ol>
+<li>Re-suspend AMPure XP beads by using the pipette to mix.</li>
+<li>Add the entire PCR reaction (~20 μL) directly to a labeled 1.5 mL microfuge tube containing 36 μL AMPure XP beads. Use the pipette to carefμLly mix the beads and DNA.</li>
+<li>Incubate for 5 minutes at room temperature on a microfuge tube rack.</li>
+<li>Spin down the tube for 15 seconds and place the tube on a magnetic rack. Wait for about 1 minute for the beads to completely pellet near the magnet. Note that the liquid</li>
+<li>Keeping the tube on the magnet, pipette off the supernatant and discard without disturbing the pellet.</li>
+<li>Keeping the tube on the magnet, add 200 μL of freshly prepared 70% ethanol without disturbing the pellet. Remove the ethanol using a pipette and discard.</li>
+<li>Repeat Step 5.</li>
+<li>Remove the tube from the magnetic rack and spin down the tube for 15 seconds. Replace the tube on the magnetic rack and allow the pellet to reform.</li>
+<li>Keeping the tube on the magnet, remove any residual liquid (~10-30 μL). With the tube open, allow the pellet to dry for 30 seconds. Caution: Do not allow the pellet to dry to the point of cracking. Be prepared to immediately move on to Step 10.</li>
+<li>Remove the tube from the magnetic rack and resuspend the pellet in 10 μL of EB. Use the pipette to continuously wash the EB over the pellet until it completely dissociates.</li>
+<li>Incubate the tube for 5 minutes away from the magnetic rack.</li>
+<li>Spin down the tube for 15 seconds and replace the tube on the magnetic rack. Wait for about 1 minute for the beads to completely pellet near the magnet. Note that the liquid supernatant shoμLd be completely clear.</li>
+<li>Remove and retain 10 μL of supernatant. Pipette the supernatant into a thin-walled PCR tube. Discard the tube containing the pellet. The PCR product is now ready for the ONT Rapid <abbr title="Short, unique sequences added to DNA fragments to identify and differentiate multiple samples sequenced together. See also—Indexing.">Barcode</abbr> Kit.</li>
+</ol>
+<h2 id="rapid-barcode-index-attachment">Rapid <abbr title="Short, unique sequences added to DNA fragments to identify and differentiate multiple samples sequenced together. See also—Indexing.">Barcode</abbr> Index Attachment</h2>
+<div class="admonition example">
+<p class="admonition-title">Summary</p>
+<p>After the optional SPRI bead clean-up step, DNA amplicons are ready for rapid barcode index attachment. Note that up to 24 DNA amplicons can be uniquely tagged during a single <abbr title="A collection of DNA fragments prepared for sequencing.">library</abbr> prep and sequencing run using the Rapid <abbr title="Short, unique sequences added to DNA fragments to identify and differentiate multiple samples sequenced together. See also—Indexing.">Barcode</abbr> Kit 24 V14. ONT manufactures another kit with up to 96 unique barcode indexes.</p>
+</div>
+<p><strong>Steps</strong></p>
+<ol>
+<li>Obtain one unique Rapid <abbr title="Short, unique sequences added to DNA fragments to identify and differentiate multiple samples sequenced together. See also—Indexing.">Barcode</abbr> (RB) mix for each PCR amplicon. Record each sample number and its associated RB.</li>
+<li>Spin down RB tubes. Pipette 1 μL of each unique RB directly into a PCR tube containing 10 μL of its associated DNA amplicon. Vortex briefly or pipette to mix.</li>
+<li>Ensure that PCR tubes are sealed shut, and then incubate tubes in a thermal cycler using the following conditions:</li>
+</ol>
+<table>
+<thead>
+<tr>
+<th>Temperature</th>
+<th>Time</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>30 °C</td>
+<td>2:00 minutes</td>
+</tr>
+<tr>
+<td>80 °C</td>
+<td>2:00 minutes</td>
+</tr>
+<tr>
+<td>4 °C</td>
+<td>hold</td>
+</tr>
+</tbody>
+</table>
+<div class="admonition nanopore">
+<p class="admonition-title">Explanation</p>
+<p>The 20 °C incubation step will first ensure optimal transposase activity, promoting the addition of the RB indexes. The 80 °C step will denature and inactivate the transposase to prevent erroneous addition of unique indexes to the wrong DNA amplicons during pooling.</p>
+</div>
+<ol>
+<li>Spin down PCR tubes. DNA amplicons are now uniquely tagged using the ONT RBs.</li>
+<li>Pipette each tagged DNA amplicon (~11.5 μL) into a single class-wide 1.5 mL microfuge tube. This represents the pooled amplicon <abbr title="A collection of DNA fragments prepared for sequencing.">library</abbr>.  </li>
+</ol>
+<h2 id="library-clean-up-with-solid-phase-reversible-immobilization-spri-beads"><abbr title="A collection of DNA fragments prepared for sequencing.">Library</abbr> Clean-Up with Solid Phase Reversible Immobilization (SPRI) Beads</h2>
+<div class="admonition example">
+<p class="admonition-title">Summary</p>
+<p><abbr title="A collection of DNA fragments prepared for sequencing.">Library</abbr> clean-up will remove remnants of PCR (e.g., primers, polymerase, etc.), residual transposome and unused rapid barcodes, as well as any dyes or indicators used during previous steps (e.g., Cresol red). Note that this step must be carried out even if the optional PCR clean-up step was performed with a class.</p>
+</div>
+<p><strong>Steps</strong>:</p>
+<ol>
+<li>Re-suspend AMPure XP beads by using the pipette to mix or vortexing.</li>
+<li>Add an appropriate volume of AMPure XP beads to the pooled amplicon <abbr title="A collection of DNA fragments prepared for sequencing.">library</abbr> using the following formula:
+VolumeAMPure XP beads= (11.5 μL)(No. of DNA amplicon samples)</li>
+<li>Use a pipette to gently mix the beads and amplicon <abbr title="A collection of DNA fragments prepared for sequencing.">library</abbr> such that the beads are evenly distributed throughout the tube.</li>
+<li>Incubate the mix at room temperature for 10 minutes, flicking occasionally to ensure that beads remain suspended in solution. Note that DNA amplicons are coordinating with SPRI beads during this time.</li>
+<li>Spin down the mix for 15 minutes to form an initial bead pellet. Then, place the tube on a magnetic rack to pellet the beads. Allow up to one minute for the beads to pellet.
+Keeping the tube on the magnetic rack, use an appropriate pipette to remove all of the liquid from the tube and discard. Avoid disturbing the pellet. Remember that the DNA is located in the pellet at this point.</li>
+<li>Keeping the tube on the magnetic rack, add 1000 μL of 80% ethanol to the pellet. Then, remove the supernatant and discard without disturbing the pellet.</li>
+<li>Repeat Step 6.</li>
+<li>Remove the tube from the magnetic rack and spin down the tube for 15 seconds. Replace the tube on the magnetic rack and allow the pellet to reform.</li>
+<li>Keeping the tube on the magnet, remove any residual liquid (~10-30 μL). With the tube open, allow the pellet to dry for 30 seconds. Caution: Do not allow the pellet to dry to the point of cracking. Be prepared to immediately move on to Step 10.</li>
+<li>Remove the tube from the magnetic rack and resuspend the pellet in 15 μL of EB. Use the pipette to continuously wash the EB over the pellet until it completely dissociates. Note that this may take several repeated washes with the same 15 μL EB.</li>
+<li>Incubate the tube for 10 minutes away from the magnetic rack at room temperature.</li>
+<li>Spin down the tube for 15 seconds and replace the tube on the magnetic rack. Wait for about 1 minute for the beads to completely pellet near the magnet. Note that the liquid supernatant shoμLd be completely clear.</li>
+<li>Remove and retain 11 μL of supernatant. Pipette the supernatant into a 1.5 mL microfuge tube. Discard the tube containing the pellet. The pooled amplicon <abbr title="A collection of DNA fragments prepared for sequencing.">library</abbr> is now ready for the attachment of rapid adapters and motor proteins.</li>
+</ol>
+<h2 id="rapid-adapter-attachment"><abbr title="Short DNA sequence ligated to sample fragments to facilitate their translocation through the nanopore.">Rapid Adapter</abbr> Attachment</h2>
+<div class="admonition example">
+<p class="admonition-title">Summary</p>
+<p>The final step of the <abbr title="The process of preparing DNA or RNA samples for sequencing, including fragmentation, adapter ligation, and amplification.">library preparation</abbr> is attaching the motor protein to the ends of the DNA. The <abbr title="Short DNA sequence ligated to sample fragments to facilitate their translocation through the nanopore.">Rapid Adapter</abbr> (RA) reagent contains the motor protein and can attach it to the rapid adaptor chemistry on the ends of the DNA which were added by the transposome complex in a previous step.</p>
+</div>
+<p><strong>Steps</strong>:</p>
+<ol>
+<li>In a 1.5ml tube dilute <abbr title="Short DNA sequence ligated to sample fragments to facilitate their translocation through the nanopore.">Rapid Adapter</abbr> (RA) as follows:</li>
+</ol>
+<table>
+<thead>
+<tr>
+<th>Reagent</th>
+<th>Volume</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><abbr title="Short DNA sequence ligated to sample fragments to facilitate their translocation through the nanopore.">Rapid Adapter</abbr> (RA)</td>
+<td>1.5 µL</td>
+</tr>
+<tr>
+<td><abbr title="Short DNA or RNA sequences ligated to sample fragments to facilitate their attachment to sequencing platforms.">Adapter</abbr> Buffer (ADB)</td>
+<td>3.5 µL</td>
+</tr>
+<tr>
+<td>Total</td>
+<td>5µL</td>
+</tr>
+</tbody>
+</table>
+<ol>
+<li>Add 1 ul of diluted <abbr title="Short DNA sequence ligated to sample fragments to facilitate their translocation through the nanopore.">Rapid Adapter</abbr> to indexed DNA.</li>
+<li>Incubate for 10 min at room temperature.</li>
+</ol>
+<h2 id="flow-cell-check">Flow Cell Check</h2>
+<div class="admonition example">
+<p class="admonition-title">Summary</p>
+<p>The <abbr title="A consumable device containing nanopores through which nucleic acids pass during sequencing.">flow cell</abbr> contains the nanopores which facilitate the sequencing. The number of active pores needs to be determined for every <abbr title="A consumable device containing nanopores through which nucleic acids pass during sequencing.">flow cell</abbr> before it is to be used to ensure that there are an adequate number for the sequencing experiment. Because we are sequencing amplicons and don’t need very high-throughput, we suggest using the <abbr title="A smaller, lower-cost flow cell.">Flongle</abbr> <abbr title="A consumable device containing nanopores through which nucleic acids pass during sequencing.">flow cell</abbr> which has a maximum of 126 pores rather than the Minion, which has maximum of 2048.  </p>
+</div>
+<p><strong>Steps</strong>:
+1. Open <abbr title="Oxford Nanopore software required for operating the sequencing devices.">MinKNOW</abbr> software.
+2. Click the “Start” tab on the upper left of the screen.
+3. Click “<abbr title="A consumable device containing nanopores through which nucleic acids pass during sequencing.">Flow cell</abbr> check”</p>
+<div class="admonition warning">
+<p class="admonition-title">Important</p>
+<p>The sequencer will take a few minutes to get to the proper temperature and run the <abbr title="A consumable device containing nanopores through which nucleic acids pass during sequencing.">flow cell</abbr> check. When complete, the number of usable pores on the <abbr title="A consumable device containing nanopores through which nucleic acids pass during sequencing.">flow cell</abbr> will be displayed. The <abbr title="A consumable device containing nanopores through which nucleic acids pass during sequencing.">flow cell</abbr> is considered under warranty if it is checked within 2 weeks of the delivery date, was properly stored at 4 degrees, but has less than 50 pores. If under warranty, contact Oxford Nanopore within 2 days of performing the <abbr title="A consumable device containing nanopores through which nucleic acids pass during sequencing.">flow cell</abbr> check.</p>
+</div>
+<h2 id="flow-cell-priming">Flow Cell Priming</h2>
+<div class="admonition example">
+<p class="admonition-title">Summary</p>
+<p>Before loading the <abbr title="A consumable device containing nanopores through which nucleic acids pass during sequencing.">flow cell</abbr> with the <abbr title="A collection of DNA fragments prepared for sequencing.">DNA library</abbr>, the <abbr title="A consumable device containing nanopores through which nucleic acids pass during sequencing.">flow cell</abbr> needs to be “primed” for sequencing. The reagents required for priming and loading the <abbr title="A smaller, lower-cost flow cell.">Flongle</abbr> <abbr title="A consumable device containing nanopores through which nucleic acids pass during sequencing.">flow cell</abbr> are contained in the <abbr title="A smaller, lower-cost flow cell.">Flongle</abbr> Sequencing Expansion (EXP-FSE002), a separate box from the <abbr title="A collection of DNA fragments prepared for sequencing.">library</abbr> prep reagents, which contains glass vials of Sequencing Buffer (SB), Flow Cell Flush (FCF), and <abbr title="A collection of DNA fragments prepared for sequencing.">Library</abbr> Beads (LIB).</p>
+</div>
+<ol>
+<li>Mix 117 µL FCF (from the <abbr title="A smaller, lower-cost flow cell.">Flongle</abbr> expansion kit)  and 3 µL of FCT (from the <abbr title="A library preparation kit that uses a transposase complex to attach sequencing adapters; is quicker and uses fewer 3rd party reagents than the native barcoding kit but also sheers the DNA resulting in smaller fragment lengths.">Rapid Barcoding</abbr> kit).</li>
+<li>Peel back the seal from the <abbr title="A smaller, lower-cost flow cell.">Flongle</abbr> <abbr title="A consumable device containing nanopores through which nucleic acids pass during sequencing.">flow cell</abbr>.</li>
+<li>Slowly expel liquid from the pipette by turning the dial clockwise until a bead of liquid forms at the tip.</li>
+<li>Place the pipette tip in the sample port, keeping the pipette vertical.</li>
+<li>Turn the dial clockwise to load the flush buffer and primer into the <abbr title="A consumable device containing nanopores through which nucleic acids pass during sequencing.">flow cell</abbr>, stopping right before all liquid is entirely expelled to avoid pipetting air into the <abbr title="A consumable device containing nanopores through which nucleic acids pass during sequencing.">flow cell</abbr>.</li>
+</ol>
+<h2 id="flow-cell-loading">Flow Cell Loading</h2>
+<ol>
+<li>Make a sequencing mix:</li>
+</ol>
+<table>
+<thead>
+<tr>
+<th>Reagent</th>
+<th>Volume</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Sequencing Buffer (SB)</td>
+<td>15 µL</td>
+</tr>
+<tr>
+<td>Loading Beads (LIB)</td>
+<td>10 µL</td>
+</tr>
+<tr>
+<td><abbr title="A collection of DNA fragments prepared for sequencing.">DNA Library</abbr></td>
+<td>5 µL</td>
+</tr>
+<tr>
+<td>Total</td>
+<td>30 µL</td>
+</tr>
+</tbody>
+</table>
+<ol>
+<li>Pipette up sequencing mix, slowly expel liquid from the pipette by turning the dial clockwise until a bead of liquid forms at the tip.</li>
+<li>Place the pipette tip in the sample port, keeping the pipette vertical.</li>
+<li>Turn the dial clockwise to load to the flush buffer and primer the <abbr title="A consumable device containing nanopores through which nucleic acids pass during sequencing.">flow cell</abbr>, stopping right before all liquid is entirely expelled to avoid pipetting air into the <abbr title="A consumable device containing nanopores through which nucleic acids pass during sequencing.">flow cell</abbr>.</li>
+<li>Place the sticker back on.</li>
+<li>Proceed to "Start Sequencing" on <abbr title="Oxford Nanopore software required for operating the sequencing devices.">MinKNOW</abbr> software.</li>
+</ol>
+<div class="admonition bioinformatics">
+<p class="admonition-title">Bioinformatics</p>
+<p>Full DNA Barcoding Analysis of DNA barcodes can be done using DNA Subway2.0 (coming soon).</p>
+<p>Epi2melabs wf-amplicon may also be used to generate consensus sequences for each sample. This consensus sequence can</p>
+</div>
+<h3 id="data-analysis">Data analysis <!-- i.e. Data Analysis--></h3>
+<p><strong>Goal</strong>: Determine the taxa sampled.</p>
+<div class="admonition example">
+<p class="admonition-title">Example data</p>
+<p><strong>Plant DNA Barcoding </strong>:</p>
+<p>This dataset was generated at a workshop at James Madison University in June 2024.</p>
+<ul>
+<li><strong>Nanopore sequencing report example</strong>: <a href="https://drive.google.com/file/d/1TA9evtbZUMl8o-88VDSXukWdeOiI3fDc/view?usp=drive_link">Download</a></li>
+<li><strong>FastQ files</strong>: <a href="https://drive.google.com/drive/folders/1LJbwlCsR-sljkiOvdF4ZYkwfLBIslufn?usp=drive_link">Download</a></li>
+<li><strong>Example <abbr title="Oxford Nanopore's software suite for sequence data analysis.">EPI2ME</abbr> report</strong>: <a href="https://drive.google.com/file/d/1uxeltSfPenYmv8wLEYNaL3umR8R4Qxln/view?usp=drive_link">Download</a></li>
+</ul>
+</div>
+<div class="admonition bioinformatics">
+<p class="admonition-title">Bioinformatics</p>
+<p>This tutorial will use the <a href=""><abbr title="Oxford Nanopore's software suite for sequence data analysis.">EPI2ME</abbr> amplicon workflow</a> developed by Oxford Nanopore.</p>
+<p><strong>Workflow version</strong>: 1.1.3</p>
+</div>
+<div class="admonition classroom">
+<p class="admonition-title">Instruction tip</p>
+<p>Students can work individually or in groups to analyze their data. Assuming each student sample is assigned their own barcoded samples, they can generate an individual report specific to their example.</p>
+</div>
+<hr />
+<h4 id="analyze-data">Analyze data</h4>
+<ol>
+<li>
+<p>Open the <abbr title="Oxford Nanopore's software suite for sequence data analysis.">EPI2ME</abbr> software and choose either <strong>Sign in</strong> or <strong>Continue as guest</strong>.</p>
+<div class="admonition bioinformatics">
+<p class="admonition-title">Bioinformatics</p>
+<p>In this example, we use the <strong>Continue as guest</strong> option.</p>
+</div>
+</li>
+<li>
+<p>Click on the <strong>Launch</strong> icon and choose the <strong><abbr title="A DNA fragment that has been amplified by PCR.">Amplicon</abbr></strong> workflow.</p>
+<div class="admonition bioinformatics">
+<p class="admonition-title">Bioinformatics</p>
+<p>In this example, choose <strong>Run Locally</strong>.</p>
+</div>
+<div class="admonition failure">
+<p class="admonition-title">Failure</p>
+<p>If you see the "Setup required" error message, follow the instructions to install or configure any needed software (for example, installing and starting <a href="https://docs.docker.com/get-started/get-docker/">Docker</a>).</p>
+</div>
+<div class="admonition option">
+<p class="admonition-title">Option</p>
+<p>Depending on your access and your computer, the launch page is where you will decide on running the workflow locally (on your computer) or on the cloud.</p>
+</div>
+</li>
+<li>
+<p>Click on the <strong>Launch</strong> button to proceed with the workflow.</p>
+</li>
+<li>
+<p>Under <strong>Setup local analysis</strong>, complete the required options to load your sequencing dataset and choose analysis parameters.</p>
+<div class="admonition bioinformatics">
+<p class="admonition-title">Bioinformatics</p>
+<p>In this example, we use the following parameters:</p>
+<p><strong><abbr title="When referring to DNA; amount/concentration of DNA needed execute a protocol.">Input</abbr> Options</strong></p>
+<ul>
+<li><em><abbr title="A common file format for storing nucleotide sequences and associated quality scores.">FASTQ</abbr></em>: "fastq_pass" folder provided in this tutorial example data. This folder will be generated by your experiment.</li>
+<li><em>Analyse unclassified reads</em>: Leave as default.</li>
+<li><em>Reference</em>: Leave as default.</li>
+</ul>
+<p><strong>Sample Options</strong></p>
+<ul>
+<li>All options left as default.</li>
+</ul>
+<p><strong>Pre-processing Options</strong></p>
+<ul>
+<li>All other options left as default.</li>
+</ul>
+<p><strong>Variant calling options</strong></p>
+<ul>
+<li>All options left as default.</li>
+</ul>
+<p><strong>Output Options</strong></p>
+<ul>
+<li>All options left as default.</li>
+</ul>
+<p><strong>Advanced Options</strong></p>
+<ul>
+<li>All options left as default.</li>
+</ul>
+<p><strong>Miscellaneous Options</strong></p>
+<ul>
+<li>All options left as default.</li>
+</ul>
+<p><strong>Nextflow Configuration</strong></p>
+<ul>
+<li>All options left as default.</li>
+</ul>
+<p><strong>Nextflow Options</strong></p>
+<ul>
+<li>All options left as default.</li>
+</ul>
+</div>
+</li>
+<li>
+<p>Click <strong>Launch workflow</strong> and then <strong>Launch</strong> again.</p>
+<div class="admonition time">
+<p class="admonition-title">Time</p>
+<p>The time required for this analysis depends on your dataset. On a computer with the recommended configuration for running a <abbr title="A portable nanopore sequencing device developed by Oxford Nanopore Technologies.">MinION</abbr>, the test dataset was completed in approximately 5 minutes.</p>
+</div>
+<hr />
+</li>
+</ol>
+<h4 id="interpret-results">Interpret results</h4>
+<p>The wf-amplicon pipeline generates a detailed report (<code>wf-amplicon-report.html</code>) that provides comprehensive insights into sequencing data. However, the file we will need for our analysis in in the folder "output" generated by epi2melabs after the run. The output folder contains folders for each sample (i.e. "barcode01"), which contain a folder named "consensus". A .fasta file in the consensus folder is a consensus DNA sequence of the DNA Barcoding amplicon from all the sequencing reads for the sample.</p>
+<p>The DNA sequence from the .fasta file can be copied and pasted into the blue line of <a href="https://dnasubway.cyverse.org/">DNA Subway</a> under "Enter sequences in FASTA format".</p>
+<div class="admonition classroom">
+<p class="admonition-title">Instruction tip</p>
+<p>DNA Subway 2.0 is coming late Spring/Summer 2025 and is equipped with a new "Blue Line" for Nanopore sequencing data which contains tools for generating the consensus Nanopore sequence reads.</p>
+</div>
+<hr />
+<p><strong>Comments and discussion</strong></p>
+<p>See recent comments or start a discussion on our <a href="https://join.slack.com/t/dnalcnanopore-rvs6354/shared_invite/zt-2j25rj9mr-MESJ8XmVsyk7qZ49qhMiNA">Slack channel</a>.</p>
+<div id="curator-feed-default-feed-layout"><a href="https://curator.io" target="_blank" class="crt-logo crt-tag">Powered by Curator.io</a></div>
+
+
+
+
+
+
+
+  
+    
+  
+  
+    
+  
+
+
+  <aside class="md-source-file">
+    
+      
+  <span class="md-source-file__fact">
+    <span class="md-icon" title="Last update">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1zM12.5 7v5.2l4 2.4-1 1L11 13V7zM11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2z"/></svg>
+    </span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">April 8, 2025</span>
+  </span>
+
+    
+    
+      
+  <span class="md-source-file__fact">
+    <span class="md-icon" title="Created">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M14.47 15.08 11 13V7h1.5v5.25l3.08 1.83c-.41.28-.79.62-1.11 1m-1.39 4.84c-.36.05-.71.08-1.08.08-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8c0 .37-.03.72-.08 1.08.69.1 1.33.32 1.92.64.1-.56.16-1.13.16-1.72 0-5.5-4.5-10-10-10S2 6.5 2 12s4.47 10 10 10c.59 0 1.16-.06 1.72-.16-.32-.59-.54-1.23-.64-1.92M18 15v3h-3v2h3v3h2v-3h3v-2h-3v-3z"/></svg>
+    </span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">February 19, 2025</span>
+  </span>
+
+    
+    
+    
+  </aside>
+
+
+  
+
+
+
+
+
+
+                
+
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.tracking", "navigation.sections", "navigation.path", "navigation.indexes", "toc.integrate", "content.tooltips", "content.code.copy"], "search": "../../assets/javascripts/workers/search.6ce7567c.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": {"default": "latest", "provider": "mike"}}</script>
+    
+    
+  <script defer src="https://cdn.customgpt.ai/js/chat.js"></script> <script defer> (function(){ function init(){ CustomGPT.init({ p_id:'55164', p_key:'eb9ff041998a713eb5cfacc3a49f7efb' }) } document.readyState === 'complete' ? init() : window.addEventListener('load', init); })(); </script>
+  
+      <script src="../../assets/javascripts/bundle.88dd0f4e.min.js"></script>
+      
+        <script src="../../js/print-site.js"></script>
+      
+        <script src="../../javascripts/acctoolbar.min.js"></script>
+      
+        <script src="https://unpkg.com/tablesort@5.3.0/dist/tablesort.min.js"></script>
+      
+        <script src="../../javascripts/tablesort.js"></script>
+      
+        <script src="../../js/open_in_new_tab.js"></script>
+      
+    
+  <!-- Add scripts that need to run afterwards here -->
+
+  <script id="init-glightbox">const lightbox = GLightbox({"touchNavigation": true, "loop": false, "zoomable": true, "draggable": true, "openEffect": "zoom", "closeEffect": "zoom", "slideEffect": "slide"});
+document$.subscribe(() => { lightbox.reload() });
+</script></body>
+</html>
