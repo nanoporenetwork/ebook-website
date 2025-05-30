@@ -2352,12 +2352,12 @@ Chelex inhibits DNA amplification by PCR.</p>
 <p class="admonition-title">Summary</p>
 <p>This protocol is modified from Beckman Coulter Life Sciences’ protocol for typical PCR cleanup of DNA barcoding PCR products using solid phase reversible immobilization (SPRI) beads (i.e., AMPure XP beads). This protocol will suitably remove the remnants of PCR, selecting for PCR products in the range of 400-800 base pairs, which is consistent with most standard DNA barcode marker regions (e.g., rbcL, COI, etc.). The intent of this protocol is to prepare DNA amplicons for rapid sequencing with ONT’s <abbr title="A library preparation kit that uses a transposase complex to attach sequencing adapters; is quicker and uses fewer 3rd party reagents than the native barcoding kit but also sheers the DNA resulting in smaller fragment lengths.">Rapid Barcoding</abbr> Kit. Note that it is “optional,” because once all samples are pooled, bead clean-up will still need to be conducted on the pooled amplicon <abbr title="A collection of DNA fragments prepared for sequencing.">library</abbr>.</p>
 </div>
-<p><strong>Steps</strong>:</p>
+<p><strong>Steps</strong></p>
 <ol>
 <li>Re-suspend AMPure XP beads by using the pipette to mix.</li>
 <li>Add the entire PCR reaction (~20 μL) directly to a labeled 1.5 mL microfuge tube containing 36 μL AMPure XP beads. Use the pipette to carefμLly mix the beads and DNA.</li>
 <li>Incubate for 5 minutes at room temperature on a microfuge tube rack.</li>
-<li>Spin down the tube for 15 seconds and place the tube on a magnetic rack. Wait for about 1 minute for the beads to completely pellet near the magnet. Note that the liquid</li>
+<li>Spin down the tube for 15 seconds and place the tube on a magnetic rack. Wait for about 1 minute for the beads to completely pellet near the magnet. Note that the liquid supernatant should be completely clear.</li>
 <li>Keeping the tube on the magnet, pipette off the supernatant and discard without disturbing the pellet.</li>
 <li>Keeping the tube on the magnet, add 200 μL of freshly prepared 70% ethanol without disturbing the pellet. Remove the ethanol using a pipette and discard.</li>
 <li>Repeat Step 5.</li>
@@ -2365,7 +2365,7 @@ Chelex inhibits DNA amplification by PCR.</p>
 <li>Keeping the tube on the magnet, remove any residual liquid (~10-30 μL). With the tube open, allow the pellet to dry for 30 seconds. Caution: Do not allow the pellet to dry to the point of cracking. Be prepared to immediately move on to Step 10.</li>
 <li>Remove the tube from the magnetic rack and resuspend the pellet in 10 μL of EB. Use the pipette to continuously wash the EB over the pellet until it completely dissociates.</li>
 <li>Incubate the tube for 5 minutes away from the magnetic rack.</li>
-<li>Spin down the tube for 15 seconds and replace the tube on the magnetic rack. Wait for about 1 minute for the beads to completely pellet near the magnet. Note that the liquid supernatant shoμLd be completely clear.</li>
+<li>Spin down the tube for 15 seconds and replace the tube on the magnetic rack. Wait for about 1 minute for the beads to completely pellet near the magnet. Note that the liquid supernatant should be completely clear.</li>
 <li>Remove and retain 10 μL of supernatant. Pipette the supernatant into a thin-walled PCR tube. Discard the tube containing the pellet. The PCR product is now ready for the ONT Rapid <abbr title="Short, unique sequences added to DNA fragments to identify and differentiate multiple samples sequenced together. See also—Indexing.">Barcode</abbr> Kit.</li>
 </ol>
 <h2 id="rapid-barcode-index-attachment">Rapid <abbr title="Short, unique sequences added to DNA fragments to identify and differentiate multiple samples sequenced together. See also—Indexing.">Barcode</abbr> Index Attachment</h2>
@@ -2401,10 +2401,9 @@ Chelex inhibits DNA amplification by PCR.</p>
 </tr>
 </tbody>
 </table>
-<div class="admonition nanopore">
-<p class="admonition-title">Explanation</p>
-<p>The 20 °C incubation step will first ensure optimal transposase activity, promoting the addition of the RB indexes. The 80 °C step will denature and inactivate the transposase to prevent erroneous addition of unique indexes to the wrong DNA amplicons during pooling.</p>
-</div>
+<p>!!! nanopore "Explanation"</p>
+<pre><code>  The 20 °C incubation step will first ensure optimal transposase activity, promoting the addition of the RB indexes. The 80 °C step will denature and inactivate the transposase to prevent erroneous addition of unique indexes to the wrong DNA amplicons during pooling.
+</code></pre>
 <ol>
 <li>Spin down PCR tubes. DNA amplicons are now uniquely tagged using the ONT RBs.</li>
 <li>Pipette each tagged DNA amplicon (~11.5 μL) into a single class-wide 1.5 mL microfuge tube. This represents the pooled amplicon <abbr title="A collection of DNA fragments prepared for sequencing.">library</abbr>.  </li>
@@ -2418,7 +2417,7 @@ Chelex inhibits DNA amplification by PCR.</p>
 <ol>
 <li>Re-suspend AMPure XP beads by using the pipette to mix or vortexing.</li>
 <li>Add an appropriate volume of AMPure XP beads to the pooled amplicon <abbr title="A collection of DNA fragments prepared for sequencing.">library</abbr> using the following formula:
-VolumeAMPure XP beads= (11.5 μL)(No. of DNA amplicon samples)</li>
+VolumeAMPure XP beads= (11.5 μL)*(No. of DNA amplicon samples)</li>
 <li>Use a pipette to gently mix the beads and amplicon <abbr title="A collection of DNA fragments prepared for sequencing.">library</abbr> such that the beads are evenly distributed throughout the tube.</li>
 <li>Incubate the mix at room temperature for 10 minutes, flicking occasionally to ensure that beads remain suspended in solution. Note that DNA amplicons are coordinating with SPRI beads during this time.</li>
 <li>Spin down the mix for 15 seconds to form an initial bead pellet. Then, place the tube on a magnetic rack to pellet the beads. Allow up to one minute for the beads to pellet.
@@ -2429,7 +2428,7 @@ Keeping the tube on the magnetic rack, use an appropriate pipette to remove all 
 <li>Keeping the tube on the magnet, remove any residual liquid (~10-30 μL). With the tube open, allow the pellet to dry for 30 seconds. Caution: Do not allow the pellet to dry to the point of cracking. Be prepared to immediately move on to Step 10.</li>
 <li>Remove the tube from the magnetic rack and resuspend the pellet in 15 μL of EB. Use the pipette to continuously wash the EB over the pellet until it completely dissociates. Note that this may take several repeated washes with the same 15 μL EB.</li>
 <li>Incubate the tube for 10 minutes away from the magnetic rack at room temperature.</li>
-<li>Spin down the tube for 15 seconds and replace the tube on the magnetic rack. Wait for about 1 minute for the beads to completely pellet near the magnet. Note that the liquid supernatant shoμLd be completely clear.</li>
+<li>Spin down the tube for 15 seconds and replace the tube on the magnetic rack. Wait for about 1 minute for the beads to completely pellet near the magnet. Note that the liquid supernatant should be completely clear.</li>
 <li>Remove and retain 11 μL of supernatant. Pipette the supernatant into a 1.5 mL microfuge tube. Discard the tube containing the pellet. The pooled amplicon <abbr title="A collection of DNA fragments prepared for sequencing.">library</abbr> is now ready for the attachment of rapid adapters and motor proteins.</li>
 </ol>
 <h2 id="rapid-adapter-attachment"><abbr title="Short DNA sequence ligated to sample fragments to facilitate their translocation through the nanopore.">Rapid Adapter</abbr> Attachment</h2>
@@ -2670,7 +2669,7 @@ Keeping the tube on the magnetic rack, use an appropriate pipette to remove all 
     <span class="md-icon" title="Last update">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1zM12.5 7v5.2l4 2.4-1 1L11 13V7zM11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2z"/></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">May 29, 2025</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">May 30, 2025</span>
   </span>
 
     
